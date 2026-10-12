@@ -39,6 +39,7 @@ See [storage and indexing decision-based by scale](./storage-indexing-decision-b
 
 ## See also
 
+- [Storage observability tools](./storage-observability-tools.md)
 - [Embedding metrics](../embedding/embedding-metrics.md)
 - [Storage strategy](./storage-strategy.md) · [Index strategies](./index-strategies.md)
 - [Guard-rails data isolation](../../guard-rails/guardrails-data-isolation.md)

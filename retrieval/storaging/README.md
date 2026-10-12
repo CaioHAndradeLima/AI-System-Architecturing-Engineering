@@ -67,6 +67,14 @@ Query latency, QPS, index size, freshness, Recall@K, filtered search, deletion p
 
 → [See more in storage-observability.md](./storage-observability.md)
 
+### [storage-observability-tools.md](./storage-observability-tools.md)
+
+`#tools` · `#prometheus` · `#opentelemetry` · `#langfuse`
+
+Metrics sources, Grafana/Prometheus, OpenTelemetry, LangSmith/Langfuse, and golden-set eval for vector search.
+
+→ [See more in storage-observability-tools.md](./storage-observability-tools.md)
+
 ## Related
 
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write
