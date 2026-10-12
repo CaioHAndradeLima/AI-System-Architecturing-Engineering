@@ -12,7 +12,7 @@ Maps common guardrail **responsibilities** to representative services on **AWS**
 | **Audit and monitoring** | CloudTrail, CloudWatch | Cloud Audit Logs, Cloud Monitoring | Azure Monitor, Azure Activity Log |
 | **Tenant isolation** | IAM policies, data-store policies, tenant-aware application design | IAM, data-store policies, tenant-aware application design | Entra identity controls, data-store policies, tenant-aware application design |
 
-Vendor offerings change frequently—treat this table as a **starting map**, not an exhaustive or version-pinned catalog. Tenant isolation always requires **application-level** scoping (see [data isolation](./guardrails-data-isolation.md) and [safer tenant retrieval](./safer-architecture-tenant-scoped-retrieval.md)).
+Vendor offerings change frequently—treat this table as a **starting map**, not an exhaustive or version-pinned catalog. For AWS Bedrock Guardrails capabilities in depth, see [AI-specific controls — Amazon Bedrock Guardrails](./ai-specific-controls-amazon-bedrock-guardrails.md). Tenant isolation always requires **application-level** scoping (see [data isolation](./guardrails-data-isolation.md) and [safer tenant retrieval](./safer-architecture-tenant-scoped-retrieval.md)).
 
 ## See also
 

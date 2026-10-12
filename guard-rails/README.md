@@ -69,6 +69,14 @@ Side-by-side AWS, Google Cloud, and Azure services for edge protection, identity
 
 → [See more in guard-rails-cloud-comparison.md](./guard-rails-cloud-comparison.md)
 
+### [ai-specific-controls-amazon-bedrock-guardrails.md](./ai-specific-controls-amazon-bedrock-guardrails.md)
+
+`#aws` · `#bedrock` · `#ai-safety`
+
+Bedrock Guardrails capabilities (content, injection, topics, PII, grounding, reasoning checks) plus related WAF, API Gateway, IAM, secrets, and audit services.
+
+→ [See more in ai-specific-controls-amazon-bedrock-guardrails.md](./ai-specific-controls-amazon-bedrock-guardrails.md)
+
 ### [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
 
 `#anti-pattern` · `#multi-tenant` · `#rag`
