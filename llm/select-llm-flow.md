@@ -45,5 +45,6 @@ Do not change retrieval, context assembly, and prompt templates mid-benchmark un
 
 ## See also
 
+- [Deciding sample — example benchmark table](./select-llm-deciding-sample.md)
 - [LLM questions — model selection](./llm-questions.md)
 - [LLM overview](./README.md)

@@ -54,6 +54,14 @@ Requirements → dataset → candidates → measure → choose → canary.
 
 → [See more in select-llm-flow.md](./select-llm-flow.md)
 
+### [select-llm-deciding-sample.md](./select-llm-deciding-sample.md)
+
+`#benchmark` · `#example` · `#sla`
+
+Sample Model A/B/C comparison—quality, latency, cost, tool success.
+
+→ [See more in select-llm-deciding-sample.md](./select-llm-deciding-sample.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
