@@ -157,6 +157,14 @@ LLM, agent runtime, vector search, storage, events, SQL, identity, observability
 
 → [See more in retrieval-cloud-tools.md](./retrieval-cloud-tools.md)
 
+### [retrieval-aws-multi-agent-sample.md](./retrieval-aws-multi-agent-sample.md)
+
+`#aws` · `#sample` · `#langgraph` · `#opensearch`
+
+API → LangGraph on Fargate → agents → Bedrock/OpenSearch/S3 ingestion stack.
+
+→ [See more in retrieval-aws-multi-agent-sample.md](./retrieval-aws-multi-agent-sample.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)

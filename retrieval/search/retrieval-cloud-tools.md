@@ -29,5 +29,6 @@ Vendor names and SKUs change—validate against current docs before architecture
 
 ## See also
 
+- [AWS multi-agent sample topology](./retrieval-aws-multi-agent-sample.md)
 - [Guardrails AWS services](../../guard-rails/guardrails-aws-services.md)
 - [Search overview](./README.md)
