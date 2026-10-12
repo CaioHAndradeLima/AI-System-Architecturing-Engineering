@@ -25,5 +25,6 @@ Record parameter values in each [prompt version](./prompt-versioning.md) record 
 
 ## See also
 
+- [LLM section](../llm/) — model hosting and inference (chat/completion)
 - [Embedding hosted vs self-hosted](../retrieval/embedding/embedding-hosted-vs-self-hosted.md)
 - [Prompting overview](./README.md)

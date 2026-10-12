@@ -1,6 +1,6 @@
 # AI System Architecturing & Engineering
 
-Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prompting, and related production patterns.
+Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prompting, LLM inference, and related production patterns.
 
 ## Contents
 
@@ -11,6 +11,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 | [retrieval](./retrieval/) | [ingestion](./retrieval/ingestion/), [chunking](./retrieval/chunking/), [embedding](./retrieval/embedding/), [compacting](./retrieval/compacting/), [storaging](./retrieval/storaging/), [search](./retrieval/search/) |
 | [contexting](./contexting/) | Context assembly, grounding, citations, and token budget after retrieval |
 | [prompting](./prompting/) | System prompts, templates, grounding ([decision guide](./prompting/prompt-architecturing-decision-based.md)) |
+| [llm](./llm/) | Chat/completion models, hosting, inference, routing, and runtime ops |
 
 ## Adding a new note
 
