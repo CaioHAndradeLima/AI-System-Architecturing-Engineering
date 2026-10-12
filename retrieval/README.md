@@ -37,7 +37,7 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 
 Offline ingest through query embedding, retrieval engine (vector, metadata, keyword), reranking, context assembly, and LLM answer.
 
-→ [See more in retrieval-flow.md](./retrieval-flow.md)
+→ [See more in retrieval-flow.md](./retrieval-flow.md) · [Combined query-time strategies](./search/retrieval-strategies-combined.md)
 
 ### [retrieval-architecturing-decision-based.md](./retrieval-architecturing-decision-based.md)
 

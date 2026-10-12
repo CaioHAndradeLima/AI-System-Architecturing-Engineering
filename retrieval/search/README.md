@@ -21,6 +21,14 @@ Search sits after [embedding queries](../embedding/queries/) (query vectors and 
 
 ## Guides
 
+### [retrieval-strategies-combined.md](./retrieval-strategies-combined.md)
+
+`#flow` · `#rag` · `#pipeline`
+
+Full query-time stack: rewrite, embed, auth, dense/hybrid, merge, rerank, evidence rules, context, LLM.
+
+→ [See more in retrieval-strategies-combined.md](./retrieval-strategies-combined.md)
+
 ### [../retrieval-flow.md](../retrieval-flow.md)
 
 `#flow` · `#rag` · `#hybrid`
