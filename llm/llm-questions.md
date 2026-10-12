@@ -20,7 +20,8 @@
 |-------|-----------------|
 | Generation parameters | [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md) |
 | Production deployment | [Prompt versioning](../prompting/prompt-versioning.md) · [Prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md) |
-| Hosted vs API (embeddings analog) | [Embedding hosted vs self-hosted](../retrieval/embedding/embedding-hosted-vs-self-hosted.md) |
+| Hosted vs. open-weight | [LLM hosted vs open-weight models](./llm-hosted-vs-open-weight-models.md) |
+| Hosted vs API (embeddings) | [Embedding hosted vs self-hosted](../retrieval/embedding/embedding-hosted-vs-self-hosted.md) |
 | Tool calling / agents | [Retrieval architecture decision](../retrieval/search/retrieval-architecture-decision.md) · [Agents](../agents/) |
 | Cloud inference products | [Retrieval cloud tools — LLM inference](../retrieval/search/retrieval-cloud-tools.md) |
 | Fallback / failure (prompt side) | [Context architecturing — failure handling](../contexting/context-architecturing-decision-based.md) |

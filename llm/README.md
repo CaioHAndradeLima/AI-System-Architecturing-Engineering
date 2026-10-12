@@ -38,6 +38,14 @@ Retrieval through prompt, model selection box, inference, validation, response.
 
 → [See more in llm-flow.md](./llm-flow.md)
 
+### [llm-hosted-vs-open-weight-models.md](./llm-hosted-vs-open-weight-models.md)
+
+`#hosted` · `#open-weight` · `#bedrock` · `#vllm`
+
+Managed APIs vs self-hosted weights—advantages, trade-offs, and flows.
+
+→ [See more in llm-hosted-vs-open-weight-models.md](./llm-hosted-vs-open-weight-models.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
