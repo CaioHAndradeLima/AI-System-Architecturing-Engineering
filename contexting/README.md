@@ -76,6 +76,14 @@ Multiple evidence threads, dated organization, LLM causal synthesis.
 
 → [See more in context-multi-hop-question.md](./context-multi-hop-question.md)
 
+### [context-analytical-question.md](./context-analytical-question.md)
+
+`#sql` · `#analytics` · `#structured`
+
+SQL/tool result as compact table with units and dates → LLM explanation.
+
+→ [See more in context-analytical-question.md](./context-analytical-question.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
