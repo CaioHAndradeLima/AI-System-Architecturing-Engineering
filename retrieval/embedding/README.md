@@ -19,6 +19,14 @@ Embeddings sit after [chunking](../chunking/) and before or inside the vector in
 
 ## Guides
 
+### [embedding-user-query-flow.md](./embedding-user-query-flow.md)
+
+`#flow` · `#offline-online` · `#rag`
+
+Document ingest embed path vs query embed, search, context assembly, and LLM—same model both sides.
+
+→ [See more in embedding-user-query-flow.md](./embedding-user-query-flow.md)
+
 ### [embedding-decision-based.md](./embedding-decision-based.md)
 
 `#decision-guide` · `#model-selection` · `#governance`
