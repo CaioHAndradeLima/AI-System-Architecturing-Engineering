@@ -22,7 +22,7 @@ Decision matrix for choosing a **starting chunking strategy** in a production RA
 | Table-aware | [Structure-aware — tables section](./chunking-recursive-structure-aware.md#when-this-approach-is-insufficient) |
 | Semantic chunking | [Chunking semantic](./chunking-semantic.md) |
 | Parent-child / hierarchical | [Chunking hierarchical parent-child](./chunking-hierarchical-parent-child.md) |
-| Maturity by system size | [Retrieval architecturing decisions — Chunking](../retrieval-architecturing-decision-based.md) |
+| Maturity by system size | [Chunking architecturing decision-based](./chunking-architecturing-decision-based.md) · [Retrieval architecturing decisions](../retrieval-architecturing-decision-based.md) |
 
 Start with the **recommended baseline**, measure, then add complexity only when evidence supports it ([guard-rails decision rules](../../guard-rails/guard-rails-decision-architecturing-assistance.md#the-rules-i-would-never-compromise-on)).
 

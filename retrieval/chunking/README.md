@@ -66,6 +66,14 @@ LangChain splitters, LlamaIndex nodes, PyMuPDF, tokenizers, and eval scripts—r
 
 → [See more in chunking-tools.md](./chunking-tools.md)
 
+### [chunking-architecturing-decision-based.md](./chunking-architecturing-decision-based.md)
+
+`#maturity` · `#mvp-to-enterprise` · `#operations`
+
+Two tables: chunking/parsing/storage/metadata by scale, plus tenancy, failures, evaluation, and scaling triggers.
+
+→ [See more in chunking-architecturing-decision-based.md](./chunking-architecturing-decision-based.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines
