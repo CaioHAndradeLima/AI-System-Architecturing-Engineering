@@ -4,60 +4,25 @@ Turn text **chunks and queries** into vectors for similarity search: model choic
 
 Embeddings sit after [chunking](../chunking/) and before or inside the vector index in the [ingestion](../ingestion/) pipeline. Weak embeddings show up as poor semantic match—see **Embeddings** in [ingestion procedures](../ingestion/ingestion-procedures.md).
 
-## Topic areas (as docs are added)
+## Topic areas
 
 | Area | Focus |
 |------|--------|
-| **Models** | Hosted APIs vs local, dimensions, multilingual |
-| **Index vs query** | Same model and preprocessing for both paths |
-| **Batching & cost** | Throughput, rate limits, embedding cost per document |
-| **Versioning** | Model upgrades, re-index jobs, metadata on vectors |
-| **Quality** | Drift monitoring, benchmarks vs retrieval Recall@K |
-| **Multi-tenant** | Per-tenant quotas, isolated embedding workloads |
+| **[User queries](./queries/)** | Preprocess, embed, retrieve, eval, latency/cost |
+| **Models & hosting** | Selection, hosted vs self-hosted, migration |
+| **Index-time** | Document embed, metrics, bad practices |
+| **Operations** | Versioning, re-index, observability tooling |
 
 ---
 
+## Sections
+
+| Section | Summary |
+|---------|---------|
+| [queries/](./queries/) | Online user question → query vector → evidence |
+| _(this folder)_ | Document embedding, model lifecycle, platform metrics |
+
 ## Guides
-
-### [embedding-user-query-flow.md](./embedding-user-query-flow.md)
-
-`#flow` · `#offline-online` · `#rag`
-
-Document ingest embed path vs query embed, search, context assembly, and LLM—same model both sides.
-
-→ [See more in embedding-user-query-flow.md](./embedding-user-query-flow.md)
-
-### [embedding-cleaning-user-query.md](./embedding-cleaning-user-query.md)
-
-`#query` · `#preprocessing` · `#retrieval`
-
-Normalization, language detection, rewriting, expansion, multi-query, and decomposition before embedding.
-
-→ [See more in embedding-cleaning-user-query.md](./embedding-cleaning-user-query.md)
-
-### [embedding-user-context-compact-flow.md](./embedding-user-context-compact-flow.md)
-
-`#conversation` · `#query-rewrite` · `#context`
-
-Standalone vs context-dependent messages; authorized history, rewrite, then embed and retrieve.
-
-→ [See more in embedding-user-context-compact-flow.md](./embedding-user-context-compact-flow.md)
-
-### [embedding-user-query-latency-and-cost.md](./embedding-user-query-latency-and-cost.md)
-
-`#latency` · `#cost` · `#production`
-
-Query embed, p95 latency, tenant cost, safe caching, retries, rewriting, and tracing—startup vs enterprise.
-
-→ [See more in embedding-user-query-latency-and-cost.md](./embedding-user-query-latency-and-cost.md)
-
-### [embedding-user-query-evaluation.md](./embedding-user-query-evaluation.md)
-
-`#evaluation` · `#recall` · `#ndcg`
-
-Recall@K, MRR, nDCG@K, and latency/cost for judging query encoding and retrieval.
-
-→ [See more in embedding-user-query-evaluation.md](./embedding-user-query-evaluation.md)
 
 ### [embedding-decision-based.md](./embedding-decision-based.md)
 
@@ -115,9 +80,11 @@ Nine common embedding mistakes with fixes—dimensions, similarity scores, model
 
 → [See more in embedding-bad-practices.md](./embedding-bad-practices.md)
 
+_User-query guides: [queries/README.md](./queries/README.md)_
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded
 - [Ingestion](../ingestion/) — pipeline context
-- [Retrieval architecturing decisions](../retrieval-architecturing-decision-based.md) — Embeddings row by scale
+- [Retrieval architecturing decisions](../retrieval-architecturing-decision-based.md)
 - [Embedding metrics](./embedding-metrics.md) · [Chunking metrics observability](../chunking/chunking-metrics-observability.md)
