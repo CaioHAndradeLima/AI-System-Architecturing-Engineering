@@ -59,6 +59,14 @@ Storage choice, ANN tuning, metadata, filtering, updates, deletions, scaling, av
 
 → [See more in storage-indexing-decision-based.md](./storage-indexing-decision-based.md)
 
+### [storage-observability.md](./storage-observability.md)
+
+`#metrics` · `#slo` · `#ann` · `#multi-tenant`
+
+Query latency, QPS, index size, freshness, Recall@K, filtered search, deletion propagation, and cost per tenant.
+
+→ [See more in storage-observability.md](./storage-observability.md)
+
 ## Related
 
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write

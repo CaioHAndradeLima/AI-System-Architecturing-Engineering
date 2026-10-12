@@ -26,7 +26,7 @@ Pair with [storage architecturing decision-based](./storage-architecturing-decis
 | Hybrid DB + vector | [Compact architecture flow](../compacting/compact-architecture-flow.md) |
 | Embedding side of scale | [Embedding startup vs enterprise](../embedding/embedding-startup-vs-enterprise-architecture-decision-based.md) |
 | Tenancy / auth / deletion | [Guard-rails data isolation](../../guard-rails/guardrails-data-isolation.md) · [Wrong architecture: shared retrieval](../../guard-rails/wrong-architecture-shared-retrieval.md) · [Robust implementation](../../guard-rails/guard-rails-robust-cloud-rules-implementation.md) |
-| Metrics / migration | [Embedding metrics](../embedding/embedding-metrics.md) · [Embedding migration](../embedding/embedding-migration-ingestion-using-another-model.md) |
+| Metrics / migration | [Storage observability](./storage-observability.md) · [Embedding metrics](../embedding/embedding-metrics.md) · [Embedding migration](../embedding/embedding-migration-ingestion-using-another-model.md) |
 
 ## See also
 
