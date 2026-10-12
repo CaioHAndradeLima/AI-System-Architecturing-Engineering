@@ -60,6 +60,14 @@ Full thread vs last-N vs summary + recent messages for context assembly.
 
 → [See more in context-conversation-strategies.md](./context-conversation-strategies.md)
 
+### [context-simple-document-question.md](./context-simple-document-question.md)
+
+`#mvp` · `#citations` · `#policy`
+
+Question + top chunks + source IDs → LLM answer.
+
+→ [See more in context-simple-document-question.md](./context-simple-document-question.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
