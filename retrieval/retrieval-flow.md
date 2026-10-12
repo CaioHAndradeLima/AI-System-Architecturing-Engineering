@@ -52,7 +52,7 @@ End-to-end **RAG retrieval path**: offline indexing, query-time search (vector +
 | Parse → chunk → embed (ingestion) | [Ingestion](./ingestion/) · [Chunking](./chunking/) · [Embedding](./embedding/) |
 | Vector storage | [Storaging](./storaging/) |
 | Query embedding | [Embedding queries](./embedding/queries/) |
-| Retrieval engine (vector, filters, keyword) | [Search](./search/README.md) · [Storage strategy](./storaging/storage-strategy.md) |
+| Retrieval engine (vector, filters, keyword) | [Search](./search/README.md) · [Metadata filtering](./search/retrieval-strategy-metadata-filtering.md) · [Storage strategy](./storaging/storage-strategy.md) |
 | Reranking & final evidence | _Search docs (as added)_ · [Compacting](./compacting/) |
 | Context assembly → LLM | [Compact architecture flow](./compacting/compact-architecture-flow.md) · [Embedding user query flow](./embedding/queries/embedding-user-query-flow.md) |
 

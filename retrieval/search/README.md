@@ -45,6 +45,14 @@ Top-K vs threshold vs both; score filter flow and when to abstain or clarify.
 
 → [See more in retrieval-strategy-similarity.md](./retrieval-strategy-similarity.md)
 
+### [retrieval-strategy-metadata-filtering.md](./retrieval-strategy-metadata-filtering.md)
+
+`#metadata` · `#multi-tenant` · `#acl`
+
+Trusted tenant identity → access restrictions → search eligible vectors only.
+
+→ [See more in retrieval-strategy-metadata-filtering.md](./retrieval-strategy-metadata-filtering.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
