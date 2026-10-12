@@ -22,7 +22,13 @@
 
 ## Guides
 
-_Guides will be listed here as you add markdown files in this folder (same pattern as [prompting](../prompting/README.md))._
+### [llm-questions.md](./llm-questions.md)
+
+`#index` · `#decision-guide`
+
+Nine topics and key questions—model choice through safe production deployment.
+
+→ [See more in llm-questions.md](./llm-questions.md)
 
 ## Related
 
