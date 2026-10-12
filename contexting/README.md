@@ -100,6 +100,14 @@ Seven rules for permissions, untrusted evidence, secrets, tools, tenant isolatio
 
 → [See more in context-reliable-architecture.md](./context-reliable-architecture.md)
 
+### [context-evaluate-assembling.md](./context-evaluate-assembling.md)
+
+`#eval` · `#metrics` · `#groundedness`
+
+Coverage, redundancy, tokens, citations, latency, security tests, abstain.
+
+→ [See more in context-evaluate-assembling.md](./context-evaluate-assembling.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)

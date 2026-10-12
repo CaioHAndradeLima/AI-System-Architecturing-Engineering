@@ -26,5 +26,6 @@ These rules apply in **assemble_context_node** and earlier—validation after ge
 
 ## See also
 
+- [Evaluate context assembling](./context-evaluate-assembling.md) — unauthorized-evidence tests, groundedness, no-answer handling
 - [Guard-rails overview](../guard-rails/README.md)
 - [Contexting overview](./README.md)
