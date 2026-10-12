@@ -18,7 +18,13 @@ Chunking sits after parsing and before embedding in the [ingestion](../ingestion
 
 ## Guides
 
-_Guide entries (tags, short description, see-more links) will appear here as markdown files are added—same style as [ingestion README](../ingestion/README.md)._
+### [chunking-simpler-strategy.md](./chunking-simpler-strategy.md)
+
+`#fixed-size` · `#overlap` · `#langchain`
+
+200-token / 40-token overlap example, trade-off table, and `RecursiveCharacterTextSplitter` with character vs token notes.
+
+→ [See more in chunking-simpler-strategy.md](./chunking-simpler-strategy.md)
 
 ## Related
 
