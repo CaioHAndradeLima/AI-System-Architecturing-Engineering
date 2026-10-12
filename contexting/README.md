@@ -116,6 +116,14 @@ Eight assembly mistakes, impact, and better approaches.
 
 → [See more in context-assembling-trade-offs.md](./context-assembling-trade-offs.md)
 
+### [context-architecturing-decision-based.md](./context-architecturing-decision-based.md)
+
+`#decision-guide` · `#startup` · `#enterprise` · `#multi-agent`
+
+Assembly, evidence, budget, history, security, eval, observability, and cost by maturity.
+
+→ [See more in context-architecturing-decision-based.md](./context-architecturing-decision-based.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)

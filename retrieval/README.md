@@ -12,7 +12,7 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 | **[Compacting](./compacting/)** | Fit and prioritize retrieved context for the LLM |
 | **[Storaging](./storaging/)** | Vector index, DB metadata, object storage, index lifecycle |
 | **[Search](./search/)** | Dense, sparse, hybrid, filters, reranking |
-| **[Contexting](../contexting/)** | Grounding, citations, prompt/context assembly (post-retrieval) |
+| **[Contexting](../contexting/)** | Grounding, citations, prompt/context assembly ([decision by scale](../contexting/context-architecturing-decision-based.md)) |
 | **Operations** | Freshness, reindexing, eval metrics (recall, MRR, grounded answers) |
 | **Multi-tenant** | Scoped indexes, ACL sync, safe caching |
 
