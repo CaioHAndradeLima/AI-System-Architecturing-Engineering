@@ -1,6 +1,6 @@
 # AI System Architecturing & Engineering
 
-Markdown guides on multi-agent systems, guard-rails, retrieval, and related production patterns.
+Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, and related production patterns.
 
 ## Contents
 
@@ -9,6 +9,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, and related prod
 | [agents](./agents/) | Multi-agent patterns (sequential, parallel, hierarchical) and Python layout |
 | [guard-rails](./guard-rails/) | Strategy, tenant isolation, AWS controls, test use cases |
 | [retrieval](./retrieval/) | [ingestion](./retrieval/ingestion/), [chunking](./retrieval/chunking/), [embedding](./retrieval/embedding/), [compacting](./retrieval/compacting/), [storaging](./retrieval/storaging/), [search](./retrieval/search/) |
+| [contexting](./contexting/) | Context assembly, grounding, citations, prompts, and token budget after retrieval |
 
 ## Adding a new note
 

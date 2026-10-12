@@ -1,6 +1,6 @@
 # Search
 
-**Query-time retrieval**: turn a user question (and optional context) into ranked evidence from indexes and metadata—before [compacting](../compacting/) sends context to the LLM.
+**Query-time retrieval**: turn a user question (and optional context) into ranked evidence from indexes and metadata—before [compacting](../compacting/) and [contexting](../../contexting/) shape what the LLM sees.
 
 Search sits after [embedding queries](../embedding/queries/) (query vectors and rewrite) and [storaging](../storaging/) (indexes, filters, freshness). Authorization and tenant scope belong on every path ([guard-rails tenant-scoped retrieval](../../guard-rails/safer-architecture-tenant-scoped-retrieval.md)).
 
