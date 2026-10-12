@@ -134,6 +134,14 @@ Supervisor, agents, model gateway, routing, limits, telemetry, fallbacks.
 
 → [See more in llm-architecturing.md](./llm-architecturing.md)
 
+### [llm-decision-based.md](./llm-decision-based.md)
+
+`#decision-guide` · `#startup` · `#enterprise` · `#gateway`
+
+Model choice, config, cost, latency, tools, reliability, eval, deployment by maturity.
+
+→ [See more in llm-decision-based.md](./llm-decision-based.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)

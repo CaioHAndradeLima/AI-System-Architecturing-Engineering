@@ -11,7 +11,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 | [retrieval](./retrieval/) | [ingestion](./retrieval/ingestion/), [chunking](./retrieval/chunking/), [embedding](./retrieval/embedding/), [compacting](./retrieval/compacting/), [storaging](./retrieval/storaging/), [search](./retrieval/search/) |
 | [contexting](./contexting/) | Context assembly, grounding, citations, and token budget after retrieval |
 | [prompting](./prompting/) | System prompts, templates, grounding ([decision guide](./prompting/prompt-architecturing-decision-based.md)) |
-| [llm](./llm/) | Chat/completion models, hosting, inference, routing, and runtime ops |
+| [llm](./llm/) | Chat/completion models, hosting, inference ([decision guide](./llm/llm-decision-based.md)) |
 
 ## Adding a new note
 
