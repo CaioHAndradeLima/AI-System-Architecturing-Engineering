@@ -87,6 +87,7 @@ Practical **rollout order** for query-time retrieval: start simple, add filters 
           - Unauthorized data is never exposed
           - Latency and cost meet targets
           - Changes pass retrieval regression tests
+
 ```
 
 ## Step → guides
