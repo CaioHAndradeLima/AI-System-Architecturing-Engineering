@@ -32,6 +32,14 @@ Nine engineering concerns compared side by side—from upload triggers and worke
 
 → [See more in ingestion-architecture-engineering.md](./ingestion-architecture-engineering.md)
 
+### [ingestion-observability.md](./ingestion-observability.md)
+
+`#observability` · `#metrics` · `#sla`
+
+Ingestion success, parsing failures, latency, cost, duplicates, freshness, Recall@K, and cross-tenant test failures—what each metric means.
+
+→ [See more in ingestion-observability.md](./ingestion-observability.md)
+
 ### [retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
 `#ingestion` · `#indexing` · `#pipeline`
