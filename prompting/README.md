@@ -21,6 +21,14 @@ Typical RAG order: [retrieval](../retrieval/) → [context assembly](../contexti
 
 ## Guides
 
+### [prompt-implementation-flow.md](./prompt-implementation-flow.md)
+
+`#checklist` · `#implementation` · `#eval`
+
+Ten-step prompt engineering checklist with regression loop and rollout.
+
+→ [See more in prompt-implementation-flow.md](./prompt-implementation-flow.md)
+
 ### [prompt-categories.md](./prompt-categories.md)
 
 `#taxonomy` · `#system` · `#rag`
