@@ -92,6 +92,14 @@ retrieve → assemble_context → generate → validate → response.
 
 → [See more in context-assembly-langchain-langgraph.md](./context-assembly-langchain-langgraph.md)
 
+### [context-reliable-architecture.md](./context-reliable-architecture.md)
+
+`#security` · `#tenancy` · `#provenance`
+
+Seven rules for permissions, untrusted evidence, secrets, tools, tenant isolation, and traceability.
+
+→ [See more in context-reliable-architecture.md](./context-reliable-architecture.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
