@@ -18,7 +18,7 @@
 
 | Topic | Existing guides |
 |-------|-----------------|
-| Streaming and async | [LLM latency sample](./llm-latency-sample.md) · [Latency variables and measurement](./llm-latency-variables-measurement.md) |
+| Streaming and async | [Async vs streaming](./llm-async-vs-streaming.md) · [Latency sample](./llm-latency-sample.md) · [Latency measurement](./llm-latency-variables-measurement.md) |
 | Model routing | [LLM routing flow](./llm-routing-flow.md) · [Routing policy](./llm-routing-policy.md) |
 | Generation parameters | [LLM generation parameters](./llm-generation-parameters.md) · [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md) |
 | Production deployment | [Prompt versioning](../prompting/prompt-versioning.md) · [Prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md) |

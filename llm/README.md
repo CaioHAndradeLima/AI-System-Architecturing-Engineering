@@ -102,6 +102,14 @@ TTFT, percentiles, tokens/s, errors, cost, calls and retries.
 
 → [See more in llm-latency-variables-measurement.md](./llm-latency-variables-measurement.md)
 
+### [llm-async-vs-streaming.md](./llm-async-vs-streaming.md)
+
+`#streaming` · `#async` · `#ttft`
+
+Token streaming UX vs concurrent awaits for agents and requests.
+
+→ [See more in llm-async-vs-streaming.md](./llm-async-vs-streaming.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
