@@ -140,3 +140,11 @@ Integration-style scenarios (cross-tenant doc access, forged `tenant_id`, cache 
 Seven requirements for trusted tenant resolution, pre-access authorization, DB policies, scoped retrieval, isolated cache/memory/jobs, least-privilege tools, and cross-tenant tests.
 
 → [See more in guard-rails-robust-cloud-rules-implementation.md](./guard-rails-robust-cloud-rules-implementation.md)
+
+### [guard-rails-decision-architecturing-assistance.md](./guard-rails-decision-architecturing-assistance.md)
+
+`#architecture` · `#decision-guide` · `#maturity`
+
+Guardrail/tool matrix by MVP → medium → mature (validation, AI safety, observability, jobs, release) plus AWS/GCP/Azure service mapping.
+
+→ [See more in guard-rails-decision-architecturing-assistance.md](./guard-rails-decision-architecturing-assistance.md)
