@@ -28,7 +28,7 @@ Pair with [retrieval strategies combined](./retrieval-strategies-combined.md) (f
 | Reranking | [Reranking](./retrieval-strategy-reranking.md) |
 | Query rewriting | [Cleaning user query](../embedding/queries/embedding-cleaning-user-query.md) |
 | Index configuration | [Index strategies](../storaging/index-strategies.md) · [HNSW flow](../storaging/hnsw-flow.md) · [Storage indexing by scale](../storaging/storage-indexing-decision-based.md) |
-| Evaluation / observability | [Query evaluation](../embedding/queries/embedding-user-query-evaluation.md) · [Storage observability](../storaging/storage-observability.md) |
+| Evaluation / observability | [Retrieval metrics observability](./retrieval-metrics-observability.md) · [Query evaluation](../embedding/queries/embedding-user-query-evaluation.md) · [Storage observability](../storaging/storage-observability.md) |
 | Scaling | [Storage and indexing by scale](../storaging/storage-indexing-decision-based.md) |
 
 ## See also

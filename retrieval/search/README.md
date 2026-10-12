@@ -85,6 +85,14 @@ Retrieval method, K, thresholds, filters, rerank, hybrid, index, fallback, eval,
 
 → [See more in retrieval-decision-based.md](./retrieval-decision-based.md)
 
+### [retrieval-metrics-observability.md](./retrieval-metrics-observability.md)
+
+`#metrics` · `#recall` · `#rerank` · `#abstain`
+
+Recall@K, MRR, nDCG, rerank lift, no-result rate, filter failures, context tokens, answer correctness.
+
+→ [See more in retrieval-metrics-observability.md](./retrieval-metrics-observability.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
