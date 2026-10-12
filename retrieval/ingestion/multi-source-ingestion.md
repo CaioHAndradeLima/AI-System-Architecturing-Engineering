@@ -79,6 +79,7 @@
 
 ## See also
 
+- [Ingestion architecture engineering — MVP vs enterprise](./ingestion-architecture-engineering.md)
 - [Ingestion procedures](./ingestion-procedures.md)
 - [Retrieval architecturing decisions](../retrieval-architecturing-decision-based.md)
 - [Guard-rails robust implementation](../../guard-rails/guard-rails-robust-cloud-rules-implementation.md)

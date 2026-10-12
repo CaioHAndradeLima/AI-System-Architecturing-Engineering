@@ -24,6 +24,14 @@ Drive, Confluence, SharePoint, and APIs through connectors, CDC, queues, ACL syn
 
 → [See more in multi-source-ingestion.md](./multi-source-ingestion.md)
 
+### [ingestion-architecture-engineering.md](./ingestion-architecture-engineering.md)
+
+`#architecture` · `#mvp-vs-enterprise` · `#operations`
+
+Nine engineering concerns compared side by side—from upload triggers and workers to idempotency, deletions, ACL sync, and monitoring.
+
+→ [See more in ingestion-architecture-engineering.md](./ingestion-architecture-engineering.md)
+
 ### [retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
 `#ingestion` · `#indexing` · `#pipeline`
