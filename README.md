@@ -6,7 +6,7 @@ Markdown guides on multi-agent systems, guard-rails, and related production patt
 
 | Directory | Topics |
 |-----------|--------|
-| [agents](./agents/) | Multi-agent architecture patterns and example Python layout |
+| [agents](./agents/) | Multi-agent patterns (sequential, parallel, hierarchical) and Python layout |
 | [guard-rails](./guard-rails/) | Strategy, tenant isolation, AWS controls, test use cases |
 
 ## Adding a new note
