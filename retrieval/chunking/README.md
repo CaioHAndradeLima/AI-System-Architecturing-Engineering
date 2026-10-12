@@ -58,6 +58,14 @@ Document type → recommended starting strategy and rationale; links to specific
 
 → [See more in chunking-architecturing.md](./chunking-architecturing.md)
 
+### [chunking-tools.md](./chunking-tools.md)
+
+`#tools` · `#langchain` · `#llamaindex`
+
+LangChain splitters, LlamaIndex nodes, PyMuPDF, tokenizers, and eval scripts—roles and when to use each.
+
+→ [See more in chunking-tools.md](./chunking-tools.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines
