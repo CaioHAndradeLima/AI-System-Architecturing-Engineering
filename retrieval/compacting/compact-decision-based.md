@@ -32,6 +32,7 @@ Choose **storage and retrieval shape** by use case—exact lookups vs semantic s
 
 ## See also
 
+- [Storaging](../storaging/) — vector DB, metadata, and object storage
 - [Compact architecture flow](./compact-architecture-flow.md)
 - [Minimum ingestion MVP](../ingestion/minimum-ingestion-mvp.md)
 - [Embedding bad practices — semantic vs keyword](../embedding/embedding-bad-practices.md)
