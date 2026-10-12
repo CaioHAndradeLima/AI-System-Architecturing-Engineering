@@ -77,6 +77,14 @@ Bedrock Guardrails capabilities (content, injection, topics, PII, grounding, rea
 
 → [See more in ai-specific-controls-amazon-bedrock-guardrails.md](./ai-specific-controls-amazon-bedrock-guardrails.md)
 
+### [ai-specific-controls-google-model-armor.md](./ai-specific-controls-google-model-armor.md)
+
+`#gcp` · `#model-armor` · `#ai-safety`
+
+Model Armor prompt/document/response screening, Sensitive Data Protection integration, templates—and related Armor, API Gateway, IAM, Secret Manager, audit, and monitoring.
+
+→ [See more in ai-specific-controls-google-model-armor.md](./ai-specific-controls-google-model-armor.md)
+
 ### [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
 
 `#anti-pattern` · `#multi-tenant` · `#rag`
