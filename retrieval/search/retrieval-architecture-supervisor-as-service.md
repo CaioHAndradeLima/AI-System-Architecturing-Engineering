@@ -55,6 +55,7 @@ Related patterns: [sequential AI pipeline](../../agents/multi-agent-architecture
 
 ## See also
 
+- [Retrieval architecture decision](./retrieval-architecture-decision.md)
 - [Supervisor with retrieval **agent**](./retrieval-architecture-supervisor-as-agent.md) — LLM-driven source choice, rewrite, and retry
 - [Retrieval implementation flow](./retrieval-implementation-flow.md)
 - [Search overview](./README.md)

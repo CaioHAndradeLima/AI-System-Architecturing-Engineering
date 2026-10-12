@@ -125,6 +125,14 @@ Supervisor → Knowledge / Data / Engineering agents → tools → merge → fin
 
 → [See more in retrieval-architecture-multi-agent.md](./retrieval-architecture-multi-agent.md)
 
+### [retrieval-architecture-decision.md](./retrieval-architecture-decision.md)
+
+`#decision-guide` · `#agents` · `#tool`
+
+Requirement → service, multi-backend tool, routing, retrieval agent, or multi-agent.
+
+→ [See more in retrieval-architecture-decision.md](./retrieval-architecture-decision.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
