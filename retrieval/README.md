@@ -41,6 +41,14 @@ Minimal index path (parse → chunk → embed → store) and query path (embed q
 
 → [See more in minimum-ingestion-mvp.md](./minimum-ingestion-mvp.md)
 
+### [retrieval-architecturing-decision-based.md](./retrieval-architecturing-decision-based.md)
+
+`#architecture` · `#decision-guide` · `#maturity`
+
+Parsing through evaluation by MVP, medium, and large system—parsers, chunking, embeddings, vector store, retrieval, and eval depth.
+
+→ [See more in retrieval-architecturing-decision-based.md](./retrieval-architecturing-decision-based.md)
+
 ## Related guard-rails
 
 - [Safer architecture: tenant-scoped retrieval](../guard-rails/safer-architecture-tenant-scoped-retrieval.md)
