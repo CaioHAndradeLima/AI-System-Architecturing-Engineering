@@ -58,6 +58,7 @@ Implements the “Database + vector index” pattern from [compact decision-base
 
 - Vector hits should return **stable message IDs**; hydrate text from the database after ACL check.
 - Re-embed on edit; tombstone or delete vectors when messages are removed ([embedding migration — change table](../embedding/embedding-migration-ingestion-using-another-model.md)).
+- Which messages to embed: [short messages trade-offs](./embedding-queries-short-messages-trade-offs.md).
 - Conversation RAG may also use [user context compact flow](../embedding/queries/embedding-user-context-compact-flow.md) before embed.
 
 ## See also

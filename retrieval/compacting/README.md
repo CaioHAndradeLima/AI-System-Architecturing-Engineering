@@ -35,6 +35,14 @@ Dual-write DB + vector index; tenant-filtered search, authorized fetch, then RAG
 
 → [See more in compact-architecture-flow.md](./compact-architecture-flow.md)
 
+### [embedding-queries-short-messages-trade-offs.md](./embedding-queries-short-messages-trade-offs.md)
+
+`#messages` · `#embedding` · `#trade-offs`
+
+When to embed acknowledgments, incidents, rich one-liners, threads, and high-volume chats.
+
+→ [See more in embedding-queries-short-messages-trade-offs.md](./embedding-queries-short-messages-trade-offs.md)
+
 ## Related
 
 - [Embedding — user context compact flow](../embedding/queries/embedding-user-context-compact-flow.md) — rewrite query using chat history (before retrieve)
