@@ -27,6 +27,14 @@ Message/chat use cases: DB vs vector vs hybrid vs pgvector/Chroma for prototypes
 
 → [See more in compact-decision-based.md](./compact-decision-based.md)
 
+### [compact-architecture-flow.md](./compact-architecture-flow.md)
+
+`#architecture` · `#db-plus-vector` · `#messages`
+
+Dual-write DB + vector index; tenant-filtered search, authorized fetch, then RAG.
+
+→ [See more in compact-architecture-flow.md](./compact-architecture-flow.md)
+
 ## Related
 
 - [Embedding — user context compact flow](../embedding/queries/embedding-user-context-compact-flow.md) — rewrite query using chat history (before retrieve)

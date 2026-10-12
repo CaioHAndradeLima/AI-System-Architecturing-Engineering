@@ -32,6 +32,7 @@ Choose **storage and retrieval shape** by use case—exact lookups vs semantic s
 
 ## See also
 
+- [Compact architecture flow](./compact-architecture-flow.md)
 - [Minimum ingestion MVP](../ingestion/minimum-ingestion-mvp.md)
 - [Embedding bad practices — semantic vs keyword](../embedding/embedding-bad-practices.md)
 - [Retrieval architecturing decision-based](../retrieval-architecturing-decision-based.md)
