@@ -15,7 +15,7 @@ Scenarios to prove tenant isolation, tool safety, and content handling behave as
 | A background worker processes a queued job | The worker uses the job's verified tenant context |
 | Logs or traces contain retrieved content | Access and retention controls prevent unintended disclosure |
 
-These cases align with [what good guardrails do](./README.md#what-good-guardrails-do) (testable, fail safely) and [data isolation strategies](./guardrails-data-isolation.md).
+These cases align with [what good guardrails do](./README.md#what-good-guardrails-do) (testable, fail safely), [robust cloud rules implementation](./guard-rails-robust-cloud-rules-implementation.md), and [data isolation strategies](./guardrails-data-isolation.md).
 
 ## See also
 

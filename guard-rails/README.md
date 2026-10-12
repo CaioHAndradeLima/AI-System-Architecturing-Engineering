@@ -132,3 +132,11 @@ Platform controls that complement app guardrails: API gateway/WAF, IAM, secrets,
 Integration-style scenarios (cross-tenant doc access, forged `tenant_id`, cache isolation, tool abuse, injection in chunks) with expected deny or safe outcomes.
 
 → [See more in guard-rails-test-use-cases.md](./guard-rails-test-use-cases.md)
+
+### [guard-rails-robust-cloud-rules-implementation.md](./guard-rails-robust-cloud-rules-implementation.md)
+
+`#checklist` · `#multi-tenant` · `#production`
+
+Seven requirements for trusted tenant resolution, pre-access authorization, DB policies, scoped retrieval, isolated cache/memory/jobs, least-privilege tools, and cross-tenant tests.
+
+→ [See more in guard-rails-robust-cloud-rules-implementation.md](./guard-rails-robust-cloud-rules-implementation.md)
