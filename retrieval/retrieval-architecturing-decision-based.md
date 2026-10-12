@@ -19,6 +19,7 @@ How to evolve **parsing → evaluation** choices as the system grows from MVP to
 
 ## See also
 
+- [Search section](./search/README.md)
 - [Ingestion section](./ingestion/README.md)
 - [Ingestion procedures](./ingestion/ingestion-procedures.md)
 - [Retrieval simple ingestion](./ingestion/retrieval-simple-ingestion.md)
