@@ -52,6 +52,14 @@ Multi-signal evidence score: relevance, freshness, authority, task fit.
 
 → [See more in context-scoring-math.md](./context-scoring-math.md)
 
+### [context-conversation-strategies.md](./context-conversation-strategies.md)
+
+`#history` · `#summarization` · `#token-budget`
+
+Full thread vs last-N vs summary + recent messages for context assembly.
+
+→ [See more in context-conversation-strategies.md](./context-conversation-strategies.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
