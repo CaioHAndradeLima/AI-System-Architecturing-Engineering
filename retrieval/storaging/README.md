@@ -77,6 +77,7 @@ Metrics sources, Grafana/Prometheus, OpenTelemetry, LangSmith/Langfuse, and gold
 
 ## Related
 
+- [Search](../search/README.md) — query-time retrieval after indexes are ready
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write
 - [Retrieval architecturing decision-based — Vector storage](../retrieval-architecturing-decision-based.md)
 - [Embedding migration](../embedding/embedding-migration-ingestion-using-another-model.md)
