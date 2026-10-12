@@ -40,7 +40,7 @@ How to respond when **inference or agent steps fail**—retries, limits, fallbac
               Return
 ```
 
-**Classify error** using the [failure table](#llm-retry-fallbacks-and-routing) above (429 → backoff; invalid JSON → repair; poor quality → do not blindly fallback). **Fail safely** = abstain, degraded response, or escalation—not unvalidated output. **Validate response** = schema, grounding, and [guard-rails](../guard-rails/) checks before return.
+**Classify error** using the failure table above (429 → backoff; invalid JSON → repair; poor quality → do not blindly fallback). **Fail safely** = abstain, degraded response, or escalation—not unvalidated output. **Validate response** = schema, grounding, and [guard-rails](../guard-rails/) checks before return.
 
 Pre-register **fallback models** in [select LLM flow](./select-llm-flow.md)—same security and tool contracts as primary. **Quality failures** are not fixed by switching models alone; check [context](../contexting/) and [retrieval](../retrieval/search/) first.
 

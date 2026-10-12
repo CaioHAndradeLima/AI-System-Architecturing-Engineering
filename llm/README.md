@@ -22,6 +22,14 @@
 
 ## Guides
 
+### [llm-implementation-flow.md](./llm-implementation-flow.md)
+
+`#checklist` · `#implementation` · `#canary`
+
+Eight-step LLM selection and generation checklist through deploy loop.
+
+→ [See more in llm-implementation-flow.md](./llm-implementation-flow.md)
+
 ### [llm-questions.md](./llm-questions.md)
 
 `#index` · `#decision-guide`
