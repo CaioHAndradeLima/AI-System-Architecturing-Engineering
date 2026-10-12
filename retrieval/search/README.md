@@ -109,6 +109,14 @@ Supervisor calls retrieval tool (embed, search, filters, rerank) then main agent
 
 → [See more in retrieval-architecture-supervisor-as-service.md](./retrieval-architecture-supervisor-as-service.md)
 
+### [retrieval-architecture-supervisor-as-agent.md](./retrieval-architecture-supervisor-as-agent.md)
+
+`#agents` · `#supervisor` · `#retrieval-agent`
+
+Retrieval agent selects sources, rewrites, strategizes, evaluates, retries; returns evidence to supervisor.
+
+→ [See more in retrieval-architecture-supervisor-as-agent.md](./retrieval-architecture-supervisor-as-agent.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
