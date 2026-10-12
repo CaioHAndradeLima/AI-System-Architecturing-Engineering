@@ -77,6 +77,14 @@ Wide initial retrieval, query+passage rerank, narrow final evidence for the LLM.
 
 → [See more in retrieval-strategy-reranking.md](./retrieval-strategy-reranking.md)
 
+### [retrieval-decision-based.md](./retrieval-decision-based.md)
+
+`#decision-guide` · `#startup` · `#enterprise` · `#slo`
+
+Retrieval method, K, thresholds, filters, rerank, hybrid, index, fallback, eval, and scaling by maturity.
+
+→ [See more in retrieval-decision-based.md](./retrieval-decision-based.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)

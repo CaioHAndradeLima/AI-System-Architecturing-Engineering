@@ -9,6 +9,8 @@ How to evolve **parsing → evaluation** choices as the system grows from MVP to
 | **Embeddings** | One suitable hosted or local model | Benchmark alternatives and monitor drift | Model governance, throughput optimization, migration plans |
 | **Vector storage** | Existing DB with vector support or lightweight index | Managed vector/search service | Scale, availability, isolation, and operational requirements drive selection |
 | **Retrieval** | Vector similarity + metadata filters | Hybrid search if evidence supports it | Tuned retrieval, reranking, partitioning, and advanced filtering |
+
+Detail by maturity stage: [search retrieval decision-based](./search/retrieval-decision-based.md).
 | **Evaluation** | Golden dataset + manual review | Automated regression tests | Continuous, risk-based evaluation and monitoring |
 
 ## How to use this table
