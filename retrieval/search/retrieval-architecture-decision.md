@@ -25,5 +25,6 @@ Start with the **simplest design that meets the requirement**; add agent autonom
 
 ## See also
 
+- [Retrieval architecture evaluation](./retrieval-architecture-evaluation.md)
 - [Agents overview](../../agents/README.md)
 - [Search overview](./README.md)

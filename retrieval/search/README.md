@@ -141,6 +141,14 @@ Two-branch supervisor loop: analytics + knowledge tools, merge, evidence suffici
 
 → [See more in retrieval-architecture-simple-loop.md](./retrieval-architecture-simple-loop.md)
 
+### [retrieval-architecture-evaluation.md](./retrieval-architecture-evaluation.md)
+
+`#eval` · `#agents` · `#security`
+
+Metrics by layer: service, retrieval agent, supervisor, E2E, and ACL/tenant isolation.
+
+→ [See more in retrieval-architecture-evaluation.md](./retrieval-architecture-evaluation.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
