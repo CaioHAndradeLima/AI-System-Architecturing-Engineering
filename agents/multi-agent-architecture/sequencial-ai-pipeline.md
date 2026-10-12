@@ -86,5 +86,6 @@ Data usually flows as a **shared context object** (plan, retrieved chunks, draft
 
 ## See also
 
+- [Retrieval as a service (supervisor + retrieval tool)](../../retrieval/search/retrieval-architecture-supervisor-as-service.md)
 - Other multi-agent architecture notes in [multi-agent-architecture](./) (more patterns as they are added)
 - [Agents overview](../README.md)
