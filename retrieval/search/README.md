@@ -117,6 +117,14 @@ Retrieval agent selects sources, rewrites, strategizes, evaluates, retries; retu
 
 → [See more in retrieval-architecture-supervisor-as-agent.md](./retrieval-architecture-supervisor-as-agent.md)
 
+### [retrieval-architecture-multi-agent.md](./retrieval-architecture-multi-agent.md)
+
+`#agents` · `#supervisor` · `#parallel`
+
+Supervisor → Knowledge / Data / Engineering agents → tools → merge → final answer.
+
+→ [See more in retrieval-architecture-multi-agent.md](./retrieval-architecture-multi-agent.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
