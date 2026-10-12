@@ -27,6 +27,14 @@ Document ingest embed path vs query embed, search, context assembly, and LLM—s
 
 → [See more in embedding-user-query-flow.md](./embedding-user-query-flow.md)
 
+### [embedding-cleaning-user-query.md](./embedding-cleaning-user-query.md)
+
+`#query` · `#preprocessing` · `#retrieval`
+
+Normalization, language detection, rewriting, expansion, multi-query, and decomposition before embedding.
+
+→ [See more in embedding-cleaning-user-query.md](./embedding-cleaning-user-query.md)
+
 ### [embedding-decision-based.md](./embedding-decision-based.md)
 
 `#decision-guide` · `#model-selection` · `#governance`

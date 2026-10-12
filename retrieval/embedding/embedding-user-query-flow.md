@@ -58,7 +58,7 @@ Chunks and metadata come from [chunking](../chunking/) and [ingestion](../ingest
 
 | Stage | Role |
 |-------|------|
-| **Query preprocessing** | Normalize text; apply model-specific prefixes (e.g. query vs document) per provider docs |
+| **Query preprocessing** | Normalize text; apply model-specific prefixes (e.g. query vs document) per provider docs — see [cleaning user query](./embedding-cleaning-user-query.md) |
 | **Query embedding model** | Must match **document embedding model** used for stored vectors |
 | **Vector similarity search** | Apply **tenant and ACL filters** before or during search—not after the LLM ([guard-rails](../../guard-rails/safer-architecture-tenant-scoped-retrieval.md)) |
 | **Top-K** | Tune K and max context tokens; watch duplicate overlap ([chunking metrics](../chunking/chunking-metrics-observability.md)) |
