@@ -8,6 +8,14 @@ Parent overview: [retrieval topic areas](../README.md#topic-areas).
 
 ## Guides
 
+### [basic-document-ingestion.md](./basic-document-ingestion.md)
+
+`#upload` · `#pdf` · `#pipeline`
+
+User PDF upload through API, object storage, parse/clean, chunk, embed, and vector DB until ready for retrieval.
+
+→ [See more in basic-document-ingestion.md](./basic-document-ingestion.md)
+
 ### [retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
 `#ingestion` · `#indexing` · `#pipeline`
