@@ -11,7 +11,7 @@
 | **Dimensions** | What is the output size, and can it be configured? |
 | **Latency** | How long does it take to embed queries and batches of documents? |
 | **Cost** | What is the cost per token or other billing unit? |
-| **Deployment** | Is a hosted API acceptable, or must embeddings run in your own environment? |
+| **Deployment** | Is a hosted API acceptable, or must embeddings run in your own environment? ([hosted vs self-hosted](./embedding-hosted-vs-self-hosted.md)) |
 | **Data governance** | Can your organization send this data to the selected provider? |
 | **Operational maturity** | Are versioning, batching, limits, availability and migration options adequate? |
 

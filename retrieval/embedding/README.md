@@ -27,6 +27,14 @@ Ten selection factors (quality, languages, domain, latency, cost, deployment, op
 
 → [See more in embedding-decision-based.md](./embedding-decision-based.md)
 
+### [embedding-hosted-vs-self-hosted.md](./embedding-hosted-vs-self-hosted.md)
+
+`#deployment` · `#hosted` · `#self-hosted`
+
+Setup, scaling, cost, latency, governance, and customization—hosted API vs self-hosted inference.
+
+→ [See more in embedding-hosted-vs-self-hosted.md](./embedding-hosted-vs-self-hosted.md)
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded
