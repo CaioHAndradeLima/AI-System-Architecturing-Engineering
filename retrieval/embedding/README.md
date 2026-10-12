@@ -35,6 +35,14 @@ Setup, scaling, cost, latency, governance, and customization—hosted API vs sel
 
 → [See more in embedding-hosted-vs-self-hosted.md](./embedding-hosted-vs-self-hosted.md)
 
+### [embedding-migration-ingestion-using-another-model.md](./embedding-migration-ingestion-using-another-model.md)
+
+`#migration` · `#re-index` · `#blue-green`
+
+Evaluate model B, build new index, switch query+index together, retire model A after validation.
+
+→ [See more in embedding-migration-ingestion-using-another-model.md](./embedding-migration-ingestion-using-another-model.md)
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded
