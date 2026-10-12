@@ -32,7 +32,7 @@ This violates **security guardrails** (tenant isolation, data protection) from t
 1. **Bind every request to a principal** (user, tenant, org) before any search—see [guardrails-strategy.md](./guardrails-strategy.md) (Authentication / ACL → tool / retrieval checks).
 2. **Scope retrieval server-side**: metadata filters, separate indexes per tenant, or row-level security on the vector store—never rely on the LLM to ignore wrong chunks.
 3. **Validate outputs** for citations: retrieved doc IDs must belong to the same tenant as the session.
-4. **Test with cross-tenant adversarial queries** in [evaluation](../evaluation/) (e.g. “summarize Customer B’s contract” while authenticated as A).
+4. **Test with cross-tenant adversarial queries** (see [test use cases](./guard-rails-test-use-cases.md); e.g. “summarize Customer B’s contract” while authenticated as A).
 
 ## See also
 

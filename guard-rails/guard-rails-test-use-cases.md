@@ -21,4 +21,4 @@ These cases align with [what good guardrails do](./README.md#what-good-guardrail
 
 - [Safer architecture: tenant-scoped retrieval](./safer-architecture-tenant-scoped-retrieval.md)
 - [Wrong architecture: shared retrieval](./wrong-architecture-shared-retrieval.md)
-- [Evaluation](../evaluation/)
+- [Guard-rails overview](./README.md)

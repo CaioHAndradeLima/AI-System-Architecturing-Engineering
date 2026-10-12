@@ -77,7 +77,7 @@ A **multi-tenant RAG pattern** where identity and authorization are resolved in 
 - [ ] Reject or ignore client-provided tenant headers unless cross-checked against membership
 - [ ] Implement filters in **adapters** (vector store client), not only in agent prompts
 - [ ] Log `tenant_id`, user ID, and retrieved document IDs for audit
-- [ ] Run cross-tenant retrieval tests in [evaluation](../evaluation/)
+- [ ] Run cross-tenant retrieval tests from [test use cases](./guard-rails-test-use-cases.md)
 - [ ] Fail closed if tenant cannot be resolved or membership check fails
 
 ## See also

@@ -5,7 +5,7 @@ A **linear multi-agent workflow**: each stage receives the output of the previou
 ## Prerequisites
 
 - Basic agent concepts (system prompt, tool use, structured outputs)
-- Familiarity with [RAG](../../rag/) if the retrieval stage loads external evidence
+- Familiarity with retrieval-augmented generation if the retrieval stage loads external evidence
 
 ## Core idea
 

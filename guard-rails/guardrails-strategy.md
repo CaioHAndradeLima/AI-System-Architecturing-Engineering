@@ -83,8 +83,8 @@ Order matters: authentication after basic input parsing is common (you need a bo
 
 - [ ] Separate **input_validation**, **access_control**, and **output_validation** modules (see example app layout)
 - [ ] Centralize policy definitions; avoid duplicating rules in every agent prompt
-- [ ] Test guardrails with **adversarial inputs** and golden “must refuse” cases in [evaluation](../evaluation/)
-- [ ] Emit spans/metrics per layer ([observability](../observability/)) to see where requests die
+- [ ] Test guardrails with **adversarial inputs** and golden “must refuse” cases (see [test use cases](./guard-rails-test-use-cases.md))
+- [ ] Emit spans/metrics per layer to see where requests die
 - [ ] Document **fail-closed** behavior for each layer (HTTP code, user message, internal alert)
 
 ## See also

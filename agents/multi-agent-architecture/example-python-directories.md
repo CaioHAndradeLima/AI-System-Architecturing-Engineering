@@ -98,5 +98,4 @@ Add agents under `agents/` and tools under `tools/` as you add domains; extend `
 
 - [Multi-agent architecture README](./README.md)
 - [Guardrails strategy](../../guard-rails/guardrails-strategy.md)
-- [Observability](../../observability/)
-- [Evaluation](../../evaluation/)
+- [Guard-rails test use cases](../../guard-rails/guard-rails-test-use-cases.md)
