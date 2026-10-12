@@ -27,6 +27,14 @@ Exact nearest-neighbor vs approximate (ANN) search—recall, latency, and scale 
 
 → [See more in storage-strategy.md](./storage-strategy.md)
 
+### [index-strategies.md](./index-strategies.md)
+
+`#ann` · `#hnsw` · `#ivf`
+
+Flat exact, HNSW, IVF, and disk-oriented ANN—ideas and trade-offs.
+
+→ [See more in index-strategies.md](./index-strategies.md)
+
 ## Related
 
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write
