@@ -1,7 +1,5 @@
 # Retrieval implementation flow
 
-Practical **rollout order** for query-time retrieval: start simple, add filters and eval, then hybrid, rerank, and observability—with a deploy loop gated on quality and security.
-
 ```
           RETRIEVAL IMPLEMENTATION CHECKLIST
           ==================================
