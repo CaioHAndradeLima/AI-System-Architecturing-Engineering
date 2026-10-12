@@ -30,4 +30,4 @@ A growing collection of markdown guides on building and operating AI systems (LL
 
 ## Repository
 
-Remote URL will be wired when the GitHub repository is created.
+https://github.com/CaioHAndradeLima/AI-System-Architecturing-Engineering
