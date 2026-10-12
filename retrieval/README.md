@@ -6,7 +6,8 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 
 | Area | What we cover |
 |------|----------------|
-| **[Ingestion](./ingestion/)** | Fetch, parse, chunk, embed, index |
+| **[Ingestion](./ingestion/)** | Fetch, parse, embed, index, sync, observability |
+| **[Chunking](./chunking/)** | Splitting text into retrievable units and metadata |
 | **Search** | Dense, sparse, hybrid, filters, reranking |
 | **Grounding** | Citations, context limits, when retrieval fails |
 | **Operations** | Freshness, reindexing, eval metrics (recall, MRR, grounded answers) |
@@ -18,7 +19,8 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 
 | Section | Summary |
 |---------|---------|
-| [ingestion/](./ingestion/) | Offline pipeline docs (parse → vector index, MVP, procedures) |
+| [ingestion/](./ingestion/) | Offline pipeline docs (parse → vector index, MVP, multi-source, ops) |
+| [chunking/](./chunking/) | Chunk strategies, parameters, eval, and re-index |
 
 ## Guides
 
@@ -30,7 +32,7 @@ Parsing through evaluation by MVP, medium, and large system—parsers, chunking,
 
 → [See more in retrieval-architecturing-decision-based.md](./retrieval-architecturing-decision-based.md)
 
-_Ingestion-specific guides are indexed in [ingestion/README.md](./ingestion/README.md)._
+_Section indexes: [ingestion](./ingestion/README.md) · [chunking](./chunking/README.md)_
 
 ## Related guard-rails
 
