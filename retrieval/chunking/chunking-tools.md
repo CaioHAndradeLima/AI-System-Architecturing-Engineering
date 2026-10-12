@@ -19,6 +19,7 @@ Reference **tools** for splitting, parsing, token counting, and evaluating chunk
 
 ## See also
 
+- [Chunking tools decision-based — observability & orchestration](./chunking-tools-decision-based.md)
 - [Chunking architecturing](./chunking-architecturing.md)
 - [Ingestion — parser choices](../ingestion/basic-document-ingestion.md#what-does-each-component-do)
 - [Chunking overview](./README.md)

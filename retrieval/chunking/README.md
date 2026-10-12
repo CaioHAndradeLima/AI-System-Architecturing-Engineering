@@ -82,6 +82,14 @@ Pipeline, chunk quality, retrieval, answer, and cross-tenant metrics—startup v
 
 → [See more in chunking-metrics-observability.md](./chunking-metrics-observability.md)
 
+### [chunking-tools-decision-based.md](./chunking-tools-decision-based.md)
+
+`#tools` · `#observability` · `#startup-vs-scale`
+
+Logs, metrics, tracing, RAG eval, LangSmith/Langfuse, job orchestration, and error reporting—startup vs scaling stack.
+
+→ [See more in chunking-tools-decision-based.md](./chunking-tools-decision-based.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines
