@@ -62,6 +62,22 @@ Sample Model A/B/C comparison—quality, latency, cost, tool success.
 
 → [See more in select-llm-deciding-sample.md](./select-llm-deciding-sample.md)
 
+### [llm-routing-flow.md](./llm-routing-flow.md)
+
+`#routing` · `#small-model` · `#sla`
+
+Router to small, strong, or specialized model; merge result.
+
+→ [See more in llm-routing-flow.md](./llm-routing-flow.md)
+
+### [llm-routing-policy.md](./llm-routing-policy.md)
+
+`#routing` · `#policy` · `#rag`
+
+Task-based model choices—rewrite, RAG, synthesis, schema, supervisor, auth.
+
+→ [See more in llm-routing-policy.md](./llm-routing-policy.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
