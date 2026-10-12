@@ -82,5 +82,6 @@ Partial failure is normal: ship an answer that states which sources failed rathe
 
 ## See also
 
+- [Retrieval multi-agent architecture (supervisor + domain branches)](../../retrieval/search/retrieval-architecture-multi-agent.md)
 - [Sequential AI pipeline](./sequencial-ai-pipeline.md)
 - [Multi-agent architecture index](./README.md)
