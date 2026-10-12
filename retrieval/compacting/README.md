@@ -19,7 +19,13 @@ Compacting sits **after** vector search and **before** generation—downstream o
 
 ## Guides
 
-_Guide entries (tags, short description, see-more links) will appear here as markdown files are added—same style as [chunking README](../chunking/README.md)._
+### [compact-decision-based.md](./compact-decision-based.md)
+
+`#decision-guide` · `#storage` · `#hybrid`
+
+Message/chat use cases: DB vs vector vs hybrid vs pgvector/Chroma for prototypes.
+
+→ [See more in compact-decision-based.md](./compact-decision-based.md)
 
 ## Related
 
