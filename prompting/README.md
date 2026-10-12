@@ -61,6 +61,14 @@ Golden dataset, regression gate, canary, promotion; per-version audit fields.
 
 → [See more in prompt-versioning.md](./prompt-versioning.md)
 
+### [prompt-relevant-variables-influences.md](./prompt-relevant-variables-influences.md)
+
+`#temperature` · `#model` · `#structured-output`
+
+Temperature, max tokens, top-p, stop sequences, schema mode, model choice.
+
+→ [See more in prompt-relevant-variables-influences.md](./prompt-relevant-variables-influences.md)
+
 ## Related
 
 - [Context algorithm — render final context](../contexting/context-algorithm.md)

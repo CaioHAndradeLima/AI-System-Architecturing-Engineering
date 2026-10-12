@@ -33,7 +33,7 @@ Promote to full traffic
 For each version, record:
 
 - Prompt template and version identifier.
-- Model name and configuration.
+- Model name and configuration ([generation parameters](./prompt-relevant-variables-influences.md)).
 - Retrieval configuration and relevant context settings.
 - Evaluation dataset version.
 - Answer quality, groundedness, latency, and token cost.
