@@ -79,7 +79,7 @@ Generated Response
 | Rapid model A/B | ✓ | |
 | Heavy tool-use / reasoning quality bar | Strong hosted tiers | Match with eval, not assumptions |
 
-Map products to cloud rows in [retrieval cloud tools](../retrieval/search/retrieval-cloud-tools.md). Align with [LLM flow — model selection](./llm-flow.md) and [guard-rails cloud comparison](../guard-rails/guard-rails-cloud-comparison.md) for data handling.
+Map products to [LLM cloud services](./llm-cloud-services.md) and [retrieval cloud tools](../retrieval/search/retrieval-cloud-tools.md). Align with [LLM flow — model selection](./llm-flow.md) and [guard-rails cloud comparison](../guard-rails/guard-rails-cloud-comparison.md) for data handling.
 
 ## See also
 

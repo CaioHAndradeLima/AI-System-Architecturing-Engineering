@@ -118,6 +118,14 @@ Failure table plus fallback routing within latency budget.
 
 → [See more in llm-retry-fallbacks-routing.md](./llm-retry-fallbacks-routing.md)
 
+### [llm-cloud-services.md](./llm-cloud-services.md)
+
+`#cloud` · `#aws` · `#azure` · `#gcp`
+
+Bedrock, Foundry, Gemini, runtimes, secrets, monitoring, identity.
+
+→ [See more in llm-cloud-services.md](./llm-cloud-services.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)

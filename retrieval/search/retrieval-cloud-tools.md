@@ -4,7 +4,7 @@ Maps **retrieval and agent-stack responsibilities** to representative services o
 
 | Architectural responsibility | AWS | Azure | Google Cloud |
 |------------------------------|-----|-------|--------------|
-| **LLM inference** | Bedrock | Azure OpenAI / Foundry models | Gemini APIs |
+| **LLM inference** | Bedrock | Azure OpenAI / Foundry models | Gemini APIs ([LLM cloud services detail](../../llm/llm-cloud-services.md)) |
 | **Agent runtime** | Bedrock AgentCore or ECS | Foundry Agent Service or Container Apps | Agent Platform or Cloud Run |
 | **Vector retrieval** | OpenSearch / Aurora pgvector | Azure AI Search | Vector Search / RAG Engine |
 | **Document storage** | S3 | Blob Storage | Cloud Storage |
