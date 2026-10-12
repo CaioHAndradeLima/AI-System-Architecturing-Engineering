@@ -126,6 +126,14 @@ Bedrock, Foundry, Gemini, runtimes, secrets, monitoring, identity.
 
 → [See more in llm-cloud-services.md](./llm-cloud-services.md)
 
+### [llm-architecturing.md](./llm-architecturing.md)
+
+`#gateway` · `#multi-agent` · `#langgraph`
+
+Supervisor, agents, model gateway, routing, limits, telemetry, fallbacks.
+
+→ [See more in llm-architecturing.md](./llm-architecturing.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
