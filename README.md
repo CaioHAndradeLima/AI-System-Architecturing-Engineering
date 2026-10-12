@@ -8,7 +8,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, and related prod
 |-----------|--------|
 | [agents](./agents/) | Multi-agent patterns (sequential, parallel, hierarchical) and Python layout |
 | [guard-rails](./guard-rails/) | Strategy, tenant isolation, AWS controls, test use cases |
-| [retrieval](./retrieval/) | [ingestion](./retrieval/ingestion/), [chunking](./retrieval/chunking/), [embedding](./retrieval/embedding/), [compacting](./retrieval/compacting/) |
+| [retrieval](./retrieval/) | [ingestion](./retrieval/ingestion/), [chunking](./retrieval/chunking/), [embedding](./retrieval/embedding/), [compacting](./retrieval/compacting/), [storaging](./retrieval/storaging/) |
 
 ## Adding a new note
 

@@ -10,6 +10,7 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 | **[Chunking](./chunking/)** | Splitting text into retrievable units and metadata |
 | **[Embedding](./embedding/)** | Document vectors, models; [queries](./embedding/queries/) for online search |
 | **[Compacting](./compacting/)** | Fit and prioritize retrieved context for the LLM |
+| **[Storaging](./storaging/)** | Vector index, DB metadata, object storage, index lifecycle |
 | **Search** | Dense, sparse, hybrid, filters, reranking |
 | **Grounding** | Citations, context limits, when retrieval fails |
 | **Operations** | Freshness, reindexing, eval metrics (recall, MRR, grounded answers) |
@@ -25,6 +26,7 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 | [chunking/](./chunking/) | Chunk strategies, parameters, eval, and re-index |
 | [embedding/](./embedding/) | Document embedding, migration, metrics; [queries/](./embedding/queries/) for user query path |
 | [compacting/](./compacting/) | Context assembly, dedupe, truncation, summarization |
+| [storaging/](./storaging/) | Where chunks, vectors, and source records are stored |
 
 ## Guides
 
@@ -36,7 +38,7 @@ Parsing through evaluation by MVP, medium, and large system—parsers, chunking,
 
 → [See more in retrieval-architecturing-decision-based.md](./retrieval-architecturing-decision-based.md)
 
-_Section indexes: [ingestion](./ingestion/README.md) · [chunking](./chunking/README.md) · [embedding](./embedding/README.md) · [queries](./embedding/queries/README.md) · [compacting](./compacting/README.md)_
+_Section indexes: [ingestion](./ingestion/README.md) · [chunking](./chunking/README.md) · [embedding](./embedding/README.md) · [queries](./embedding/queries/README.md) · [compacting](./compacting/README.md) · [storaging](./storaging/README.md)_
 
 ## Related guard-rails
 
