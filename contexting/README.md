@@ -108,6 +108,14 @@ Coverage, redundancy, tokens, citations, latency, security tests, abstain.
 
 → [See more in context-evaluate-assembling.md](./context-evaluate-assembling.md)
 
+### [context-assembling-trade-offs.md](./context-assembling-trade-offs.md)
+
+`#trade-offs` · `#anti-patterns` · `#token-budget`
+
+Eight assembly mistakes, impact, and better approaches.
+
+→ [See more in context-assembling-trade-offs.md](./context-assembling-trade-offs.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
