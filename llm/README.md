@@ -30,6 +30,14 @@ Nine topics and key questions—model choice through safe production deployment.
 
 → [See more in llm-questions.md](./llm-questions.md)
 
+### [llm-flow.md](./llm-flow.md)
+
+`#flow` · `#model-selection` · `#rag`
+
+Retrieval through prompt, model selection box, inference, validation, response.
+
+→ [See more in llm-flow.md](./llm-flow.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)

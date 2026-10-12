@@ -2,7 +2,7 @@
 
 **Instructions and templates** that tell the model how to behave: system prompts, roles, output formats, grounding rules, few-shot examples, and tool-use wording—distinct from **what evidence** is included ([contexting](../contexting/)).
 
-Typical RAG order: [retrieval](../retrieval/) → [context assembly](../contexting/context-assembly-flow.md) → **prompting** (policy + template) → [LLM](../llm/) → validation ([guard-rails](../guard-rails/)).
+Typical RAG order: [retrieval](../retrieval/) → [context assembly](../contexting/context-assembly-flow.md) → **prompting** (policy + template) → [LLM flow](../llm/llm-flow.md) → validation ([guard-rails](../guard-rails/)).
 
 ## Topic areas (as docs are added)
 
