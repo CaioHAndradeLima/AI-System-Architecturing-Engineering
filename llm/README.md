@@ -86,6 +86,14 @@ Sampling, output limits, stop sequences, seed, reasoning effort.
 
 → [See more in llm-generation-parameters.md](./llm-generation-parameters.md)
 
+### [llm-latency-sample.md](./llm-latency-sample.md)
+
+`#latency` · `#parallel` · `#multi-agent`
+
+Sequential vs parallel agent timing example (~3.3s vs ~2.3s).
+
+→ [See more in llm-latency-sample.md](./llm-latency-sample.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
