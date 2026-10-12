@@ -61,6 +61,14 @@ Parallel vector and keyword paths, merge/fuse, optional rerank to final evidence
 
 → [See more in retrieval-strategy-hybrid-search-vector-plus-keyword.md](./retrieval-strategy-hybrid-search-vector-plus-keyword.md)
 
+### [retrieval-strategy-reranking.md](./retrieval-strategy-reranking.md)
+
+`#rerank` · `#cross-encoder` · `#latency`
+
+Wide initial retrieval, query+passage rerank, narrow final evidence for the LLM.
+
+→ [See more in retrieval-strategy-reranking.md](./retrieval-strategy-reranking.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)

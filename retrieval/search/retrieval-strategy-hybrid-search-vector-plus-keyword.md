@@ -60,7 +60,7 @@ Apply the same **metadata filters** on both branches ([metadata filtering](./ret
 
 ## After fusion
 
-- **Reranking** (cross-encoder or LLM) on the merged set often pays off when lists overlap poorly.
+- **Reranking** on the merged set often pays off when lists overlap poorly — [reranking strategy](./retrieval-strategy-reranking.md).
 - **Thresholds** on fused scores are harder to calibrate than single-channel search ([similarity strategy](./retrieval-strategy-similarity.md))—use golden-set regression when you change fusion weights.
 
 ## See also

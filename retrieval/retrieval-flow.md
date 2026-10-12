@@ -53,7 +53,7 @@ End-to-end **RAG retrieval path**: offline indexing, query-time search (vector +
 | Vector storage | [Storaging](./storaging/) |
 | Query embedding | [Embedding queries](./embedding/queries/) |
 | Retrieval engine (vector, filters, keyword) | [Search](./search/README.md) · [Metadata filtering](./search/retrieval-strategy-metadata-filtering.md) · [Storage strategy](./storaging/storage-strategy.md) |
-| Reranking & final evidence | _Search docs (as added)_ · [Compacting](./compacting/) |
+| Reranking & final evidence | [Reranking](./search/retrieval-strategy-reranking.md) · [Compacting](./compacting/) |
 | Context assembly → LLM | [Compact architecture flow](./compacting/compact-architecture-flow.md) · [Embedding user query flow](./embedding/queries/embedding-user-query-flow.md) |
 
 **Hybrid retrieval:** vector and keyword branches merge before candidate passages—see [hybrid search (vector + keyword)](./search/retrieval-strategy-hybrid-search-vector-plus-keyword.md).
