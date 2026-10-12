@@ -16,6 +16,14 @@ User PDF upload through API, object storage, parse/clean, chunk, embed, and vect
 
 → [See more in basic-document-ingestion.md](./basic-document-ingestion.md)
 
+### [multi-source-ingestion.md](./multi-source-ingestion.md)
+
+`#connectors` · `#sync` · `#enterprise`
+
+Drive, Confluence, SharePoint, and APIs through connectors, CDC, queues, ACL sync, and shared chunk/embed/index with cross-cutting ops.
+
+→ [See more in multi-source-ingestion.md](./multi-source-ingestion.md)
+
 ### [retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
 `#ingestion` · `#indexing` · `#pipeline`
