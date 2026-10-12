@@ -53,6 +53,14 @@ Untrusted input flow, delimiters, tool validation, output checks, adversarial te
 
 → [See more in prompt-injection.md](./prompt-injection.md)
 
+### [prompt-versioning.md](./prompt-versioning.md)
+
+`#versioning` · `#canary` · `#eval`
+
+Golden dataset, regression gate, canary, promotion; per-version audit fields.
+
+→ [See more in prompt-versioning.md](./prompt-versioning.md)
+
 ## Related
 
 - [Context algorithm — render final context](../contexting/context-algorithm.md)
