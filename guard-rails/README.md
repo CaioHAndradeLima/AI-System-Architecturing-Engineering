@@ -33,16 +33,62 @@ See [safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-
 | 3 | **Fails safely.** If authorization cannot be verified, access is denied. If a mandatory validation service is unavailable, the system does not silently bypass the check. |
 | 4 | **Can be tested.** You can demonstrate that valid requests work and unauthorized requests fail. |
 
+---
+
 ## Guides
 
-| Note | Summary |
-|------|---------|
-| [guard-rails-category.md](./guard-rails-category.md) | Categories, examples, and preferred enforcement (Pydantic, IdP, IAM, etc.) |
-| [guardrails-aws-services.md](./guardrails-aws-services.md) | API gateway/WAF, IAM, secrets, encryption, audit logs, monitoring |
-| [guardrails-data-isolation.md](./guardrails-data-isolation.md) | Tenant isolation: shared DB, separate DBs/schemas, dedicated envs |
-| [guard-rails-test-use-cases.md](./guard-rails-test-use-cases.md) | Multi-tenant and guardrail scenarios with expected outcomes |
-| [guardrails-strategy.md](./guardrails-strategy.md) | Input → ACL → agents → tool checks → output pipeline |
-| [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md) | Anti-pattern: one shared vector index for all tenants |
-| [safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-scoped-retrieval.md) | IdP → backend tenant → ACL → scoped retrieval → validate |
+### [guardrails-strategy.md](./guardrails-strategy.md)
 
-_Add more markdown files here as you expand this section._
+`#pipeline` · `#layers` · `#request-flow`
+
+End-to-end guardrail order from user input through ACL, agent execution, tool/retrieval checks, and output validation. Use this as the default mental model for where each control runs.
+
+→ [See more in guardrails-strategy.md](./guardrails-strategy.md)
+
+### [guard-rails-category.md](./guard-rails-category.md)
+
+`#taxonomy` · `#enforcement` · `#reference`
+
+Maps guardrail categories (input, auth, tenant isolation, tools, output, privacy, etc.) to examples and preferred enforcement points—application code, IdP, IAM, classifiers.
+
+→ [See more in guard-rails-category.md](./guard-rails-category.md)
+
+### [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
+
+`#anti-pattern` · `#multi-tenant` · `#rag`
+
+Shows why one shared vector index for all customers leaks data across tenants. Documents failure modes when retrieval is not scoped before the LLM sees chunks.
+
+→ [See more in wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
+
+### [safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-scoped-retrieval.md)
+
+`#architecture` · `#multi-tenant` · `#rag` · `#identity`
+
+IdP verification, backend tenant resolution, membership checks, and mandatory `tenant_id` filters on retrieval—with response validation before reply.
+
+→ [See more in safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-scoped-retrieval.md)
+
+### [guardrails-data-isolation.md](./guardrails-data-isolation.md)
+
+`#data-isolation` · `#tenancy` · `#storage`
+
+Compares three storage patterns: shared DB with `tenant_id`, separate schemas/databases, and dedicated infrastructure per tenant—including trade-offs and guardrail checklists.
+
+→ [See more in guardrails-data-isolation.md](./guardrails-data-isolation.md)
+
+### [guardrails-aws-services.md](./guardrails-aws-services.md)
+
+`#aws` · `#infrastructure` · `#security`
+
+Platform controls that complement app guardrails: API gateway/WAF, IAM, secrets, DB auth, network, encryption, audit logs, and monitoring.
+
+→ [See more in guardrails-aws-services.md](./guardrails-aws-services.md)
+
+### [guard-rails-test-use-cases.md](./guard-rails-test-use-cases.md)
+
+`#testing` · `#multi-tenant` · `#checklist`
+
+Integration-style scenarios (cross-tenant doc access, forged `tenant_id`, cache isolation, tool abuse, injection in chunks) with expected deny or safe outcomes.
+
+→ [See more in guard-rails-test-use-cases.md](./guard-rails-test-use-cases.md)
