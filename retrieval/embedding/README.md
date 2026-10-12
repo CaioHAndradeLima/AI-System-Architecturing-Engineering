@@ -43,9 +43,17 @@ Evaluate model B, build new index, switch query+index together, retire model A a
 
 → [See more in embedding-migration-ingestion-using-another-model.md](./embedding-migration-ingestion-using-another-model.md)
 
+### [embedding-metrics.md](./embedding-metrics.md)
+
+`#observability` · `#metrics` · `#recall`
+
+Latency, throughput, cost, cache, dimension consistency, freshness, Recall@K, and answer correctness.
+
+→ [See more in embedding-metrics.md](./embedding-metrics.md)
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded
 - [Ingestion](../ingestion/) — pipeline context
 - [Retrieval architecturing decisions](../retrieval-architecturing-decision-based.md) — Embeddings row by scale
-- [Chunking metrics observability](../chunking/chunking-metrics-observability.md) — embedding latency and cost
+- [Embedding metrics](./embedding-metrics.md) · [Chunking metrics observability](../chunking/chunking-metrics-observability.md)
