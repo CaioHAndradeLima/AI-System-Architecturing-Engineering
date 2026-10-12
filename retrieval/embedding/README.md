@@ -51,6 +51,14 @@ Query embed, p95 latency, tenant cost, safe caching, retries, rewriting, and tra
 
 → [See more in embedding-user-query-latency-and-cost.md](./embedding-user-query-latency-and-cost.md)
 
+### [embedding-user-query-evaluation.md](./embedding-user-query-evaluation.md)
+
+`#evaluation` · `#recall` · `#ndcg`
+
+Recall@K, MRR, nDCG@K, and latency/cost for judging query encoding and retrieval.
+
+→ [See more in embedding-user-query-evaluation.md](./embedding-user-query-evaluation.md)
+
 ### [embedding-decision-based.md](./embedding-decision-based.md)
 
 `#decision-guide` · `#model-selection` · `#governance`

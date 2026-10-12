@@ -20,5 +20,6 @@ Cache **query embeddings** or retrieval results only with keys that include **te
 
 ## See also
 
+- [User query evaluation — Recall@K, MRR, nDCG](./embedding-user-query-evaluation.md)
 - [Embedding bad practices — cosine as probability](./embedding-bad-practices.md)
 - [Embedding overview](./README.md)
