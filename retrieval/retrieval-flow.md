@@ -56,7 +56,7 @@ End-to-end **RAG retrieval path**: offline indexing, query-time search (vector +
 | Reranking & final evidence | _Search docs (as added)_ · [Compacting](./compacting/) |
 | Context assembly → LLM | [Compact architecture flow](./compacting/compact-architecture-flow.md) · [Embedding user query flow](./embedding/queries/embedding-user-query-flow.md) |
 
-**Hybrid retrieval:** vector and keyword branches often merge before candidate passages (RRF or weighted fusion)—details live under [search](./search/README.md) as you add them.
+**Hybrid retrieval:** vector and keyword branches merge before candidate passages—see [hybrid search (vector + keyword)](./search/retrieval-strategy-hybrid-search-vector-plus-keyword.md).
 
 ## See also
 

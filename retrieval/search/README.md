@@ -53,6 +53,14 @@ Trusted tenant identity → access restrictions → search eligible vectors only
 
 → [See more in retrieval-strategy-metadata-filtering.md](./retrieval-strategy-metadata-filtering.md)
 
+### [retrieval-strategy-hybrid-search-vector-plus-keyword.md](./retrieval-strategy-hybrid-search-vector-plus-keyword.md)
+
+`#hybrid` · `#bm25` · `#dense` · `#rrf`
+
+Parallel vector and keyword paths, merge/fuse, optional rerank to final evidence.
+
+→ [See more in retrieval-strategy-hybrid-search-vector-plus-keyword.md](./retrieval-strategy-hybrid-search-vector-plus-keyword.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
