@@ -75,6 +75,7 @@ A **full-stack request path** for production agent/LLM APIs: edge protection, id
 - Application-layer ordering aligns with [guardrails-strategy.md](./guardrails-strategy.md) (input → ACL → agents → tools → output).
 - Tenant retrieval detail: [safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-scoped-retrieval.md).
 - AWS-shaped controls at each tier: [guardrails-aws-services.md](./guardrails-aws-services.md).
+- Multi-cloud product map: [guard-rails-cloud-comparison.md](./guard-rails-cloud-comparison.md).
 - Category-to-enforcement map: [guard-rails-category.md](./guard-rails-category.md).
 
 Cross-cutting items are not a bypass path—if secrets or monitoring fail, fail safely rather than skipping upstream checks.

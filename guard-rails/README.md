@@ -61,6 +61,14 @@ Full production stack from WAF/API gateway through identity, app guardrails, AI 
 
 → [See more in guardrails-cloud-architecture.md](./guardrails-cloud-architecture.md)
 
+### [guard-rails-cloud-comparison.md](./guard-rails-cloud-comparison.md)
+
+`#cloud` · `#multi-cloud` · `#reference`
+
+Side-by-side AWS, Google Cloud, and Azure services for edge protection, identity, AI safety, DLP, secrets, audit/monitoring, and tenant isolation.
+
+→ [See more in guard-rails-cloud-comparison.md](./guard-rails-cloud-comparison.md)
+
 ### [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
 
 `#anti-pattern` · `#multi-tenant` · `#rag`
