@@ -93,6 +93,14 @@ Recall@K, MRR, nDCG, rerank lift, no-result rate, filter failures, context token
 
 → [See more in retrieval-metrics-observability.md](./retrieval-metrics-observability.md)
 
+### [retrieval-implementation-flow.md](./retrieval-implementation-flow.md)
+
+`#checklist` · `#implementation` · `#eval`
+
+Eight-step rollout from dense search through hybrid, rerank, observability, and deploy loop.
+
+→ [See more in retrieval-implementation-flow.md](./retrieval-implementation-flow.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
