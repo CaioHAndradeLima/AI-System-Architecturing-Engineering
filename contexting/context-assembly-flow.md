@@ -44,7 +44,7 @@ End-to-end **RAG pipeline** with **context assembly** as the step that merges re
 
 **Context assembly** should only include chunks the user is authorized to see; permissions apply when selecting and formatting evidence, not only at retrieval time.
 
-What to put in the assembled prompt: [context info for output](./context-info-for-output.md).
+What to put in the assembled prompt: [context info for output](./context-info-for-output.md). How to build it: [context algorithm](./context-algorithm.md).
 
 ## See also
 

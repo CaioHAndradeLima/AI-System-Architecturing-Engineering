@@ -36,6 +36,14 @@ Evidence, history, request context, structured results, and source metadata for 
 
 → [See more in context-info-for-output.md](./context-info-for-output.md)
 
+### [context-algorithm.md](./context-algorithm.md)
+
+`#algorithm` · `#dedupe` · `#token-budget`
+
+Eight-step assembly from candidates through render → prompt template → LLM.
+
+→ [See more in context-algorithm.md](./context-algorithm.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
