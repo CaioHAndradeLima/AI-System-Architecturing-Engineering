@@ -20,7 +20,13 @@ Contexting follows [retrieval/search](../retrieval/search/) (candidate passages)
 
 ## Guides
 
-_Guides will be listed here as you add markdown files in this folder (same pattern as [retrieval/search](../retrieval/search/README.md))._
+### [context-assembly-flow.md](./context-assembly-flow.md)
+
+`#flow` · `#rag` · `#prompt`
+
+Full RAG path highlighting context assembly: retrieval + history + permissions + token budget → prompt → LLM → citations.
+
+→ [See more in context-assembly-flow.md](./context-assembly-flow.md)
 
 ## Related
 
