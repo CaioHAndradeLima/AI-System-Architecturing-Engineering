@@ -28,6 +28,14 @@ Full RAG path highlighting context assembly: retrieval + history + permissions +
 
 → [See more in context-assembly-flow.md](./context-assembly-flow.md)
 
+### [context-info-for-output.md](./context-info-for-output.md)
+
+`#context` · `#citations` · `#history`
+
+Evidence, history, request context, structured results, and source metadata for the prompt.
+
+→ [See more in context-info-for-output.md](./context-info-for-output.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
