@@ -43,6 +43,14 @@ Standalone vs context-dependent messages; authorized history, rewrite, then embe
 
 → [See more in embedding-user-context-compact-flow.md](./embedding-user-context-compact-flow.md)
 
+### [embedding-user-query-latency-and-cost.md](./embedding-user-query-latency-and-cost.md)
+
+`#latency` · `#cost` · `#production`
+
+Query embed, p95 latency, tenant cost, safe caching, retries, rewriting, and tracing—startup vs enterprise.
+
+→ [See more in embedding-user-query-latency-and-cost.md](./embedding-user-query-latency-and-cost.md)
+
 ### [embedding-decision-based.md](./embedding-decision-based.md)
 
 `#decision-guide` · `#model-selection` · `#governance`

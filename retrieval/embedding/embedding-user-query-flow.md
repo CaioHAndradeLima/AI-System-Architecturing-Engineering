@@ -79,6 +79,7 @@ Chunks and metadata come from [chunking](../chunking/) and [ingestion](../ingest
 
 ## See also
 
+- [User query latency and cost](./embedding-user-query-latency-and-cost.md)
 - [Minimum ingestion MVP](../ingestion/minimum-ingestion-mvp.md)
 - [Embedding metrics](./embedding-metrics.md)
 - [Embedding overview](./README.md)
