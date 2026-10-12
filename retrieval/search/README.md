@@ -37,7 +37,13 @@ What K means, example values, and how K relates to context assembly and eval.
 
 → [See more in retrieval-strategy-top-k.md](./retrieval-strategy-top-k.md)
 
-_Additional search-specific guides will be listed here as you add files in this folder._
+### [retrieval-strategy-similarity.md](./retrieval-strategy-similarity.md)
+
+`#dense` · `#threshold` · `#abstain`
+
+Top-K vs threshold vs both; score filter flow and when to abstain or clarify.
+
+→ [See more in retrieval-strategy-similarity.md](./retrieval-strategy-similarity.md)
 
 ## Related
 

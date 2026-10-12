@@ -21,5 +21,6 @@ Apply **tenant and metadata filters** as part of retrieval; do not rely on a lar
 
 ## See also
 
+- [Retrieval strategy — similarity scores](./retrieval-strategy-similarity.md)
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
 - [Search overview](./README.md)
