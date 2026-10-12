@@ -74,6 +74,14 @@ Two tables: chunking/parsing/storage/metadata by scale, plus tenancy, failures, 
 
 → [See more in chunking-architecturing-decision-based.md](./chunking-architecturing-decision-based.md)
 
+### [chunking-metrics-observability.md](./chunking-metrics-observability.md)
+
+`#observability` · `#metrics` · `#recall`
+
+Pipeline, chunk quality, retrieval, answer, and cross-tenant metrics—startup vs enterprise practices.
+
+→ [See more in chunking-metrics-observability.md](./chunking-metrics-observability.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines

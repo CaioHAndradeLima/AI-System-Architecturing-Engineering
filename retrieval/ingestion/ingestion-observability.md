@@ -22,6 +22,8 @@
 
 Recall@K is an **evaluation** metric but belongs on ingestion dashboards when chunk/embed/index changes ship—regressions often originate in indexing, not the LLM.
 
+Extended chunk-level metrics: [chunking metrics observability](../chunking/chunking-metrics-observability.md).
+
 ## See also
 
 - [Ingestion procedures — Evaluation row](./ingestion-procedures.md)
