@@ -67,6 +67,14 @@ Eleven areas—from model selection and hosting through caching, upgrades, cost,
 
 → [See more in embedding-startup-vs-enterprise-architecture-decision-based.md](./embedding-startup-vs-enterprise-architecture-decision-based.md)
 
+### [embedding-bad-practices.md](./embedding-bad-practices.md)
+
+`#anti-patterns` · `#quality` · `#security`
+
+Nine common embedding mistakes with fixes—dimensions, similarity scores, model mix, ACL, hybrid search, re-embed waste.
+
+→ [See more in embedding-bad-practices.md](./embedding-bad-practices.md)
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded
