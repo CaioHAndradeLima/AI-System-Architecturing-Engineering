@@ -22,5 +22,6 @@ Assemble **retrieved context** in contexting; bind **system**, **user**, and **f
 
 ## See also
 
+- [Prompt standard format](./prompt-standard-format.md) — structured system prompt sections
 - [Context assembly flow](../contexting/context-assembly-flow.md)
 - [Prompting overview](./README.md)

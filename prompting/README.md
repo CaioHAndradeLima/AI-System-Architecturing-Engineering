@@ -29,6 +29,14 @@ System, user, retrieved context, and output format—responsibility and change f
 
 → [See more in prompt-categories.md](./prompt-categories.md)
 
+### [prompt-standard-format.md](./prompt-standard-format.md)
+
+`#system-prompt` · `#rag` · `#abstain`
+
+Seven-part template: role, objective, evidence, decisions, security, output, failure.
+
+→ [See more in prompt-standard-format.md](./prompt-standard-format.md)
+
 ## Related
 
 - [Context algorithm — render final context](../contexting/context-algorithm.md)
