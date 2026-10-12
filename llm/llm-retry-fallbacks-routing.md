@@ -12,26 +12,37 @@ How to respond when **inference or agent steps fail**—retries, limits, fallbac
 | **Poor answer quality** | Investigate prompt, evidence, and model behavior; blindly retrying may reproduce the same failure |
 | **Excessive agent loop** | Enforce step limits, time budgets, and explicit stop conditions |
 
-## Fallback routing (sketch)
+## Fallback routing architecture
 
 ```
-Primary model / route fails or times out
-              |
-              v
-       Within SLA budget?
-         /          \
-       No            Yes
-        |              |
-        v              v
-   Fail fast      Fallback model
-   or degrade     (pre-benchmarked)
-        |              |
-        +------+-------+
-               v
-        Log route + reason
+          Primary Model
+                |
+                v
+          Request succeeds?
+            /       \
+          Yes        No
+           |          |
+           v          v
+        Return     Classify error
+                      |
+                      v
+             Is fallback appropriate?
+                  /         \
+                Yes          No
+                 |            |
+                 v            v
+          Fallback Model   Fail safely
+                 |
+                 v
+          Validate response
+                 |
+                 v
+              Return
 ```
 
-Pre-register **fallback models** in [select LLM flow](./select-llm-flow.md)—same security and tool contracts as primary. **Quality failures** are not fixed by switching models alone; check [context](./../contexting/) and [retrieval](../retrieval/search/) first.
+**Classify error** using the [failure table](#llm-retry-fallbacks-and-routing) above (429 → backoff; invalid JSON → repair; poor quality → do not blindly fallback). **Fail safely** = abstain, degraded response, or escalation—not unvalidated output. **Validate response** = schema, grounding, and [guard-rails](../guard-rails/) checks before return.
+
+Pre-register **fallback models** in [select LLM flow](./select-llm-flow.md)—same security and tool contracts as primary. **Quality failures** are not fixed by switching models alone; check [context](../contexting/) and [retrieval](../retrieval/search/) first.
 
 Agent loops: align with [architecture decision](../retrieval/search/retrieval-architecture-decision.md) and [supervisor as agent](../retrieval/search/retrieval-architecture-supervisor-as-agent.md) retry limits.
 
