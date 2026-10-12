@@ -33,6 +33,14 @@ Component-by-component responsibilities and failure symptoms from ingestion thro
 
 → [See more in ingestion-procedures.md](./ingestion-procedures.md)
 
+### [minimum-ingestion-mvp.md](./minimum-ingestion-mvp.md)
+
+`#mvp` · `#rag` · `#query-loop`
+
+Minimal index path (parse → chunk → embed → store) and query path (embed question → top-K → LLM → citations).
+
+→ [See more in minimum-ingestion-mvp.md](./minimum-ingestion-mvp.md)
+
 ## Related guard-rails
 
 - [Safer architecture: tenant-scoped retrieval](../guard-rails/safer-architecture-tenant-scoped-retrieval.md)
