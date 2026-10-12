@@ -52,6 +52,7 @@ Reference **AWS layout** for a supervisor-style app: authenticated API → LangG
 
 | Piece | Role |
 |-------|------|
+| **LangGraph on Fargate** | Node split: retrieve → assemble context → generate ([context assembly LangGraph](../../contexting/context-assembly-langchain-langgraph.md)) |
 | **Knowledge Agent + Retrieval Service** | Deterministic RAG path ([supervisor as service](./retrieval-architecture-supervisor-as-service.md)); agent chooses when to call service |
 | **Analytics / Engineering agents** | Branch tools ([simple loop](./retrieval-architecture-simple-loop.md), [multi-agent](./retrieval-architecture-multi-agent.md)) |
 | **Bedrock embeddings + OpenSearch** | Same-model index and query embed ([embedding user query flow](../embedding/queries/embedding-user-query-flow.md)) |
