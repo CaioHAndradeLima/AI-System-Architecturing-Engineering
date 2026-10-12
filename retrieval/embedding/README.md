@@ -19,7 +19,13 @@ Embeddings sit after [chunking](../chunking/) and before or inside the vector in
 
 ## Guides
 
-_Guide entries (tags, short description, see-more links) will appear here as markdown files are added—same style as [chunking README](../chunking/README.md)._
+### [embedding-decision-based.md](./embedding-decision-based.md)
+
+`#decision-guide` · `#model-selection` · `#governance`
+
+Ten selection factors (quality, languages, domain, latency, cost, deployment, ops) with questions to ask before committing.
+
+→ [See more in embedding-decision-based.md](./embedding-decision-based.md)
 
 ## Related
 
