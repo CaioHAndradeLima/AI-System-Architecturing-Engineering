@@ -50,6 +50,14 @@ Search small child chunks, then expand to authorized parent sections for LLM con
 
 → [See more in chunking-hierarchical-parent-child.md](./chunking-hierarchical-parent-child.md)
 
+### [chunking-architecturing.md](./chunking-architecturing.md)
+
+`#architecture` · `#decision-matrix` · `#production`
+
+Document type → recommended starting strategy and rationale; links to specific guides in this folder.
+
+→ [See more in chunking-architecturing.md](./chunking-architecturing.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines
