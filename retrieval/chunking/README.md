@@ -26,6 +26,14 @@ Chunking sits after parsing and before embedding in the [ingestion](../ingestion
 
 → [See more in chunking-simpler-strategy.md](./chunking-simpler-strategy.md)
 
+### [chunking-recursive-structure-aware.md](./chunking-recursive-structure-aware.md)
+
+`#structure-aware` · `#headings` · `#tables`
+
+Recursive split at headings → paragraphs → sentences; baseline benefits and when tables/code need special handling.
+
+→ [See more in chunking-recursive-structure-aware.md](./chunking-recursive-structure-aware.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines

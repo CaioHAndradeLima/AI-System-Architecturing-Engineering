@@ -63,6 +63,7 @@ Always persist **`tenant_id`** (and document ACL fields) on chunk metadata for f
 
 ## See also
 
+- [Chunking recursive structure-aware](./chunking-recursive-structure-aware.md)
 - [Ingestion procedures — Chunking](../ingestion/ingestion-procedures.md)
 - [Retrieval architecturing decisions — Chunking row](../retrieval-architecturing-decision-based.md)
 - [Chunking overview](./README.md)
