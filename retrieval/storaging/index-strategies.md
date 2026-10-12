@@ -5,7 +5,7 @@
 | Index / approach | General idea | Trade-off |
 |------------------|--------------|-----------|
 | **Flat / exact search** | Compare against all vectors | Exact results, but potentially expensive at scale |
-| **HNSW** (Hierarchical Navigable Small World) | Graph-based navigation between nearby vectors | Often fast, but uses additional memory and indexing resources |
+| **HNSW** (Hierarchical Navigable Small World) | Graph-based navigation between nearby vectors ([query flow](./hnsw-flow.md)) | Often fast, but uses additional memory and indexing resources |
 | **IVF** (Inverted File Index) | Partition vectors into clusters and search selected clusters | Can reduce search work, but requires tuning and may miss candidates |
 | **Disk-oriented ANN approaches** | Storage-efficient structures to search large datasets | May trade latency and complexity for lower memory requirements |
 

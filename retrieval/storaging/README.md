@@ -35,6 +35,14 @@ Flat exact, HNSW, IVF, and disk-oriented ANN—ideas and trade-offs.
 
 → [See more in index-strategies.md](./index-strategies.md)
 
+### [hnsw-flow.md](./hnsw-flow.md)
+
+`#hnsw` · `#query-path` · `#ann`
+
+Graph navigation from indexed vectors to top-K neighbors at search time.
+
+→ [See more in hnsw-flow.md](./hnsw-flow.md)
+
 ## Related
 
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write
