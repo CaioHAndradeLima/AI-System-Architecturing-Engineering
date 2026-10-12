@@ -37,6 +37,14 @@ Seven-part template: role, objective, evidence, decisions, security, output, fai
 
 → [See more in prompt-standard-format.md](./prompt-standard-format.md)
 
+### [prompt-few-shot-providing-samples.md](./prompt-few-shot-providing-samples.md)
+
+`#few-shot` · `#examples`
+
+When to add input/output samples; domain nuance and repeated failure modes.
+
+→ [See more in prompt-few-shot-providing-samples.md](./prompt-few-shot-providing-samples.md)
+
 ## Related
 
 - [Context algorithm — render final context](../contexting/context-algorithm.md)
