@@ -18,5 +18,6 @@ Use this table for **on-call triage** (symptom → likely stage) and for **test 
 ## See also
 
 - [Retrieval simple ingestion](./retrieval-simple-ingestion.md)
-- [Retrieval overview](./README.md)
-- [Guard-rails — retrieval authorization](../guard-rails/guard-rails-decision-architecturing-assistance.md)
+- [Ingestion overview](./README.md)
+- [Retrieval overview](../README.md)
+- [Guard-rails — retrieval authorization](../../guard-rails/guard-rails-decision-architecturing-assistance.md)

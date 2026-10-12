@@ -69,4 +69,6 @@ Even an MVP should attach **source IDs** to chunks so citations are real and you
 
 - [Retrieval simple ingestion](./retrieval-simple-ingestion.md)
 - [Ingestion procedures](./ingestion-procedures.md)
-- [Safer tenant-scoped retrieval](../guard-rails/safer-architecture-tenant-scoped-retrieval.md)
+- [Ingestion overview](./README.md)
+- [Retrieval overview](../README.md)
+- [Safer tenant-scoped retrieval](../../guard-rails/safer-architecture-tenant-scoped-retrieval.md)

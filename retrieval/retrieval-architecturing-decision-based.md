@@ -1,6 +1,6 @@
 # Retrieval architecturing decision-based
 
-How to evolve **parsing → evaluation** choices as the system grows from MVP to medium to large scale. Pair with [minimum ingestion MVP](./minimum-ingestion-mvp.md) and [guard-rails decision assistance](../guard-rails/guard-rails-decision-architecturing-assistance.md) for security and ops maturity.
+How to evolve **parsing → evaluation** choices as the system grows from MVP to medium to large scale. Pair with [minimum ingestion MVP](./ingestion/minimum-ingestion-mvp.md) and [guard-rails decision assistance](../guard-rails/guard-rails-decision-architecturing-assistance.md) for security and ops maturity.
 
 | Decision | MVP | Medium system | Large system |
 |----------|-----|---------------|--------------|
@@ -13,12 +13,13 @@ How to evolve **parsing → evaluation** choices as the system grows from MVP to
 
 ## How to use this table
 
-- **MVP:** Ship [minimum ingestion MVP](./minimum-ingestion-mvp.md); do not skip metadata filters if the product is multi-tenant.
+- **MVP:** Ship [minimum ingestion MVP](./ingestion/minimum-ingestion-mvp.md); do not skip metadata filters if the product is multi-tenant.
 - **Medium:** Invest when manual review catches repeated retrieval failures or embedding drift hurts quality.
 - **Large:** Treat chunking/embedding/retrieval configs as **versioned experiments** with rollback; align index isolation with [data isolation](../guard-rails/guardrails-data-isolation.md).
 
 ## See also
 
-- [Ingestion procedures](./ingestion-procedures.md)
-- [Retrieval simple ingestion](./retrieval-simple-ingestion.md)
+- [Ingestion section](./ingestion/README.md)
+- [Ingestion procedures](./ingestion/ingestion-procedures.md)
+- [Retrieval simple ingestion](./ingestion/retrieval-simple-ingestion.md)
 - [Retrieval overview](./README.md)

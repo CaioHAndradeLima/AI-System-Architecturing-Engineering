@@ -8,7 +8,7 @@ Offline **indexing pipeline** from heterogeneous sources into a vector index: in
 PDFs / Confluence / DB / APIs
 ```
 
-Connectors differ per system; the pipeline stages stay the same. Track **source identity**, **version**, and **permissions metadata** at ingestion so query-time filters can enforce tenant and document ACLs ([guard-rails](../guard-rails/safer-architecture-tenant-scoped-retrieval.md)).
+Connectors differ per system; the pipeline stages stay the same. Track **source identity**, **version**, and **permissions metadata** at ingestion so query-time filters can enforce tenant and document ACLs ([guard-rails](../../guard-rails/safer-architecture-tenant-scoped-retrieval.md)).
 
 ## Pipeline
 
@@ -73,5 +73,6 @@ PDFs / Confluence / DB / APIs
 ## See also
 
 - [Ingestion procedures — component failures](./ingestion-procedures.md)
-- [Retrieval overview](./README.md)
-- [Sequential pipeline — retrieval agent](../agents/multi-agent-architecture/sequencial-ai-pipeline.md)
+- [Ingestion overview](./README.md)
+- [Retrieval overview](../README.md)
+- [Sequential pipeline — retrieval agent](../../agents/multi-agent-architecture/sequencial-ai-pipeline.md)
