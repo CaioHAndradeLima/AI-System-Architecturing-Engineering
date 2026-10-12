@@ -19,7 +19,13 @@ Storaging connects [ingestion](../ingestion/) outputs, [embedding](../embedding/
 
 ## Guides
 
-_Guide entries (tags, short description, see-more links) will appear here as markdown files are added—same style as [compacting README](../compacting/README.md)._
+### [storage-strategy.md](./storage-strategy.md)
+
+`#vector-index` · `#ann` · `#exact-search`
+
+Exact nearest-neighbor vs approximate (ANN) search—recall, latency, and scale trade-offs.
+
+→ [See more in storage-strategy.md](./storage-strategy.md)
 
 ## Related
 
