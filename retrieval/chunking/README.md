@@ -42,6 +42,14 @@ Embed sentences, detect meaning shifts, form semantic chunks, then enforce min/m
 
 → [See more in chunking-semantic.md](./chunking-semantic.md)
 
+### [chunking-hierarchical-parent-child.md](./chunking-hierarchical-parent-child.md)
+
+`#hierarchical` · `#parent-child` · `#retrieval`
+
+Search small child chunks, then expand to authorized parent sections for LLM context (e.g. API manual sections).
+
+→ [See more in chunking-hierarchical-parent-child.md](./chunking-hierarchical-parent-child.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines
