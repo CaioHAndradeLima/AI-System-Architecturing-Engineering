@@ -51,6 +51,14 @@ Latency, throughput, cost, cache, dimension consistency, freshness, Recall@K, an
 
 → [See more in embedding-metrics.md](./embedding-metrics.md)
 
+### [embedding-tools-decision-based.md](./embedding-tools-decision-based.md)
+
+`#tools` · `#observability` · `#startup-vs-scale`
+
+Logs, traces, RAG eval, LangSmith/Langfuse, and per-tenant embedding usage—starting vs scaling stack.
+
+→ [See more in embedding-tools-decision-based.md](./embedding-tools-decision-based.md)
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded

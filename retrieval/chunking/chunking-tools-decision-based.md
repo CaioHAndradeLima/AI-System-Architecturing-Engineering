@@ -17,7 +17,7 @@
 | Need | See also |
 |------|----------|
 | Job orchestration | [Multi-source ingestion](../ingestion/multi-source-ingestion.md) · [Ingestion architecture engineering](../ingestion/ingestion-architecture-engineering.md) |
-| RAG evaluation / metrics | [Chunking metrics observability](./chunking-metrics-observability.md) · [Ingestion observability](../ingestion/ingestion-observability.md) |
+| RAG evaluation / metrics | [Chunking metrics observability](./chunking-metrics-observability.md) · [Embedding metrics](../embedding/embedding-metrics.md) · [Embedding tools decision-based](../embedding/embedding-tools-decision-based.md) |
 | Pipeline maturity | [Chunking architecturing decision-based](./chunking-architecturing-decision-based.md) |
 | Cloud monitoring | [Guard-rails AWS services](../../guard-rails/guardrails-aws-services.md) · [Cloud comparison](../../guard-rails/guard-rails-cloud-comparison.md) |
 
