@@ -16,6 +16,7 @@
 - **Normalization** and **language detection** are cheap defaults; route to the right index or embedding settings per language ([embedding decision-based — language support](./embedding-decision-based.md)).
 - **Rewriting / expansion / multi-query** add latency and cost—measure Recall@K and precision on a golden set ([embedding metrics](./embedding-metrics.md)).
 - **Decomposition** pairs well with [multi-agent retrieval](../../agents/multi-agent-architecture/parallel-agents-architecture.md) or merged top-K from sub-queries; dedupe chunks in context assembly.
+- Follow-ups that need chat history: [user context compact flow](./embedding-user-context-compact-flow.md).
 - LLM-based rewrite must not bypass **authorization**—preprocessing does not replace tenant filters on search.
 
 ## See also

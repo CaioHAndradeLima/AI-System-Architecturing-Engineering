@@ -35,6 +35,14 @@ Normalization, language detection, rewriting, expansion, multi-query, and decomp
 
 → [See more in embedding-cleaning-user-query.md](./embedding-cleaning-user-query.md)
 
+### [embedding-user-context-compact-flow.md](./embedding-user-context-compact-flow.md)
+
+`#conversation` · `#query-rewrite` · `#context`
+
+Standalone vs context-dependent messages; authorized history, rewrite, then embed and retrieve.
+
+→ [See more in embedding-user-context-compact-flow.md](./embedding-user-context-compact-flow.md)
+
 ### [embedding-decision-based.md](./embedding-decision-based.md)
 
 `#decision-guide` · `#model-selection` · `#governance`
