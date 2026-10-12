@@ -21,6 +21,7 @@
 | Streaming and async | [Async vs streaming](./llm-async-vs-streaming.md) · [Latency sample](./llm-latency-sample.md) · [Latency measurement](./llm-latency-variables-measurement.md) |
 | Model routing | [LLM routing flow](./llm-routing-flow.md) · [Routing policy](./llm-routing-policy.md) |
 | Generation parameters | [LLM generation parameters](./llm-generation-parameters.md) · [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md) |
+| Fallbacks and retries | [LLM retry, fallbacks, and routing](./llm-retry-fallbacks-routing.md) |
 | Production deployment | [Prompt versioning](../prompting/prompt-versioning.md) · [Prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md) |
 | Hosted vs. open-weight | [LLM hosted vs open-weight models](./llm-hosted-vs-open-weight-models.md) |
 | Hosted vs API (embeddings) | [Embedding hosted vs self-hosted](../retrieval/embedding/embedding-hosted-vs-self-hosted.md) |

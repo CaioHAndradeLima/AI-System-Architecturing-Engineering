@@ -34,7 +34,7 @@ Implement routing in **application code** (rules, classifier, or lightweight mod
 | Pattern | Doc |
 |---------|-----|
 | Pick models with benchmarks | [Select LLM flow](./select-llm-flow.md) · [Deciding sample](./select-llm-deciding-sample.md) |
-| Fallback when route target fails | [LLM questions — fallbacks](./llm-questions.md) (dedicated guide TBD) |
+| Fallback when route target fails | [Retry, fallbacks, and routing](./llm-retry-fallbacks-routing.md) |
 | Per-agent models | [Multi-agent retrieval architecture](../retrieval/search/retrieval-architecture-multi-agent.md) |
 | Enterprise routing policy | [Prompt architecturing — model configuration](../prompting/prompt-architecturing-decision-based.md) |
 

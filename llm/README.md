@@ -110,6 +110,14 @@ Token streaming UX vs concurrent awaits for agents and requests.
 
 → [See more in llm-async-vs-streaming.md](./llm-async-vs-streaming.md)
 
+### [llm-retry-fallbacks-routing.md](./llm-retry-fallbacks-routing.md)
+
+`#retry` · `#fallback` · `#429` · `#agent-loop`
+
+Failure table plus fallback routing within latency budget.
+
+→ [See more in llm-retry-fallbacks-routing.md](./llm-retry-fallbacks-routing.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
