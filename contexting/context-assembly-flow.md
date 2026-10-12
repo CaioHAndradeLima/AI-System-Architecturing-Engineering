@@ -48,4 +48,5 @@ What to put in the assembled prompt: [context info for output](./context-info-fo
 
 ## See also
 
+- [Prompting](../prompting/) — templates and instructions after assembly
 - [Contexting overview](./README.md)
