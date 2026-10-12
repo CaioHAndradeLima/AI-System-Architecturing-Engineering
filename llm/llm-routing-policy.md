@@ -1,6 +1,23 @@
 # LLM routing policy
 
-**Task → model choice** examples for the [model router](./llm-routing-flow.md). Calibrate “small / medium / strong” on your [benchmark](./select-llm-flow.md), not vendor labels alone.
+**Task → model choice** for the router below. Calibrate “small / medium / strong” on your [benchmark](./select-llm-flow.md), not vendor labels alone. Router signals: [LLM routing flow](./llm-routing-flow.md).
+
+```
+                Request
+                   |
+                   v
+              Model Router
+              /     |      \
+             v      v       v
+          Small   Strong   Specialized
+          Model   Model     Model
+             \      |       /
+              \     |      /
+               v    v     v
+                Result
+```
+
+## Task → model choice
 
 | Task | Potential model choice |
 |------|------------------------|
