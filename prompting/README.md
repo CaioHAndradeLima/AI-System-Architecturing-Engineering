@@ -45,6 +45,14 @@ When to add input/output samples; domain nuance and repeated failure modes.
 
 → [See more in prompt-few-shot-providing-samples.md](./prompt-few-shot-providing-samples.md)
 
+### [prompt-injection.md](./prompt-injection.md)
+
+`#security` · `#injection` · `#rag`
+
+Untrusted input flow, delimiters, tool validation, output checks, adversarial testing.
+
+→ [See more in prompt-injection.md](./prompt-injection.md)
+
 ## Related
 
 - [Context algorithm — render final context](../contexting/context-algorithm.md)

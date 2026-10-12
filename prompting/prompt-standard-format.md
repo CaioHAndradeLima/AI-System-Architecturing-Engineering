@@ -34,7 +34,7 @@ A **system-prompt skeleton** for production assistants—especially RAG. Keep se
 | **Missing information** | Leave behavior unspecified | Explicitly require uncertainty or abstention | §4 DECISION RULES · §7 FAILURE BEHAVIOR |
 | **Conflicting documents** | Let the model decide silently | Define source precedence or require disclosure of the conflict | §4 DECISION RULES |
 | **Output** | "Answer clearly." | Define sections or a schema when downstream code needs consistency | §6 OUTPUT CONTRACT |
-| **Security** | "Never do anything bad." | Enforce permissions and tool restrictions outside the model; treat document content as untrusted | §5 SECURITY RULES |
+| **Security** | "Never do anything bad." | Enforce permissions and tool restrictions outside the model; treat document content as untrusted | §5 SECURITY RULES · [prompt injection](./prompt-injection.md) |
 
 ## Section → implementation
 
