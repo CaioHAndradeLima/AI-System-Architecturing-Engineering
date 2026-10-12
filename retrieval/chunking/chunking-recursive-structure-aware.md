@@ -81,6 +81,7 @@ TABLE: Plan pricing
 
 ## See also
 
+- [Chunking semantic](./chunking-semantic.md)
 - [Chunking simpler strategy](./chunking-simpler-strategy.md)
 - [Retrieval architecturing decisions — Chunking](../retrieval-architecturing-decision-based.md)
 - [Chunking overview](./README.md)

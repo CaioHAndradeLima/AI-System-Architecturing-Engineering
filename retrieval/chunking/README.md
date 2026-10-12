@@ -34,6 +34,14 @@ Recursive split at headings → paragraphs → sentences; baseline benefits and 
 
 → [See more in chunking-recursive-structure-aware.md](./chunking-recursive-structure-aware.md)
 
+### [chunking-semantic.md](./chunking-semantic.md)
+
+`#semantic` · `#embeddings` · `#topic-boundaries`
+
+Embed sentences, detect meaning shifts, form semantic chunks, then enforce min/max size—with advantage vs trade-off table.
+
+→ [See more in chunking-semantic.md](./chunking-semantic.md)
+
 ## Related
 
 - [Ingestion](../ingestion/) — full index-time pipelines
