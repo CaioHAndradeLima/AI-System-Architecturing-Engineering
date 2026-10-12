@@ -72,5 +72,6 @@ PDFs / Confluence / DB / APIs
 
 ## See also
 
+- [Ingestion procedures — component failures](./ingestion-procedures.md)
 - [Retrieval overview](./README.md)
 - [Sequential pipeline — retrieval agent](../agents/multi-agent-architecture/sequencial-ai-pipeline.md)

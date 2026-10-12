@@ -25,6 +25,14 @@ Five-stage offline path from PDFs, Confluence, DB, and APIs through parse, chunk
 
 → [See more in retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
+### [ingestion-procedures.md](./ingestion-procedures.md)
+
+`#reference` · `#pipeline` · `#quality`
+
+Component-by-component responsibilities and failure symptoms from ingestion through evaluation—use for triage and test coverage.
+
+→ [See more in ingestion-procedures.md](./ingestion-procedures.md)
+
 ## Related guard-rails
 
 - [Safer architecture: tenant-scoped retrieval](../guard-rails/safer-architecture-tenant-scoped-retrieval.md)
