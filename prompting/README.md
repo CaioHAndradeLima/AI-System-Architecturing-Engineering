@@ -69,6 +69,14 @@ Temperature, max tokens, top-p, stop sequences, schema mode, model choice.
 
 → [See more in prompt-relevant-variables-influences.md](./prompt-relevant-variables-influences.md)
 
+### [prompt-architecturing-decision-based.md](./prompt-architecturing-decision-based.md)
+
+`#decision-guide` · `#startup` · `#enterprise` · `#multi-agent`
+
+Prompt design, few-shot, grounding, schemas, injection, versioning, eval, and ops by maturity.
+
+→ [See more in prompt-architecturing-decision-based.md](./prompt-architecturing-decision-based.md)
+
 ## Related
 
 - [Context algorithm — render final context](../contexting/context-algorithm.md)

@@ -10,7 +10,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 | [guard-rails](./guard-rails/) | Strategy, tenant isolation, AWS controls, test use cases |
 | [retrieval](./retrieval/) | [ingestion](./retrieval/ingestion/), [chunking](./retrieval/chunking/), [embedding](./retrieval/embedding/), [compacting](./retrieval/compacting/), [storaging](./retrieval/storaging/), [search](./retrieval/search/) |
 | [contexting](./contexting/) | Context assembly, grounding, citations, and token budget after retrieval |
-| [prompting](./prompting/) | System prompts, templates, grounding instructions, and output formats |
+| [prompting](./prompting/) | System prompts, templates, grounding ([decision guide](./prompting/prompt-architecturing-decision-based.md)) |
 
 ## Adding a new note
 
