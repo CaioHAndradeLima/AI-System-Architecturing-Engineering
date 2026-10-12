@@ -15,6 +15,8 @@
 | **Data governance** | Can your organization send this data to the selected provider? |
 | **Operational maturity** | Are versioning, batching, limits, availability and migration options adequate? |
 
+Scale-specific practices: [startup vs enterprise architecture decision-based](./embedding-startup-vs-enterprise-architecture-decision-based.md).
+
 ## How this ties to the pipeline
 
 - **Context length** must match [chunking](../chunking/) max chunk size (tokens or chars after tokenizer mapping).

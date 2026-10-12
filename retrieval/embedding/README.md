@@ -59,6 +59,14 @@ Logs, traces, RAG eval, LangSmith/Langfuse, and per-tenant embedding usage—sta
 
 → [See more in embedding-tools-decision-based.md](./embedding-tools-decision-based.md)
 
+### [embedding-startup-vs-enterprise-architecture-decision-based.md](./embedding-startup-vs-enterprise-architecture-decision-based.md)
+
+`#maturity` · `#architecture` · `#mvp-to-enterprise`
+
+Eleven areas—from model selection and hosting through caching, upgrades, cost, eval, security, and observability by scale.
+
+→ [See more in embedding-startup-vs-enterprise-architecture-decision-based.md](./embedding-startup-vs-enterprise-architecture-decision-based.md)
+
 ## Related
 
 - [Chunking](../chunking/) — what gets embedded
