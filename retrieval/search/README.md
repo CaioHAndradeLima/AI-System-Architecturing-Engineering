@@ -21,7 +21,15 @@ Search sits after [embedding queries](../embedding/queries/) (query vectors and 
 
 ## Guides
 
-_Guides will be listed here as you add markdown files in this folder (same pattern as [storaging](../storaging/README.md))._
+### [../retrieval-flow.md](../retrieval-flow.md)
+
+`#flow` · `#rag` · `#hybrid`
+
+Full pipeline diagram: ingestion → storage → query embed → retrieval engine → rerank → context → LLM.
+
+→ [See more in retrieval-flow.md](../retrieval-flow.md)
+
+_Additional search-specific guides will be listed here as you add files in this folder._
 
 ## Related
 
