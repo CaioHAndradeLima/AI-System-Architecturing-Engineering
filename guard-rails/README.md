@@ -85,6 +85,14 @@ Model Armor prompt/document/response screening, Sensitive Data Protection integr
 
 → [See more in ai-specific-controls-google-model-armor.md](./ai-specific-controls-google-model-armor.md)
 
+### [ai-specific-controls-azure-content-safety-prompt-shields.md](./ai-specific-controls-azure-content-safety-prompt-shields.md)
+
+`#azure` · `#content-safety` · `#prompt-shields`
+
+Prompt Shields and Content Safety screening, app-side validation, Purview integration—and related WAF, API Management, Entra ID, Key Vault, and Monitor.
+
+→ [See more in ai-specific-controls-azure-content-safety-prompt-shields.md](./ai-specific-controls-azure-content-safety-prompt-shields.md)
+
 ### [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
 
 `#anti-pattern` · `#multi-tenant` · `#rag`

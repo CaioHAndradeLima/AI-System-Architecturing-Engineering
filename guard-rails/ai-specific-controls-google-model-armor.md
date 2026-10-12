@@ -40,6 +40,7 @@ Multi-cloud mapping: [guard-rails-cloud-comparison.md](./guard-rails-cloud-compa
 
 ## See also
 
+- [AI-specific controls — Azure Content Safety and Prompt Shields](./ai-specific-controls-azure-content-safety-prompt-shields.md)
 - [Guard-rails category](./guard-rails-category.md)
 - [Guard-rails test use cases](./guard-rails-test-use-cases.md)
 - [Guard-rails overview](./README.md)

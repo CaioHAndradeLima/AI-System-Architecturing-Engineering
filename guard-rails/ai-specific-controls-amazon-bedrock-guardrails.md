@@ -46,6 +46,7 @@ Guardrails do not enforce tenancy—combine Bedrock controls with [guardrails da
 ## See also
 
 - [AI-specific controls — Google Cloud Model Armor](./ai-specific-controls-google-model-armor.md)
+- [AI-specific controls — Azure Content Safety and Prompt Shields](./ai-specific-controls-azure-content-safety-prompt-shields.md)
 - [Guard-rails category — Content safety / Privacy](./guard-rails-category.md)
 - [Guard-rails test use cases](./guard-rails-test-use-cases.md)
 - [Guard-rails overview](./README.md)
