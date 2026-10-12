@@ -101,6 +101,14 @@ Eight-step rollout from dense search through hybrid, rerank, observability, and 
 
 → [See more in retrieval-implementation-flow.md](./retrieval-implementation-flow.md)
 
+### [retrieval-architecture-supervisor-as-service.md](./retrieval-architecture-supervisor-as-service.md)
+
+`#agents` · `#supervisor` · `#tool`
+
+Supervisor calls retrieval tool (embed, search, filters, rerank) then main agent answers.
+
+→ [See more in retrieval-architecture-supervisor-as-service.md](./retrieval-architecture-supervisor-as-service.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
