@@ -133,6 +133,14 @@ Requirement → service, multi-backend tool, routing, retrieval agent, or multi-
 
 → [See more in retrieval-architecture-decision.md](./retrieval-architecture-decision.md)
 
+### [retrieval-architecture-simple-loop.md](./retrieval-architecture-simple-loop.md)
+
+`#agents` · `#router` · `#rag` · `#sql`
+
+Two-branch supervisor loop: analytics + knowledge tools, merge, evidence sufficiency, response.
+
+→ [See more in retrieval-architecture-simple-loop.md](./retrieval-architecture-simple-loop.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)

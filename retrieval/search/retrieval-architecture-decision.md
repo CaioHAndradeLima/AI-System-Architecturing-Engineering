@@ -9,6 +9,7 @@ Pick **how retrieval is wired into agents** by requirement—not by defaulting t
 | Choose dynamically between vector search, keyword search, or hybrid search | Usually a tool with explicit routing logic; an agent only if reasoning adds value |
 | Decide which knowledge source to search, inspect evidence, and retry | Retrieval agent may be justified |
 | Coordinate knowledge retrieval, SQL analytics, and engineering investigation | Multi-agent architecture may be justified |
+| Structured metrics **and** docs for one question (small fan-out) | [Simple supervisor loop](./retrieval-architecture-simple-loop.md) |
 
 ## Guide links
 
