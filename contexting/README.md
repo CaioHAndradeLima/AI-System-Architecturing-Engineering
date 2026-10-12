@@ -11,7 +11,7 @@ Contexting follows [retrieval/search](../retrieval/search/) (candidate passages)
 | **Context assembly** | Order chunks, metadata, system vs user messages |
 | **Token budget** | Window limits, truncation vs summarize |
 | **Citations & grounding** | Require evidence-linked answers; cite chunk/source IDs |
-| **Prompt structure** | Instructions, few-shot, tool results in context |
+| **Prompt structure** | See [prompting](../prompting/) for templates and instructions; contexting focuses on evidence slots |
 | **Insufficient evidence** | Abstain, clarify, degraded answers ([search similarity](../retrieval/search/retrieval-strategy-similarity.md)) |
 | **Multi-turn context** | History, compaction of chat, retrieval in threads |
 | **Evaluation** | Groundedness, faithfulness, context relevance |
