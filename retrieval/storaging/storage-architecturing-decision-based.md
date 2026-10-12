@@ -18,7 +18,7 @@ Pick a **vector storage** starting point by requirement—not by popularity alon
 |-----------------|----------|
 | Prototype / pgvector | [Minimum ingestion MVP](../ingestion/minimum-ingestion-mvp.md) · [Compact decision — pgvector/Chroma](../compacting/compact-decision-based.md) |
 | DB + vectors (messages) | [Compact architecture flow](../compacting/compact-architecture-flow.md) |
-| Maturity by scale | [Retrieval architecturing decision-based — Vector storage](../retrieval-architecturing-decision-based.md) · [Chunking architecturing — Storage row](../chunking/chunking-architecturing-decision-based.md) |
+| Maturity by scale | [Storage and indexing by scale](./storage-indexing-decision-based.md) · [Retrieval architecturing decision-based — Vector storage](../retrieval-architecturing-decision-based.md) · [Chunking architecturing — Storage row](../chunking/chunking-architecturing-decision-based.md) |
 | Tenant isolation | [Guard-rails data isolation](../../guard-rails/guardrails-data-isolation.md) |
 | Large corpus performance | [HNSW flow](./hnsw-flow.md) · [Embedding metrics — retrieval latency](../embedding/embedding-metrics.md) |
 

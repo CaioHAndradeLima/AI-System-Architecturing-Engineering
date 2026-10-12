@@ -51,6 +51,14 @@ Requirement → starting store (FAISS, Chroma, pgvector, Pinecone, Qdrant, etc.)
 
 → [See more in storage-architecturing-decision-based.md](./storage-architecturing-decision-based.md)
 
+### [storage-indexing-decision-based.md](./storage-indexing-decision-based.md)
+
+`#decision-guide` · `#startup` · `#enterprise` · `#slo`
+
+Storage choice, ANN tuning, metadata, filtering, updates, deletions, scaling, availability, eval, and cost by maturity stage.
+
+→ [See more in storage-indexing-decision-based.md](./storage-indexing-decision-based.md)
+
 ## Related
 
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write
