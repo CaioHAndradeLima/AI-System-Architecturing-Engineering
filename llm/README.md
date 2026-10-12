@@ -94,6 +94,14 @@ Sequential vs parallel agent timing example (~3.3s vs ~2.3s).
 
 → [See more in llm-latency-sample.md](./llm-latency-sample.md)
 
+### [llm-latency-variables-measurement.md](./llm-latency-variables-measurement.md)
+
+`#metrics` · `#ttft` · `#p95` · `#cost`
+
+TTFT, percentiles, tokens/s, errors, cost, calls and retries.
+
+→ [See more in llm-latency-variables-measurement.md](./llm-latency-variables-measurement.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)

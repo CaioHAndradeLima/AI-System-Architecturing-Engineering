@@ -30,7 +30,7 @@ Approximate total: **0.3 + max(1.2, 1.0) + 0.8 = 2.3 seconds** + overhead
 
 Overhead includes retrieval, context assembly, and **model routing** ([routing policy](./llm-routing-policy.md)). Parallelism saves wall-clock time only when branches do not block each other and the supervisor waits for all required results before synthesis.
 
-Track **p95** per node in traces ([architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md)).
+Track **p95** per node in traces ([architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md)). Full metric list: [latency variables and measurement](./llm-latency-variables-measurement.md).
 
 ## See also
 
