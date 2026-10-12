@@ -46,6 +46,14 @@ Managed APIs vs self-hosted weights—advantages, trade-offs, and flows.
 
 → [See more in llm-hosted-vs-open-weight-models.md](./llm-hosted-vs-open-weight-models.md)
 
+### [select-llm-flow.md](./select-llm-flow.md)
+
+`#benchmark` · `#model-selection` · `#canary`
+
+Requirements → dataset → candidates → measure → choose → canary.
+
+→ [See more in select-llm-flow.md](./select-llm-flow.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
