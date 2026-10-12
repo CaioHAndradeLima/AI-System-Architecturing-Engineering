@@ -2,7 +2,7 @@
 
 Design and operate **retrieval** for LLM applications: indexing, query-time search, grounding, and quality—together with authorization and tenant scope ([guard-rails](../guard-rails/) retrieval notes).
 
-## Topic areas (as docs are added)
+## Topic areas
 
 | Area | What we cover |
 |------|----------------|
@@ -13,9 +13,17 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 | **Operations** | Freshness, reindexing, eval metrics (recall, MRR, grounded answers) |
 | **Multi-tenant** | Scoped indexes, ACL sync, safe caching |
 
+---
+
 ## Guides
 
-_Guide entries (tags, short description, see-more links) will appear here as markdown files are added—same style as [guard-rails README](../guard-rails/README.md) and [agents README](../agents/README.md)._
+### [retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
+
+`#ingestion` · `#indexing` · `#pipeline`
+
+Five-stage offline path from PDFs, Confluence, DB, and APIs through parse, chunk, embed, and vector index—with metadata for tenant-safe retrieval.
+
+→ [See more in retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
 ## Related guard-rails
 
