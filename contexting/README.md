@@ -68,6 +68,14 @@ Question + top chunks + source IDs → LLM answer.
 
 → [See more in context-simple-document-question.md](./context-simple-document-question.md)
 
+### [context-multi-hop-question.md](./context-multi-hop-question.md)
+
+`#multi-hop` · `#synthesis` · `#timeline`
+
+Multiple evidence threads, dated organization, LLM causal synthesis.
+
+→ [See more in context-multi-hop-question.md](./context-multi-hop-question.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)

@@ -27,5 +27,6 @@ For scoring, dedupe, and token limits before this minimal prompt, use the full [
 
 ## See also
 
+- [Multi-hop question](./context-multi-hop-question.md)
 - [Context assembly flow](./context-assembly-flow.md)
 - [Contexting overview](./README.md)
