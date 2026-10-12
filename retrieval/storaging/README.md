@@ -43,6 +43,14 @@ Graph navigation from indexed vectors to top-K neighbors at search time.
 
 → [See more in hnsw-flow.md](./hnsw-flow.md)
 
+### [storage-architecturing-decision-based.md](./storage-architecturing-decision-based.md)
+
+`#decision-guide` · `#faiss` · `#pgvector` · `#managed`
+
+Requirement → starting store (FAISS, Chroma, pgvector, Pinecone, Qdrant, etc.) and why.
+
+→ [See more in storage-architecturing-decision-based.md](./storage-architecturing-decision-based.md)
+
 ## Related
 
 - [Compact architecture flow](../compacting/compact-architecture-flow.md) — DB + vector dual-write
