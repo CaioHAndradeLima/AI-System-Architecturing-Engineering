@@ -64,6 +64,21 @@ When to adopt common guardrails by **product stage** (small/MVP → medium → l
 
 Deep dives: [Bedrock Guardrails](./ai-specific-controls-amazon-bedrock-guardrails.md) · [Model Armor](./ai-specific-controls-google-model-armor.md) · [Azure Content Safety / Prompt Shields](./ai-specific-controls-azure-content-safety-prompt-shields.md) · [Cloud architecture](./guardrails-cloud-architecture.md)
 
+## The rules I would never compromise on
+
+| # | Rule |
+|---|------|
+| 1 | **Never use the LLM as the authorization boundary.** |
+| 2 | **Never rely on a prompt to enforce tenant isolation.** |
+| 3 | **Apply access control before data reaches the model.** |
+| 4 | **Re-authorize every tool or action at execution time.** |
+| 5 | **Isolate caches, conversation memory, background jobs, logs, and traces—not just the database.** |
+| 6 | **Fail closed when a mandatory authorization check cannot be completed.** |
+| 7 | **Test cross-tenant access continuously.** |
+| 8 | **Treat AI safety filters as risk reduction, not proof of security or correctness.** |
+| 9 | **Log enough to investigate incidents, but avoid logging sensitive payloads by default.** |
+| 10 | **Add complexity when risk, evidence, or requirements justify it.** |
+
 ## See also
 
 - [Guard-rails test use cases](./guard-rails-test-use-cases.md)

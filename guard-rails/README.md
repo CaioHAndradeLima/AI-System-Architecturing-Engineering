@@ -145,6 +145,6 @@ Seven requirements for trusted tenant resolution, pre-access authorization, DB p
 
 `#architecture` · `#decision-guide` · `#maturity`
 
-Guardrail/tool matrix by MVP → medium → mature (validation, AI safety, observability, jobs, release) plus AWS/GCP/Azure service mapping.
+Guardrail/tool matrix by MVP → medium → mature, cloud service mapping, and non-negotiable architecture rules.
 
 → [See more in guard-rails-decision-architecturing-assistance.md](./guard-rails-decision-architecturing-assistance.md)
