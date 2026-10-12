@@ -17,5 +17,6 @@ Pair these with [guard-rails category](./guard-rails-category.md) enforcement in
 
 ## See also
 
+- [Guardrails cloud architecture](./guardrails-cloud-architecture.md)
 - [Safer architecture: tenant-scoped retrieval](./safer-architecture-tenant-scoped-retrieval.md)
 - [Guard-rails overview](./README.md)

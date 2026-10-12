@@ -53,6 +53,14 @@ Maps guardrail categories (input, auth, tenant isolation, tools, output, privacy
 
 → [See more in guard-rails-category.md](./guard-rails-category.md)
 
+### [guardrails-cloud-architecture.md](./guardrails-cloud-architecture.md)
+
+`#cloud` · `#architecture` · `#edge-to-output`
+
+Full production stack from WAF/API gateway through identity, app guardrails, AI safety screening, tenant-scoped data/tools, agent workflow, and output controls—plus cross-cutting secrets, encryption, audit, and monitoring.
+
+→ [See more in guardrails-cloud-architecture.md](./guardrails-cloud-architecture.md)
+
 ### [wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
 
 `#anti-pattern` · `#multi-tenant` · `#rag`
