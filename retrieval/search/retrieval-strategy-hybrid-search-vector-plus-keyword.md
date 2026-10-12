@@ -35,6 +35,17 @@
 | Exact IDs, SKUs, names, acronyms | Can miss | Strong |
 | Rare tokens in long docs | Depends on chunking | Often strong |
 
+### Query types
+
+| Query type | Why hybrid search can help |
+|------------|------------------------------|
+| **Natural-language questions** | Vector search captures semantic similarity |
+| **Exact error codes** | Keyword search catches literal matches |
+| **Product names and SKUs** | Exact terms matter |
+| **Legal citations** | Specific identifiers are important |
+| **Technical documentation** | Function names and parameter names need exact matching |
+| **Mixed natural-language and identifiers** | Both semantic and lexical signals matter |
+
 Use hybrid when eval shows **vector-only** misses lexical matches or **keyword-only** misses semantic paraphrases—validate on your corpus, not by default.
 
 ## Fusion (starting options)
