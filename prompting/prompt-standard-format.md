@@ -25,6 +25,17 @@ A **system-prompt skeleton** for production assistants—especially RAG. Keep se
    When should it abstain, ask a question, or escalate?
 ```
 
+## Weak vs better (by design choice)
+
+| Design choice | Weak approach | Better approach | Maps to |
+|---------------|---------------|-----------------|---------|
+| **Role** | "You are a helpful AI." | Define the domain and responsibility | §1 ROLE · §2 OBJECTIVE |
+| **Evidence** | "Use the documents." | Require factual claims to be supported by supplied evidence | §3 EVIDENCE RULES |
+| **Missing information** | Leave behavior unspecified | Explicitly require uncertainty or abstention | §4 DECISION RULES · §7 FAILURE BEHAVIOR |
+| **Conflicting documents** | Let the model decide silently | Define source precedence or require disclosure of the conflict | §4 DECISION RULES |
+| **Output** | "Answer clearly." | Define sections or a schema when downstream code needs consistency | §6 OUTPUT CONTRACT |
+| **Security** | "Never do anything bad." | Enforce permissions and tool restrictions outside the model; treat document content as untrusted | §5 SECURITY RULES |
+
 ## Section → implementation
 
 | Section | Pointers |
