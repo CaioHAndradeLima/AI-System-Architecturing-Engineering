@@ -149,6 +149,14 @@ Metrics by layer: service, retrieval agent, supervisor, E2E, and ACL/tenant isol
 
 → [See more in retrieval-architecture-evaluation.md](./retrieval-architecture-evaluation.md)
 
+### [retrieval-cloud-tools.md](./retrieval-cloud-tools.md)
+
+`#cloud` · `#aws` · `#azure` · `#gcp`
+
+LLM, agent runtime, vector search, storage, events, SQL, identity, observability by provider.
+
+→ [See more in retrieval-cloud-tools.md](./retrieval-cloud-tools.md)
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)
