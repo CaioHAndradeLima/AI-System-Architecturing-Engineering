@@ -21,7 +21,13 @@ Typical RAG order: [retrieval](../retrieval/) → [context assembly](../contexti
 
 ## Guides
 
-_Guides will be listed here as you add markdown files in this folder (same pattern as [contexting](../contexting/README.md))._
+### [prompt-categories.md](./prompt-categories.md)
+
+`#taxonomy` · `#system` · `#rag`
+
+System, user, retrieved context, and output format—responsibility and change frequency.
+
+→ [See more in prompt-categories.md](./prompt-categories.md)
 
 ## Related
 
