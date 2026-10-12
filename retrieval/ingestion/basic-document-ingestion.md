@@ -47,6 +47,20 @@
 | **Embedding Model** | Vectorize chunks; record model version on the batch. |
 | **Vector Database** | Upsert vectors with chunk text and filters (`tenant_id`, `document_id`, ACL). |
 
+## What does each component do?
+
+| Component | Responsibility | Simple choice |
+|-----------|----------------|---------------|
+| **API** | Accepts uploads and validates requests | FastAPI |
+| **File storage** | Keeps the original documents | Local files, then S3 or equivalent |
+| **Parser** | Extracts text from PDF/DOCX | PyMuPDF, python-docx |
+| **Cleaning** | Removes noise and normalizes text | Python |
+| **Chunking** | Splits text into passages | LangChain text splitters |
+| **Embeddings** | Converts passages into vectors | OpenAI embedding API or a local model |
+| **Vector database** | Searches for semantically relevant passages | FAISS or Chroma |
+
+Tool names are **starting points** for an MVP; swap for managed services as scale and isolation requirements grow ([architecturing decisions](../retrieval-architecturing-decision-based.md)).
+
 ## Relation to other ingestion docs
 
 - Broader sources (Confluence, DB, APIs): [retrieval simple ingestion](./retrieval-simple-ingestion.md)
