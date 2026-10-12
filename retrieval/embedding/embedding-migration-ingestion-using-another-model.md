@@ -37,6 +37,20 @@ Safe **embedding model change**: build and evaluate a new index on model B befor
 | **Switch query embedding + index together** | **Never** query with model B against index A (or vice versa)—vectors must share the same model and preprocessing. |
 | **Retire old index after validation** | Drop or archive A after soak period; keep rollback path until metrics stable. |
 
+## When to re-embed vs update metadata
+
+| Change | Typical action |
+|--------|----------------|
+| **Document text changes** | Re-embed affected chunks |
+| **Chunk boundaries change** | Re-embed the newly created chunks |
+| **Embedding model changes** | Re-embed the corpus into a compatible index |
+| **Supported output dimension changes** | Build a compatible new index and re-embed |
+| **Only metadata changes** | Update metadata where supported; re-embedding may not be necessary |
+| **Document is deleted** | Remove its vectors and related searchable records |
+| **Document access is revoked** | Ensure retrieval can no longer expose its content; update permissions and remove or invalidate stale indexed data as appropriate |
+
+Access revocation is an **authorization** change—fix filters and index state even when vectors are unchanged ([guard-rails test use cases](../../guard-rails/guard-rails-test-use-cases.md)).
+
 ## Checklist
 
 - [ ] Version metadata on chunks: `embedding_model_id`, `chunker_version`, `indexed_at`
