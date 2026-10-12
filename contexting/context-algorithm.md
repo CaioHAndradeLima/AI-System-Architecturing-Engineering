@@ -40,7 +40,7 @@ Prompt Template -> LLM
 | **1. Validate access and provenance** | Trusted identity + ACL; chunk IDs match index metadata ([metadata filtering](../retrieval/search/retrieval-strategy-metadata-filtering.md)) |
 | **2. Remove invalid / stale / duplicate** | Tombstones, version flags, hash dedupe ([chunking metrics — duplicate retrieval](../retrieval/chunking/chunking-metrics-observability.md)) |
 | **3. Merge or organize related** | Parent-child chunks, same document sections ([hierarchical chunking](../retrieval/chunking/chunking-hierarchical-parent-child.md)) |
-| **4. Score and select evidence** | Rerank scores, similarity thresholds ([reranking](../retrieval/search/retrieval-strategy-reranking.md), [similarity strategy](../retrieval/search/retrieval-strategy-similarity.md)) |
+| **4. Score and select evidence** | Combined signals \(S(d)\) — [context scoring math](./context-scoring-math.md); rerank and thresholds ([reranking](../retrieval/search/retrieval-strategy-reranking.md), [similarity strategy](../retrieval/search/retrieval-strategy-similarity.md)) |
 | **5. Diversity and coverage** | Avoid redundant overlap; span multiple sources when the question requires it |
 | **6. Token budget** | Truncate vs summarize; reserve space for history and instructions ([context info for output](./context-info-for-output.md)) |
 | **7. Order + source IDs** | Stable citation keys (doc ID, page, URL) for **Answer + Citations** |

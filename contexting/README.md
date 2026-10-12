@@ -44,6 +44,14 @@ Eight-step assembly from candidates through render → prompt template → LLM.
 
 → [See more in context-algorithm.md](./context-algorithm.md)
 
+### [context-scoring-math.md](./context-scoring-math.md)
+
+`#scoring` · `#weights` · `#freshness`
+
+Multi-signal evidence score: relevance, freshness, authority, task fit.
+
+→ [See more in context-scoring-math.md](./context-scoring-math.md)
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
