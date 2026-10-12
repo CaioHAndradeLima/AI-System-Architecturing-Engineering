@@ -11,6 +11,8 @@
 | **Structured output mode** | Constrains the output format where supported | Prefer schema-constrained generation when reliable structured data is required |
 | **Model choice** | Capability, latency, context size, cost, and tool support | Evaluate on representative tasks instead of selecting by reputation alone |
 
+Full parameter list including **seed** and **reasoning effort**: [LLM generation parameters](../llm/llm-generation-parameters.md).
+
 ## Related stack settings
 
 Parameters above sit beside **input** influences documented elsewhere:

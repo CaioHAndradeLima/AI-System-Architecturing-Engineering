@@ -19,7 +19,7 @@
 | Topic | Existing guides |
 |-------|-----------------|
 | Model routing | [LLM routing flow](./llm-routing-flow.md) · [Routing policy](./llm-routing-policy.md) |
-| Generation parameters | [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md) |
+| Generation parameters | [LLM generation parameters](./llm-generation-parameters.md) · [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md) |
 | Production deployment | [Prompt versioning](../prompting/prompt-versioning.md) · [Prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md) |
 | Hosted vs. open-weight | [LLM hosted vs open-weight models](./llm-hosted-vs-open-weight-models.md) |
 | Hosted vs API (embeddings) | [Embedding hosted vs self-hosted](../retrieval/embedding/embedding-hosted-vs-self-hosted.md) |

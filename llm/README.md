@@ -78,6 +78,14 @@ Task-based model choices—rewrite, RAG, synthesis, schema, supervisor, auth.
 
 → [See more in llm-routing-policy.md](./llm-routing-policy.md)
 
+### [llm-generation-parameters.md](./llm-generation-parameters.md)
+
+`#temperature` · `#top-p` · `#max-tokens` · `#reasoning`
+
+Sampling, output limits, stop sequences, seed, reasoning effort.
+
+→ [See more in llm-generation-parameters.md](./llm-generation-parameters.md)
+
 ## Related
 
 - [Prompt relevant variables](../prompting/prompt-relevant-variables-influences.md)
