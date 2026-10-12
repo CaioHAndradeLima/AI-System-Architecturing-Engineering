@@ -36,6 +36,24 @@ Calibrate weights on a **golden set**—do not copy defaults from another produc
 
 Duplicate candidates often share high \(R(d)\) but should lose after dedupe (step 2) or diversity rules (step 5).
 
+## Contextual query resolution (before retrieval)
+
+The second question is ambiguous without history. A retrieval system may not know what “it” refers to.
+
+The application can use **conversation history** to resolve the reference and create a standalone retrieval query:
+
+**Original question:**
+
+"Did we fix it?"
+
+**Resolved retrieval query:**
+
+"Was the checkout API incident that caused the 12% conversion drop resolved? What mitigation was applied and when?"
+
+This is often called **query rewriting** or **contextual query resolution**. It usually happens **before** retrieval, although the relevant conversation history is also useful during [context assembly](./context-assembly-flow.md) ([context info — conversation history](./context-info-for-output.md)).
+
+Deeper patterns: [embedding — cleaning user query](../retrieval/embedding/queries/embedding-cleaning-user-query.md).
+
 ## See also
 
 - [Context info for output](./context-info-for-output.md)
