@@ -78,7 +78,7 @@ Knowledge-agent path matches [tracing for observability](../observability-evalua
 
 | Stage | Docs |
 |-------|------|
-| CI/CD + offline eval | [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md) |
+| CI/CD + offline eval | [Pipeline evaluation](./pipeline-evaluation.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md) |
 | Quality gates → canary → prod | [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) |
 | Monitoring → failure dataset | [Investigate failure](../observability-evaluation/investigate-failure-by-observability-data.md) · [Guardrails practices](../output/output-validation-guardrails-practices.md) |
 

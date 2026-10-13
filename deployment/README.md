@@ -37,6 +37,14 @@ Eleven production components with responsibilities and typical implementations.
 
 → [See more in production-components.md](./production-components.md)
 
+### [pipeline-evaluation.md](./pipeline-evaluation.md)
+
+`#cicd` · `#golden-set` · `#quality-gate` · `#canary`
+
+PR checks → candidate matrix → score → baseline gate → staging → production.
+
+→ [See more in pipeline-evaluation.md](./pipeline-evaluation.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)

@@ -36,7 +36,7 @@ Prompt / Model / Retrieval Change
 
 | Phase | Tests / signals | Docs |
 |-------|-----------------|------|
-| Automated tests | Retrieval golden set, answer eval, schema/guardrail cases | [Evaluate retrieval metrics](./evaluate-retrieval-independently-metrics.md) · [Evaluate answer metrics](./evaluate-answer-metrics.md) · [Guardrails practices](../output/output-validation-guardrails-practices.md) |
+| Automated tests | Retrieval golden set, answer eval, schema/guardrail cases | [Pipeline evaluation](../deployment/pipeline-evaluation.md) · [Evaluate retrieval metrics](./evaluate-retrieval-independently-metrics.md) · [Evaluate answer metrics](./evaluate-answer-metrics.md) |
 | Baseline compare | Same dataset, frozen config versions on both sides | [Prompt versioning](../prompting/prompt-versioning.md) · [Tracing metrics — quality & ops](./tracing-for-observability-metrics.md) |
 | Critical regression | Pre-defined gates: Recall@K drop, false-block spike, p95 latency, error rate | [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) · [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md) |
 | Canary monitor | Operational + AI quality + cost ([metrics groups B & C](./tracing-for-observability-metrics.md)) | [Observability tools](./observability-tools.md) |
