@@ -23,7 +23,7 @@
 
 `#architecture` · `#scale` · `#enterprise` · `#multi-agent`
 
-Golden data, retrieval/answer eval, tracing, CI/CD, feedback, and cost by maturity.
+How evaluation, tracing, metrics, and release discipline evolve from startup/prototype through growing production to enterprise / multi-agent.
 
 → [See more in observability-decision-based.md](./observability-decision-based.md)
 
@@ -31,7 +31,7 @@ Golden data, retrieval/answer eval, tracing, CI/CD, feedback, and cost by maturi
 
 `#checklist` · `#implementation` · `#canary` · `#regression`
 
-Eight-step evaluation and observability checklist through canary promote or rollback.
+Evaluation and observability checklist—golden data through retrieval and answer quality, tracing, monitoring, failure diagnosis, regression gates, and canary promote or rollback.
 
 → [See more in observability-implementation-flow.md](./observability-implementation-flow.md)
 
@@ -39,7 +39,9 @@ Eight-step evaluation and observability checklist through canary promote or roll
 
 `#retrieval` · `#metrics` · `#golden-set` · `#offline-eval`
 
-Recall@K, Precision@K, MRR, nDCG@K, and empty-result rate—when each helps for retrieval-only benchmarks.
+Measure search and ranking alone on a golden dataset (query → known relevant document IDs) before blaming the LLM for bad answers.
+
+Independent retrieval eval isolates chunking, embeddings, indexes, filters, hybrid fusion, and top-K from generation and output validation.
 
 → [See more in evaluate-retrieval-independently-metrics.md](./evaluate-retrieval-independently-metrics.md)
 
@@ -47,7 +49,7 @@ Recall@K, Precision@K, MRR, nDCG@K, and empty-result rate—when each helps for 
 
 `#debugging` · `#retrieval` · `#recall` · `#ndcg`
 
-If Recall@K / nDCG@K fail, fix retrieval; if they pass, eval context assembly and generation.
+Decision flow after independent retrieval metrics on a golden set (architecture evaluation — layers).
 
 → [See more in poor-retrieval-scores.md](./poor-retrieval-scores.md)
 
@@ -55,7 +57,7 @@ If Recall@K / nDCG@K fail, fix retrieval; if they pass, eval context assembly an
 
 `#answers` · `#groundedness` · `#citations` · `#abstain`
 
-Seven end-to-end answer metrics—correctness, relevance, completeness, schema, and abstention.
+End-to-end answer quality metrics on golden or sampled conversations—after retrieval and context assembly, including what output validation checks before delivery.
 
 → [See more in evaluate-answer-metrics.md](./evaluate-answer-metrics.md)
 
@@ -63,7 +65,7 @@ Seven end-to-end answer metrics—correctness, relevance, completeness, schema, 
 
 `#eval` · `#llm-judge` · `#human` · `#rubric`
 
-Automated rubric scoring vs expert review—advantages, limits, and when to combine.
+Two ways to score answers against evidence and rubrics when deterministic checks are not enough (evaluate answer metrics, output implementation strategies — LLM-as-a-judge).
 
 → [See more in llm-as-judge-vs-human.md](./llm-as-judge-vs-human.md)
 
@@ -71,7 +73,7 @@ Automated rubric scoring vs expert review—advantages, limits, and when to comb
 
 `#tracing` · `#spans` · `#multi-agent` · `#latency`
 
-Example trace tree: API → supervisor → agents → validation → response.
+Example distributed trace for a multi-agent RAG request: one trace ID ties API, supervisor, agents, retrieval, generation, validation, and response—so latency and failures are attributable to a step (storage observability tools — tracing, observability/ package).
 
 → [See more in tracing-for-observability.md](./tracing-for-observability.md)
 
@@ -79,7 +81,7 @@ Example trace tree: API → supervisor → agents → validation → response.
 
 `#tracing` · `#attributes` · `#cost` · `#tokens`
 
-Span attributes plus operational, AI quality, and cost/business metric groups.
+What to record on traces and spans so you can debug latency, cost, quality regressions, and security incidents (example trace tree).
 
 → [See more in tracing-for-observability-metrics.md](./tracing-for-observability-metrics.md)
 
@@ -87,7 +89,7 @@ Span attributes plus operational, AI quality, and cost/business metric groups.
 
 `#incident` · `#debugging` · `#trace` · `#regression`
 
-Ten-step flow from trace to failure category, repro, fix, and safe deploy.
+Work top-down from the trace when a user report or alert does not match expectations—before guessing at prompts or models (tracing example tree, span attributes).
 
 → [See more in investigate-failure-by-observability-data.md](./investigate-failure-by-observability-data.md)
 
@@ -95,7 +97,7 @@ Ten-step flow from trace to failure category, repro, fix, and safe deploy.
 
 `#tools` · `#langsmith` · `#langfuse` · `#opentelemetry` · `#prometheus` · `#eval`
 
-Cross-stack tracing, metrics, cloud monitoring, and custom evaluation tooling for AI systems.
+Reference tracing, metrics, and evaluation platforms for AI systems—what each tool is good at and how they complement span attributes (tracing for observability — metrics) and incident workflows (investigate failure by observability data).
 
 → [See more in observability-tools.md](./observability-tools.md)
 
@@ -103,7 +105,7 @@ Cross-stack tracing, metrics, cloud monitoring, and custom evaluation tooling fo
 
 `#canary` · `#regression` · `#deploy` · `#rollback`
 
-Test → baseline → reject or canary → monitor → rollback or promote.
+Safe rollout when prompts, models, or retrieval change—automated tests and baseline comparison before traffic; canary monitoring before full promotion (prompt versioning, LLM implementation flow).
 
 → [See more in regression-and-canary-releases.md](./regression-and-canary-releases.md)
 

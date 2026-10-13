@@ -12,7 +12,7 @@ Parent overview: [retrieval topic areas](../README.md#topic-areas).
 
 `#upload` · `#pdf` · `#pipeline`
 
-User PDF upload through API, object storage, parse/clean, chunk, embed, and vector DB until ready for retrieval.
+Upload-driven ingestion pipeline for PDFs: accept the file, store the original, parse and clean text, chunk, embed, and load the vector database for query-time retrieval.
 
 → [See more in basic-document-ingestion.md](./basic-document-ingestion.md)
 
@@ -20,7 +20,7 @@ User PDF upload through API, object storage, parse/clean, chunk, embed, and vect
 
 `#connectors` · `#sync` · `#enterprise`
 
-Drive, Confluence, SharePoint, and APIs through connectors, CDC, queues, ACL sync, and shared chunk/embed/index with cross-cutting ops.
+Enterprise ingestion from many systems: connectors per source, incremental sync, queued workers, extract/validate/ACL sync, then shared chunk/embed/index path—with cross-cutting reliability and lifecycle controls.
 
 → [See more in multi-source-ingestion.md](./multi-source-ingestion.md)
 
@@ -28,7 +28,7 @@ Drive, Confluence, SharePoint, and APIs through connectors, CDC, queues, ACL syn
 
 `#architecture` · `#mvp-vs-enterprise` · `#operations`
 
-Nine engineering concerns compared side by side—from upload triggers and workers to idempotency, deletions, ACL sync, and monitoring.
+Basic MVP vs enterprise ingestion concerns: how triggers, processing, lifecycle, permissions, and monitoring differ as you move from upload scripts to multi-source sync (multi-source ingestion).
 
 → [See more in ingestion-architecture-engineering.md](./ingestion-architecture-engineering.md)
 
@@ -36,7 +36,9 @@ Nine engineering concerns compared side by side—from upload triggers and worke
 
 `#observability` · `#metrics` · `#sla`
 
-Ingestion success, parsing failures, latency, cost, duplicates, freshness, Recall@K, and cross-tenant test failures—what each metric means.
+Metrics to watch on indexing pipelines—from document processing health through index freshness, retrieval quality, and tenant isolation.
+
+Aligns with enterprise monitoring in ingestion architecture engineering and multi-source ingestion.
 
 → [See more in ingestion-observability.md](./ingestion-observability.md)
 
@@ -44,7 +46,7 @@ Ingestion success, parsing failures, latency, cost, duplicates, freshness, Recal
 
 `#ingestion` · `#indexing` · `#pipeline`
 
-Five-stage offline path from PDFs, Confluence, DB, and APIs through parse, chunk, embed, and vector index—with metadata for tenant-safe retrieval.
+Offline indexing pipeline from heterogeneous sources into a vector index: ingest, parse, chunk, embed, and store chunks with metadata for later query-time retrieval.
 
 → [See more in retrieval-simple-ingestion.md](./retrieval-simple-ingestion.md)
 
@@ -52,7 +54,9 @@ Five-stage offline path from PDFs, Confluence, DB, and APIs through parse, chunk
 
 `#reference` · `#pipeline` · `#quality`
 
-Component-by-component responsibilities and failure symptoms from ingestion through evaluation—use for triage and test coverage.
+End-to-end retrieval pipeline components: what each stage owns and what breaks when it is done poorly.
+
+Stages 1–5 align with simple ingestion; retrieval, reranking, and evaluation are query-time and quality layers on top of the index.
 
 → [See more in ingestion-procedures.md](./ingestion-procedures.md)
 
@@ -60,7 +64,9 @@ Component-by-component responsibilities and failure symptoms from ingestion thro
 
 `#mvp` · `#rag` · `#query-loop`
 
-Minimal index path (parse → chunk → embed → store) and query path (embed question → top-K → LLM → citations).
+Smallest useful RAG loop: index documents offline, then at query time embed the question, search the vector store, pass top-K chunks to the LLM, return an answer with citations.
+
+Add auth, reranking, and eval before calling it production-ready (ingestion procedures).
 
 → [See more in minimum-ingestion-mvp.md](./minimum-ingestion-mvp.md)
 

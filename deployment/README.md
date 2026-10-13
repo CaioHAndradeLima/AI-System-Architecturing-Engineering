@@ -26,7 +26,7 @@ Deployment closes the loop from [LLM](../llm/) inference and [output](../output/
 
 `#architecture` · `#scale` · `#enterprise` · `#multi-agent`
 
-Runtime, CI/CD, eval pipeline, observability, deploy, security, and cost by maturity.
+How runtime, CI/CD, evaluation pipelines, and production operations evolve from startup/prototype through growing production to enterprise / multi-agent.
 
 → [See more in deployment-decision-based.md](./deployment-decision-based.md)
 
@@ -34,7 +34,7 @@ Runtime, CI/CD, eval pipeline, observability, deploy, security, and cost by matu
 
 `#checklist` · `#implementation` · `#cicd` · `#canary`
 
-Sections A–E: application, offline eval, CI/CD, release, continuous improvement.
+Production AI delivery checklist—application hardening, offline eval, CI/CD, release, and continuous improvement (deployment decision-based by scale).
 
 → [See more in deployment-checklist-flow.md](./deployment-checklist-flow.md)
 
@@ -42,7 +42,7 @@ Sections A–E: application, offline eval, CI/CD, release, continuous improvemen
 
 `#topology` · `#langgraph` · `#multi-agent` · `#cicd`
 
-Users through gateway, agents, RAG path, infra, and eval → canary → production loop.
+End-to-end reference topology for a multi-agent RAG service in production: user path, platform infrastructure, and the eval → deploy → monitor feedback loop (example Python layout, AWS multi-agent sample).
 
 → [See more in production-architecture.md](./production-architecture.md)
 
@@ -50,7 +50,7 @@ Users through gateway, agents, RAG path, infra, and eval → canary → producti
 
 `#stack` · `#fastapi` · `#langgraph` · `#docker` · `#cicd`
 
-Application stack (API, LangGraph, retrieval, …) plus production controls (Docker, limits, canary, rollback).
+Application stack and operational controls for a production LLM service—fits production architecture and production flow (example Python directories).
 
 → [See more in production-components.md](./production-components.md)
 
@@ -58,7 +58,9 @@ Application stack (API, LangGraph, retrieval, …) plus production controls (Doc
 
 `#production` · `#feedback` · `#dataset` · `#loop`
 
-Telemetry → label → offline eval → gate → canary or improve.
+Live production feedback loop—telemetry and user signals become labeled cases, offline eval, and gated releases.
+
+Closes the loop in production architecture (monitoring → failure dataset) and pipeline criteria pass vs fail.
 
 → [See more in production-flow.md](./production-flow.md)
 
@@ -66,7 +68,9 @@ Telemetry → label → offline eval → gate → canary or improve.
 
 `#regression` · `#retrieval` · `#versioning` · `#golden-set`
 
-Stale-policy example: trace → dataset → version filter → gate → canary.
+Worked example: production symptom → trace → golden case → retrieval candidate → gate → deploy → monitor.
+
+Extends production flow when the root cause is stale or wrong-version evidence in search results.
 
 → [See more in production-retrieval-regression-testing.md](./production-retrieval-regression-testing.md)
 
@@ -74,7 +78,7 @@ Stale-policy example: trace → dataset → version filter → gate → canary.
 
 `#cicd` · `#golden-set` · `#quality-gate` · `#canary`
 
-PR checks → candidate matrix → score → baseline gate → staging → production.
+CI evaluation pipeline for comparing model, prompt, and retrieval candidates on one golden set before image build and staged rollout (regression and canary releases, production components — offline evaluation).
 
 → [See more in pipeline-evaluation.md](./pipeline-evaluation.md)
 
@@ -82,7 +86,7 @@ PR checks → candidate matrix → score → baseline gate → staging → produ
 
 `#ab-test` · `#model` · `#prompt` · `#retrieval` · `#context`
 
-Five evaluation dimensions, candidate changes, and discovery goals.
+Dimensions to vary when running candidate configurations through the pipeline evaluation golden set—change one axis at a time when possible so comparisons stay interpretable.
 
 → [See more in pipeline-evaluation-components.md](./pipeline-evaluation-components.md)
 
@@ -90,7 +94,7 @@ Five evaluation dimensions, candidate changes, and discovery goals.
 
 `#config` · `#yaml` · `#experiment` · `#reproducibility`
 
-Pinned model, prompt, retrieval, context, and golden dataset version for one eval run.
+Pinned experiment config for one candidate run in pipeline evaluation—store alongside results so baseline comparison replays the same model, prompt, retrieval, and dataset versions (pipeline evaluation components).
 
 → [See more in pipeline-evaluation-yaml-sample.md](./pipeline-evaluation-yaml-sample.md)
 
@@ -98,7 +102,7 @@ Pinned model, prompt, retrieval, context, and golden dataset version for one eva
 
 `#metrics` · `#retrieval` · `#answers` · `#safety` · `#sla`
 
-Four scoring layers: retrieval, answer, operational, and safety/reliability.
+Score each configuration at multiple layers in pipeline evaluation—after candidates run on the same golden set, aggregate retrieval, answer, operational, and safety signals before the quality gate.
 
 → [See more in pipeline-scoring-metrics.md](./pipeline-scoring-metrics.md)
 
@@ -106,7 +110,7 @@ Four scoring layers: retrieval, answer, operational, and safety/reliability.
 
 `#quality-gate` · `#baseline` · `#regression` · `#cost`
 
-Example baseline vs candidates B/C on recall, answers, citations, latency, cost.
+Example baseline comparison after pipeline scoring metrics—use fixed thresholds for regressions (citation support, latency, cost) and minimum lifts on quality before canary release.
 
 → [See more in pipeline-scoring-quality-gate.md](./pipeline-scoring-quality-gate.md)
 
@@ -114,7 +118,7 @@ Example baseline vs candidates B/C on recall, answers, citations, latency, cost.
 
 `#release` · `#quality-gate` · `#sla` · `#budget`
 
-PASS criteria: correctness, citations, schema, auth, latency, cost, critical regressions.
+PASS only if all conditions hold after pipeline scoring and baseline compare (quality gate example)—use as CI/release gate before canary.
 
 → [See more in pipeline-release-policy-simple.md](./pipeline-release-policy-simple.md)
 
@@ -122,7 +126,7 @@ PASS criteria: correctness, citations, schema, auth, latency, cost, critical reg
 
 `#report` · `#promote` · `#canary` · `#rollback`
 
-Eval report contents and six steps from gate block to gradual promote or rollback.
+Select the winner and promote it safely after pipeline evaluation candidates are scored (pipeline scoring metrics) and checked against release policy (simple) and quality gate examples.
 
 → [See more in pipeline-criteria-pass-vs-fail.md](./pipeline-criteria-pass-vs-fail.md)
 
@@ -130,7 +134,7 @@ Eval report contents and six steps from gate block to gradual promote or rollbac
 
 `#ci` · `#pr` · `#golden-set` · `#canary` · `#production`
 
-Seven test types and when they run from PR through production feedback.
+When each test runs in the delivery path—from PR through pipeline evaluation to production feedback (pipeline criteria pass vs fail).
 
 → [See more in pipeline-tools-steps.md](./pipeline-tools-steps.md)
 
@@ -138,7 +142,7 @@ Seven test types and when they run from PR through production feedback.
 
 `#aws` · `#azure` · `#gcp` · `#containers` · `#cicd`
 
-Runtime, registry, secrets, monitoring, queues, model APIs, GitHub Actions identity.
+Deployment concern → cloud services on AWS, Azure, and Google Cloud—runtime, registry, secrets, observability, async ingestion, model APIs, and CI identity (production controls — queues and secrets, LLM cloud services).
 
 → [See more in deployment-cloud-tools.md](./deployment-cloud-tools.md)
 

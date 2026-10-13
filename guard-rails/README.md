@@ -41,7 +41,7 @@ See [safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-
 
 `#pipeline` · `#layers` · `#request-flow`
 
-End-to-end guardrail order from user input through ACL, agent execution, tool/retrieval checks, and output validation. Use this as the default mental model for where each control runs.
+A defense-in-depth pipeline for agent systems: validate and authorize before execution, constrain tool and retrieval access during the run, then validate again before anything reaches the user.
 
 → [See more in guardrails-strategy.md](./guardrails-strategy.md)
 
@@ -49,7 +49,7 @@ End-to-end guardrail order from user input through ACL, agent execution, tool/re
 
 `#taxonomy` · `#enforcement` · `#reference`
 
-Maps guardrail categories (input, auth, tenant isolation, tools, output, privacy, etc.) to examples and preferred enforcement points—application code, IdP, IAM, classifiers.
+Reference map of common guardrail categories: what each one covers, a concrete example, and where enforcement should live in the stack.
 
 → [See more in guard-rails-category.md](./guard-rails-category.md)
 
@@ -57,7 +57,7 @@ Maps guardrail categories (input, auth, tenant isolation, tools, output, privacy
 
 `#cloud` · `#architecture` · `#edge-to-output`
 
-Full production stack from WAF/API gateway through identity, app guardrails, AI safety screening, tenant-scoped data/tools, agent workflow, and output controls—plus cross-cutting secrets, encryption, audit, and monitoring.
+A full-stack request path for production agent/LLM APIs: edge protection, identity, application rules, AI safety services, scoped data access, the agent workflow, and output controls—with cloud primitives applied across the lifecycle.
 
 → [See more in guardrails-cloud-architecture.md](./guardrails-cloud-architecture.md)
 
@@ -65,7 +65,9 @@ Full production stack from WAF/API gateway through identity, app guardrails, AI 
 
 `#cloud` · `#multi-cloud` · `#reference`
 
-Side-by-side AWS, Google Cloud, and Azure services for edge protection, identity, AI safety, DLP, secrets, audit/monitoring, and tenant isolation.
+Maps common guardrail responsibilities to representative services on AWS, Google Cloud, and Azure.
+
+Use alongside guardrails cloud architecture to pick products per layer.
 
 → [See more in guard-rails-cloud-comparison.md](./guard-rails-cloud-comparison.md)
 
@@ -73,7 +75,9 @@ Side-by-side AWS, Google Cloud, and Azure services for edge protection, identity
 
 `#aws` · `#bedrock` · `#ai-safety`
 
-Bedrock Guardrails capabilities (content, injection, topics, PII, grounding, reasoning checks) plus related WAF, API Gateway, IAM, secrets, and audit services.
+Amazon Bedrock Guardrails can evaluate prompts and model responses using configurable controls.
+
+Use them in the AI safety service layer of guardrails cloud architecture—alongside app guardrails and output validation—not as a substitute for auth or tenant isolation.
 
 → [See more in ai-specific-controls-amazon-bedrock-guardrails.md](./ai-specific-controls-amazon-bedrock-guardrails.md)
 
@@ -81,7 +85,9 @@ Bedrock Guardrails capabilities (content, injection, topics, PII, grounding, rea
 
 `#gcp` · `#model-armor` · `#ai-safety`
 
-Model Armor prompt/document/response screening, Sensitive Data Protection integration, templates—and related Armor, API Gateway, IAM, Secret Manager, audit, and monitoring.
+Model Armor screens prompts and responses and supports configurable controls for prompt injection, jailbreaks, harmful content, and sensitive information.
+
+It can be integrated into AI workflows on Google Cloud and other platforms.
 
 → [See more in ai-specific-controls-google-model-armor.md](./ai-specific-controls-google-model-armor.md)
 
@@ -89,7 +95,11 @@ Model Armor prompt/document/response screening, Sensitive Data Protection integr
 
 `#azure` · `#content-safety` · `#prompt-shields`
 
-Prompt Shields and Content Safety screening, app-side validation, Purview integration—and related WAF, API Management, Entra ID, Key Vault, and Monitor.
+Prompt Shields detects and helps block adversarial instructions in user prompts and documents.
+
+Azure AI Content Safety also supports content-safety screening.
+
+Use both in the AI safety service layer of guardrails cloud architecture, alongside app validation and tenant-scoped data access.
 
 → [See more in ai-specific-controls-azure-content-safety-prompt-shields.md](./ai-specific-controls-azure-content-safety-prompt-shields.md)
 
@@ -97,7 +107,7 @@ Prompt Shields and Content Safety screening, app-side validation, Purview integr
 
 `#anti-pattern` · `#multi-tenant` · `#rag`
 
-Shows why one shared vector index for all customers leaks data across tenants. Documents failure modes when retrieval is not scoped before the LLM sees chunks.
+An anti-pattern for multi-tenant RAG: every customer’s documents sit in one vector index, and user questions hit that shared search before the LLM answers—with no strong tenant boundary in the retrieval path.
 
 → [See more in wrong-architecture-shared-retrieval.md](./wrong-architecture-shared-retrieval.md)
 
@@ -105,7 +115,7 @@ Shows why one shared vector index for all customers leaks data across tenants. D
 
 `#architecture` · `#multi-tenant` · `#rag` · `#identity`
 
-IdP verification, backend tenant resolution, membership checks, and mandatory `tenant_id` filters on retrieval—with response validation before reply.
+A multi-tenant RAG pattern where identity and authorization are resolved in a trusted backend before any search, retrieval is filtered by tenant_id, and the response is validated before it reaches the user.
 
 → [See more in safer-architecture-tenant-scoped-retrieval.md](./safer-architecture-tenant-scoped-retrieval.md)
 
@@ -113,7 +123,9 @@ IdP verification, backend tenant resolution, membership checks, and mandatory `t
 
 `#data-isolation` · `#tenancy` · `#storage`
 
-Compares three storage patterns: shared DB with `tenant_id`, separate schemas/databases, and dedicated infrastructure per tenant—including trade-offs and guardrail checklists.
+Strategies for keeping each tenant’s data separate in storage and retrieval.
+
+Pick based on compliance needs, operational cost, and blast radius if a filter bug slips through.
 
 → [See more in guardrails-data-isolation.md](./guardrails-data-isolation.md)
 
@@ -121,7 +133,7 @@ Compares three storage patterns: shared DB with `tenant_id`, separate schemas/da
 
 `#aws` · `#infrastructure` · `#security`
 
-Platform controls that complement app guardrails: API gateway/WAF, IAM, secrets, DB auth, network, encryption, audit logs, and monitoring.
+Infrastructure and platform controls that complement application-level guardrails on AWS (and similar clouds).
 
 → [See more in guardrails-aws-services.md](./guardrails-aws-services.md)
 
@@ -129,7 +141,9 @@ Platform controls that complement app guardrails: API gateway/WAF, IAM, secrets,
 
 `#testing` · `#multi-tenant` · `#checklist`
 
-Integration-style scenarios (cross-tenant doc access, forged `tenant_id`, cache isolation, tool abuse, injection in chunks) with expected deny or safe outcomes.
+Scenarios to prove tenant isolation, tool safety, and content handling behave as intended.
+
+Use as a checklist for integration tests and release gates.
 
 → [See more in guard-rails-test-use-cases.md](./guard-rails-test-use-cases.md)
 
@@ -137,7 +151,7 @@ Integration-style scenarios (cross-tenant doc access, forged `tenant_id`, cache 
 
 `#checklist` · `#multi-tenant` · `#production`
 
-Seven requirements for trusted tenant resolution, pre-access authorization, DB policies, scoped retrieval, isolated cache/memory/jobs, least-privilege tools, and cross-tenant tests.
+Checklist for a production-grade multi-tenant agent or RAG stack on cloud: rules must be enforced in identity, data, retrieval, async work, and tests—not only in prompts or AI safety APIs.
 
 → [See more in guard-rails-robust-cloud-rules-implementation.md](./guard-rails-robust-cloud-rules-implementation.md)
 
@@ -145,6 +159,8 @@ Seven requirements for trusted tenant resolution, pre-access authorization, DB p
 
 `#architecture` · `#decision-guide` · `#maturity`
 
-Guardrail/tool matrix by MVP → medium → mature, cloud service mapping, and non-negotiable architecture rules.
+When to adopt common guardrails by product stage (small/MVP → medium → large/mature), plus a cloud service map for AWS, Google Cloud, and Azure.
+
+Use with guard-rails category, cloud comparison, and robust implementation.
 
 → [See more in guard-rails-decision-architecturing-assistance.md](./guard-rails-decision-architecturing-assistance.md)

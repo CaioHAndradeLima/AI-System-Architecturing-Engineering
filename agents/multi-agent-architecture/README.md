@@ -21,7 +21,7 @@ Overview and pattern comparison: [agents README](../README.md).
 
 `#sequential` · `#pipeline` · `#rag`
 
-Fixed-order workflow: planner → retrieval → specialist → reviewer → final response. Best when steps depend on each other and you want a simple, auditable trace.
+A linear multi-agent workflow: each stage receives the output of the previous stage, transforms it, and passes control forward until a final user-facing response is produced.
 
 → [See more in sequencial-ai-pipeline.md](./sequencial-ai-pipeline.md)
 
@@ -29,7 +29,7 @@ Fixed-order workflow: planner → retrieval → specialist → reviewer → fina
 
 `#parallel` · `#coordinator` · `#aggregator`
 
-Coordinator fans out to independent agents (e.g. docs, Jira, metrics), then an aggregator merges results. Best when subtasks are I/O-bound and do not need strict ordering.
+A fan-out / fan-in multi-agent workflow: a coordinator decomposes the user request, independent agents work on disjoint subtasks at the same time, and an aggregator merges their outputs into one final response.
 
 → [See more in parallel-agents-architecture.md](./parallel-agents-architecture.md)
 
@@ -37,7 +37,7 @@ Coordinator fans out to independent agents (e.g. docs, Jira, metrics), then an a
 
 `#hierarchical` · `#supervisor` · `#domains`
 
-Main supervisor delegates to domain supervisors; each manages worker agents, then results roll up for the final answer. Best for many domains with nested ownership.
+A tree of supervisors: a main supervisor delegates to domain supervisors, each domain supervisor manages specialist worker agents, and results roll back up the hierarchy for synthesis and the final user response.
 
 → [See more in supervisor-hierarchical.md](./supervisor-hierarchical.md)
 
@@ -45,6 +45,6 @@ Main supervisor delegates to domain supervisors; each manages worker agents, the
 
 `#python` · `#project-layout` · `#implementation`
 
-Reference `app/` tree: API, orchestration graph, agents, services, tools, guardrails, adapters, observability, evaluation, and tests—with import direction and pattern mapping.
+Reference layout for a multi-agent application: API entrypoints, orchestration graph, agents, shared services, tools, guardrails, adapters, observability, and evaluation live in separate packages so you can grow each area without tangling imports.
 
 → [See more in example-python-directories.md](./example-python-directories.md)

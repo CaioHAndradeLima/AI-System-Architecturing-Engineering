@@ -23,7 +23,7 @@ Compacting sits **after** vector search and **before** generation—downstream o
 
 `#decision-guide` · `#storage` · `#hybrid`
 
-Message/chat use cases: DB vs vector vs hybrid vs pgvector/Chroma for prototypes.
+Choose storage and retrieval shape by use case—exact lookups vs semantic search vs hybrid—before compacting hits into LLM context (compacting overview).
 
 → [See more in compact-decision-based.md](./compact-decision-based.md)
 
@@ -31,7 +31,7 @@ Message/chat use cases: DB vs vector vs hybrid vs pgvector/Chroma for prototypes
 
 `#architecture` · `#db-plus-vector` · `#messages`
 
-Dual-write DB + vector index; tenant-filtered search, authorized fetch, then RAG.
+Dual-write message storage: keep authoritative text in a normal database, embed into a vector index for semantic recall—then at question time search with tenant filters, fetch authorized rows, and run RAG.
 
 → [See more in compact-architecture-flow.md](./compact-architecture-flow.md)
 
@@ -39,7 +39,7 @@ Dual-write DB + vector index; tenant-filtered search, authorized fetch, then RAG
 
 `#messages` · `#embedding` · `#trade-offs`
 
-When to embed acknowledgments, incidents, rich one-liners, threads, and high-volume chats.
+Which messages are worth embedding for semantic search—and when to skip, enrich, or summarize—especially for chat/support corpora in compact architecture flow.
 
 → [See more in embedding-queries-short-messages-trade-offs.md](./embedding-queries-short-messages-trade-offs.md)
 

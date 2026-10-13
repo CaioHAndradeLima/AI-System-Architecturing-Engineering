@@ -22,7 +22,7 @@ Output validation sits at the end of [LLM flow](../llm/llm-flow.md) (after infer
 
 `#checklist` · `#implementation` · `#guardrails`
 
-Nine-step output validation checklist through production monitoring and the validation gate.
+Output validation and guardrails checklist—from schemas and citations through policy, failure handling, adversarial tests, and production monitoring.
 
 → [See more in output-implementation-flow.md](./output-implementation-flow.md)
 
@@ -30,7 +30,7 @@ Nine-step output validation checklist through production monitoring and the vali
 
 `#architecture` · `#scale` · `#enterprise` · `#multi-agent`
 
-Schema, groundedness, citations, security, failure, eval, observability, and cost by maturity stage.
+How post-generation validation, delivery, and guardrails evolve from startup/prototype through growing production to enterprise / multi-agent.
 
 → [See more in output-decision-based.md](./output-decision-based.md)
 
@@ -38,7 +38,7 @@ Schema, groundedness, citations, security, failure, eval, observability, and cos
 
 `#validation` · `#groundedness` · `#quality`
 
-Five common post-generation validation strategies—from cheap deterministic gates to LLM-as-a-judge and human review—and when each fits your latency and risk budget.
+How to validate LLM outputs against evidence and policy—pick strategies by risk, cost, and coverage (LLM flow — output validation).
 
 → [See more in output-implementation-strategies.md](./output-implementation-strategies.md)
 
@@ -46,7 +46,7 @@ Five common post-generation validation strategies—from cheap deterministic gat
 
 `#citations` · `#grounding` · `#rag`
 
-Confirm cited IDs exist in the authorized evidence set and that each source supports the claims attached to it before returning Answer + Citations.
+Validate citation IDs and claim support on the generated answer before delivery (context info — source metadata).
 
 → [See more in output-citation-validation.md](./output-citation-validation.md)
 
@@ -54,7 +54,7 @@ Confirm cited IDs exist in the authorized evidence set and that each source supp
 
 `#tools` · `#security` · `#sandbox`
 
-Run LLM-proposed tool calls only after guardrail checks, with sandboxed execution and bounded results returned to the model.
+Tool calls from the model are untrusted until validated, authorized, and executed with least privilege (prompt injection, reliable architecture).
 
 → [See more in output-secure-tool-execution-flow.md](./output-secure-tool-execution-flow.md)
 
@@ -62,7 +62,7 @@ Run LLM-proposed tool calls only after guardrail checks, with sandboxed executio
 
 `#failures` · `#abstain` · `#operations`
 
-Nine validation failure modes mapped to recommended responses—repair prompts, reroute, block, or escalate—so delivery stays reliable under edge cases.
+When post-generation or tool validation fails, respond in a bounded, safe way—repair, abstain, deny, or retry only where policy allows.
 
 → [See more in output-validation-failure-impact.md](./output-validation-failure-impact.md)
 
@@ -70,7 +70,7 @@ Nine validation failure modes mapped to recommended responses—repair prompts, 
 
 `#flow` · `#repair` · `#abstain` · `#escalation`
 
-Validate → classify → schema repair, retrieve/abstain, deny, or fallback.
+After generation, classify validation failures and apply the matching branch—pairs with the failure impact table.
 
 → [See more in output-failure-procedure-flow.md](./output-failure-procedure-flow.md)
 
@@ -78,7 +78,7 @@ Validate → classify → schema repair, retrieve/abstain, deny, or fallback.
 
 `#langgraph` · `#routing` · `#repair` · `#safe-exit`
 
-retrieve → generate → validate → route: END, repair, retrieve_more, safe_exit.
+Validation routing in a LangGraph-style RAG loop: validate after generate, branch to repair, retrieve-more, or safe exit—implements failure procedure flow as graph edges.
 
 → [See more in output-failure-guardrails-via-langchain.md](./output-failure-guardrails-via-langchain.md)
 
@@ -86,7 +86,7 @@ retrieve → generate → validate → route: END, repair, retrieve_more, safe_e
 
 `#metrics` · `#groundedness` · `#citations` · `#guardrails`
 
-Schema, citation, abstain, false-block, repair, validation latency, cost.
+Metrics and tests for post-generation validation—schema, citations, grounding, abstain, blocks, repair, latency, and cost (implementation strategies, failure procedure flow).
 
 → [See more in output-validation-via-test-or-guardrails-metrics.md](./output-validation-via-test-or-guardrails-metrics.md)
 
@@ -94,7 +94,7 @@ Schema, citation, abstain, false-block, repair, validation latency, cost.
 
 `#testing` · `#adversarial` · `#tenant` · `#false-block`
 
-Golden and adversarial cases: citations, JSON, injection, tools, abstain.
+Test and review scenarios for post-generation validation—cover in golden sets, CI eval, and adversarial suites (metrics, guard-rails test use cases).
 
 → [See more in output-validation-guardrails-practices.md](./output-validation-guardrails-practices.md)
 

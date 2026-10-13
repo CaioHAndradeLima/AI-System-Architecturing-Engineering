@@ -22,7 +22,7 @@ Chunking sits after parsing and before embedding in the [ingestion](../ingestion
 
 `#fixed-size` · `#overlap` · `#langchain`
 
-200-token / 40-token overlap example, trade-off table, and `RecursiveCharacterTextSplitter` with character vs token notes.
+A fixed-size window with overlap: split long text into passages small enough for precise retrieval, with shared boundary tokens so facts split across cuts still appear whole in at least one chunk.
 
 → [See more in chunking-simpler-strategy.md](./chunking-simpler-strategy.md)
 
@@ -30,7 +30,9 @@ Chunking sits after parsing and before embedding in the [ingestion](../ingestion
 
 `#structure-aware` · `#headings` · `#tables`
 
-Recursive split at headings → paragraphs → sentences; baseline benefits and when tables/code need special handling.
+Split on document structure first (headings, sections), then fall back to paragraphs and sentences only when a section exceeds the size limit.
+
+Contrast with pure fixed windows in chunking simpler strategy.
 
 → [See more in chunking-recursive-structure-aware.md](./chunking-recursive-structure-aware.md)
 
@@ -38,7 +40,7 @@ Recursive split at headings → paragraphs → sentences; baseline benefits and 
 
 `#semantic` · `#embeddings` · `#topic-boundaries`
 
-Embed sentences, detect meaning shifts, form semantic chunks, then enforce min/max size—with advantage vs trade-off table.
+Split text at topic boundaries instead of fixed token windows: embed sentence-level (or passage-level) units, compare neighbors, cut where meaning shifts, then clamp to min/max chunk sizes.
 
 → [See more in chunking-semantic.md](./chunking-semantic.md)
 
@@ -46,7 +48,7 @@ Embed sentences, detect meaning shifts, form semantic chunks, then enforce min/m
 
 `#hierarchical` · `#parent-child` · `#retrieval`
 
-Search small child chunks, then expand to authorized parent sections for LLM context (e.g. API manual sections).
+Two-level index: small child chunks for precise vector search; larger parent sections for context passed to the LLM after a relevant child hit.
 
 → [See more in chunking-hierarchical-parent-child.md](./chunking-hierarchical-parent-child.md)
 
@@ -54,7 +56,9 @@ Search small child chunks, then expand to authorized parent sections for LLM con
 
 `#architecture` · `#decision-matrix` · `#production`
 
-Document type → recommended starting strategy and rationale; links to specific guides in this folder.
+Decision matrix for choosing a starting chunking strategy in a production RAG system.
+
+Validate choices on your corpus with golden questions and Recall@K (ingestion observability).
 
 → [See more in chunking-architecturing.md](./chunking-architecturing.md)
 
@@ -62,7 +66,7 @@ Document type → recommended starting strategy and rationale; links to specific
 
 `#tools` · `#langchain` · `#llamaindex`
 
-LangChain splitters, LlamaIndex nodes, PyMuPDF, tokenizers, and eval scripts—roles and when to use each.
+Reference tools for splitting, parsing, token counting, and evaluating chunk configs—not a mandatory stack; pick per chunking architecturing strategy.
 
 → [See more in chunking-tools.md](./chunking-tools.md)
 
@@ -70,7 +74,7 @@ LangChain splitters, LlamaIndex nodes, PyMuPDF, tokenizers, and eval scripts—r
 
 `#maturity` · `#mvp-to-enterprise` · `#operations`
 
-Two tables: chunking/parsing/storage/metadata by scale, plus tenancy, failures, evaluation, and scaling triggers.
+How chunking and indexing choices evolve from startup/MVP through medium SaaS to enterprise—plus multi-tenancy, failures, evaluation, and scaling triggers.
 
 → [See more in chunking-architecturing-decision-based.md](./chunking-architecturing-decision-based.md)
 
@@ -78,7 +82,9 @@ Two tables: chunking/parsing/storage/metadata by scale, plus tenancy, failures, 
 
 `#observability` · `#metrics` · `#recall`
 
-Pipeline, chunk quality, retrieval, answer, and cross-tenant metrics—startup vs enterprise practices.
+Metrics for chunking, embedding, indexing, retrieval, and answers—what to measure at startup vs enterprise.
+
+Complements ingestion observability with chunk-specific signals.
 
 → [See more in chunking-metrics-observability.md](./chunking-metrics-observability.md)
 
@@ -86,7 +92,9 @@ Pipeline, chunk quality, retrieval, answer, and cross-tenant metrics—startup v
 
 `#tools` · `#observability` · `#startup-vs-scale`
 
-Logs, metrics, tracing, RAG eval, LangSmith/Langfuse, job orchestration, and error reporting—startup vs scaling stack.
+Observability and orchestration choices for chunking and RAG pipelines at startup vs scale.
+
+Pairs with chunking tools (splitters/parsers) and chunking metrics observability (what to measure).
 
 → [See more in chunking-tools-decision-based.md](./chunking-tools-decision-based.md)
 

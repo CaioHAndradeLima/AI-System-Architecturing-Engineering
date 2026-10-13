@@ -10,7 +10,9 @@
 
 `#flow` · `#offline-online` · `#rag`
 
-Document ingest embed path vs query embed, search, context assembly, and LLM—same model both sides.
+How document vectors (offline) and query vectors (online) meet at similarity search—the core RAG embedding path.
+
+Index and query must use the same embedding model and encoding rules (migration guide, bad practices — model mix).
 
 → [See more in embedding-user-query-flow.md](./embedding-user-query-flow.md)
 
@@ -18,7 +20,7 @@ Document ingest embed path vs query embed, search, context assembly, and LLM—s
 
 `#query` · `#preprocessing` · `#retrieval`
 
-Normalization, language detection, rewriting, expansion, multi-query, and decomposition before embedding.
+Query preprocessing techniques before query embedding—normalize, detect language, rewrite, expand, or decompose the user question.
 
 → [See more in embedding-cleaning-user-query.md](./embedding-cleaning-user-query.md)
 
@@ -26,7 +28,7 @@ Normalization, language detection, rewriting, expansion, multi-query, and decomp
 
 `#conversation` · `#query-rewrite` · `#context`
 
-Standalone vs context-dependent messages; authorized history, rewrite, then embed and retrieve.
+When the latest user message is ambiguous alone, use authorized conversation history to rewrite the question before embed and retrieve—without leaking other users’ or tenants’ context.
 
 → [See more in embedding-user-context-compact-flow.md](./embedding-user-context-compact-flow.md)
 
@@ -34,7 +36,7 @@ Standalone vs context-dependent messages; authorized history, rewrite, then embe
 
 `#latency` · `#cost` · `#production`
 
-Query embed, p95 latency, tenant cost, safe caching, retries, rewriting, and tracing—startup vs enterprise.
+Online query path maturity: embedding API usage, latency SLOs, caching, reliability, rewriting, and observability—startup vs production/enterprise.
 
 → [See more in embedding-user-query-latency-and-cost.md](./embedding-user-query-latency-and-cost.md)
 
@@ -42,6 +44,6 @@ Query embed, p95 latency, tenant cost, safe caching, retries, rewriting, and tra
 
 `#evaluation` · `#recall` · `#ndcg`
 
-Recall@K, MRR, nDCG@K, and latency/cost for judging query encoding and retrieval.
+Metrics to judge whether query encoding and retrieval work on real questions—not just whether the embed API returns 200.
 
 → [See more in embedding-user-query-evaluation.md](./embedding-user-query-evaluation.md)

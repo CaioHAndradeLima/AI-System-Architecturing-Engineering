@@ -26,7 +26,7 @@
 
 `#checklist` · `#implementation` · `#canary`
 
-Eight-step LLM selection and generation checklist through deploy loop.
+LLM model selection and generation checklist—from requirements through eval, inference, reliability, and canary deploy.
 
 → [See more in llm-implementation-flow.md](./llm-implementation-flow.md)
 
@@ -34,7 +34,7 @@ Eight-step LLM selection and generation checklist through deploy loop.
 
 `#index` · `#decision-guide`
 
-Nine topics and key questions—model choice through safe production deployment.
+Topic → key question map for this section—use as a reading order as guides are added under llm/.
 
 → [See more in llm-questions.md](./llm-questions.md)
 
@@ -42,7 +42,7 @@ Nine topics and key questions—model choice through safe production deployment.
 
 `#flow` · `#model-selection` · `#rag`
 
-Retrieval through prompt, model selection box, inference, validation, response.
+End-to-end path from user question to response, with model selection as an explicit gate before inference.
 
 → [See more in llm-flow.md](./llm-flow.md)
 
@@ -50,7 +50,9 @@ Retrieval through prompt, model selection box, inference, validation, response.
 
 `#hosted` · `#open-weight` · `#bedrock` · `#vllm`
 
-Managed APIs vs self-hosted weights—advantages, trade-offs, and flows.
+Hosted (managed API) versus self-hosted open-weight inference for chat/completion models.
+
+For embedding hosting, see embedding hosted vs self-hosted.
 
 → [See more in llm-hosted-vs-open-weight-models.md](./llm-hosted-vs-open-weight-models.md)
 
@@ -58,7 +60,7 @@ Managed APIs vs self-hosted weights—advantages, trade-offs, and flows.
 
 `#benchmark` · `#model-selection` · `#canary`
 
-Requirements → dataset → candidates → measure → choose → canary.
+Benchmark-driven model selection before production—same prompts and evidence across candidates, then quality/SLA gate and canary.
 
 → [See more in select-llm-flow.md](./select-llm-flow.md)
 
@@ -66,7 +68,7 @@ Requirements → dataset → candidates → measure → choose → canary.
 
 `#benchmark` · `#example` · `#sla`
 
-Sample Model A/B/C comparison—quality, latency, cost, tool success.
+Illustrative benchmark after select LLM flow—same dataset, same prompts and evidence; numbers are examples only, not vendor-specific.
 
 → [See more in select-llm-deciding-sample.md](./select-llm-deciding-sample.md)
 
@@ -74,7 +76,7 @@ Sample Model A/B/C comparison—quality, latency, cost, tool success.
 
 `#routing` · `#small-model` · `#sla`
 
-Router to small, strong, or specialized model; merge result.
+Model router sends each request to a small, strong, or specialized model based on task signals—then returns a unified result to the caller.
 
 → [See more in llm-routing-flow.md](./llm-routing-flow.md)
 
@@ -82,7 +84,11 @@ Router to small, strong, or specialized model; merge result.
 
 `#routing` · `#policy` · `#rag`
 
-Task-based model choices—rewrite, RAG, synthesis, schema, supervisor, auth.
+Task → model choice for the router below.
+
+Calibrate “small / medium / strong” on your benchmark, not vendor labels alone.
+
+Router signals: LLM routing flow.
 
 → [See more in llm-routing-policy.md](./llm-routing-policy.md)
 
@@ -90,7 +96,9 @@ Task-based model choices—rewrite, RAG, synthesis, schema, supervisor, auth.
 
 `#temperature` · `#top-p` · `#max-tokens` · `#reasoning`
 
-Sampling, output limits, stop sequences, seed, reasoning effort.
+Inference-time sampling and limits for chat/completion calls.
+
+Version values with prompts and models (prompt versioning).
 
 → [See more in llm-generation-parameters.md](./llm-generation-parameters.md)
 
@@ -98,7 +106,7 @@ Sampling, output limits, stop sequences, seed, reasoning effort.
 
 `#latency` · `#parallel` · `#multi-agent`
 
-Sequential vs parallel agent timing example (~3.3s vs ~2.3s).
+Illustrative end-to-end latency for multi-branch workflows—numbers are examples; measure on your stack (LLM flow).
 
 → [See more in llm-latency-sample.md](./llm-latency-sample.md)
 
@@ -106,7 +114,7 @@ Sequential vs parallel agent timing example (~3.3s vs ~2.3s).
 
 `#metrics` · `#ttft` · `#p95` · `#cost`
 
-TTFT, percentiles, tokens/s, errors, cost, calls and retries.
+What to measure on inference and multi-step LLM paths—complements latency sample (illustrative math) and provider dashboards.
 
 → [See more in llm-latency-variables-measurement.md](./llm-latency-variables-measurement.md)
 
@@ -114,7 +122,7 @@ TTFT, percentiles, tokens/s, errors, cost, calls and retries.
 
 `#streaming` · `#async` · `#ttft`
 
-Token streaming UX vs concurrent awaits for agents and requests.
+Two different ideas: streaming improves perceived latency for one generation; async lets the application do other work (or other requests) while I/O-bound steps run.
 
 → [See more in llm-async-vs-streaming.md](./llm-async-vs-streaming.md)
 
@@ -122,7 +130,9 @@ Token streaming UX vs concurrent awaits for agents and requests.
 
 `#retry` · `#fallback` · `#429` · `#agent-loop`
 
-Failure table plus fallback routing within latency budget.
+How to respond when inference or agent steps fail—retries, limits, fallback models, and when not to retry.
+
+Complements routing policy (happy path) and latency measurement (errors, retries).
 
 → [See more in llm-retry-fallbacks-routing.md](./llm-retry-fallbacks-routing.md)
 
@@ -130,7 +140,11 @@ Failure table plus fallback routing within latency budget.
 
 `#cloud` · `#aws` · `#azure` · `#gcp`
 
-Bedrock, Foundry, Gemini, runtimes, secrets, monitoring, identity.
+Capability → provider map for running LLM applications—model APIs, runtime, secrets, monitoring, identity.
+
+Deploy/runtime stack by cloud: deployment cloud tools.
+
+Broader retrieval/agent stack: retrieval cloud tools.
 
 → [See more in llm-cloud-services.md](./llm-cloud-services.md)
 
@@ -138,7 +152,7 @@ Bedrock, Foundry, Gemini, runtimes, secrets, monitoring, identity.
 
 `#gateway` · `#multi-agent` · `#langgraph`
 
-Supervisor, agents, model gateway, routing, limits, telemetry, fallbacks.
+Reference layout: agents call a shared model gateway instead of provider APIs directly—routing, limits, credentials, tracing, and fallbacks live in one place (multi-agent sample).
 
 → [See more in llm-architecturing.md](./llm-architecturing.md)
 
@@ -146,7 +160,7 @@ Supervisor, agents, model gateway, routing, limits, telemetry, fallbacks.
 
 `#decision-guide` · `#startup` · `#enterprise` · `#gateway`
 
-Model choice, config, cost, latency, tools, reliability, eval, deployment by maturity.
+How chat/completion model and inference ops evolve from startup/prototype through growing production to enterprise / multi-agent.
 
 → [See more in llm-decision-based.md](./llm-decision-based.md)
 

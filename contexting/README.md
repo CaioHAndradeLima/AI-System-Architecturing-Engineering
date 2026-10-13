@@ -24,7 +24,7 @@ Contexting follows [retrieval/search](../retrieval/search/) (candidate passages)
 
 `#flow` · `#rag` · `#prompt`
 
-Full RAG path highlighting context assembly: retrieval + history + permissions + token budget → prompt → LLM → citations.
+End-to-end RAG pipeline with context assembly as the step that merges retrieved candidates with conversation history, permissions, and token budget before the prompt reaches the LLM.
 
 → [See more in context-assembly-flow.md](./context-assembly-flow.md)
 
@@ -32,7 +32,7 @@ Full RAG path highlighting context assembly: retrieval + history + permissions +
 
 `#context` · `#citations` · `#history`
 
-Evidence, history, request context, structured results, and source metadata for the prompt.
+Five inputs that context assembly combines before the LLM—each with a distinct role in grounded, traceable answers (context assembly flow).
 
 → [See more in context-info-for-output.md](./context-info-for-output.md)
 
@@ -40,7 +40,7 @@ Evidence, history, request context, structured results, and source metadata for 
 
 `#algorithm` · `#dedupe` · `#token-budget`
 
-Eight-step assembly from candidates through render → prompt template → LLM.
+Ordered context assembly steps from retrieved candidates to the final prompt—after search returns candidates and before the LLM runs (context assembly flow).
 
 → [See more in context-algorithm.md](./context-algorithm.md)
 
@@ -48,7 +48,9 @@ Eight-step assembly from candidates through render → prompt template → LLM.
 
 `#scoring` · `#weights` · `#freshness`
 
-Multi-signal evidence score: relevance, freshness, authority, task fit.
+Score and select evidence during context assembly (context algorithm — step 4).
+
+Initial retrieval similarity is useful but should not be the only selection criterion.
 
 → [See more in context-scoring-math.md](./context-scoring-math.md)
 
@@ -56,7 +58,7 @@ Multi-signal evidence score: relevance, freshness, authority, task fit.
 
 `#history` · `#summarization` · `#token-budget`
 
-Full thread vs last-N vs summary + recent messages for context assembly.
+How much conversation history to include during context assembly—trade-offs for token budget and follow-up understanding (context info — conversation history).
 
 → [See more in context-conversation-strategies.md](./context-conversation-strategies.md)
 
@@ -64,7 +66,7 @@ Full thread vs last-N vs summary + recent messages for context assembly.
 
 `#mvp` · `#citations` · `#policy`
 
-Question + top chunks + source IDs → LLM answer.
+Minimal context shape for single-corpus policy or doc Q&A: question plus top chunks and citation fields—no multi-agent branches or structured SQL blocks (minimum ingestion MVP).
 
 → [See more in context-simple-document-question.md](./context-simple-document-question.md)
 
@@ -72,7 +74,11 @@ Question + top chunks + source IDs → LLM answer.
 
 `#multi-hop` · `#synthesis` · `#timeline`
 
-Multiple evidence threads, dated organization, LLM causal synthesis.
+Some questions need several evidence threads (metrics, errors, incidents) before the model can answer.
+
+Context assembly gathers and organizes each hop—often with dates—then asks the LLM to synthesize (e.g.
+
+a causal timeline).
 
 → [See more in context-multi-hop-question.md](./context-multi-hop-question.md)
 
@@ -80,7 +86,9 @@ Multiple evidence threads, dated organization, LLM causal synthesis.
 
 `#sql` · `#analytics` · `#structured`
 
-SQL/tool result as compact table with units and dates → LLM explanation.
+Metrics and analytics questions: context is built from validated query results, not (only) document chunks.
+
+The LLM explains numbers that the application already computed or fetched.
 
 → [See more in context-analytical-question.md](./context-analytical-question.md)
 
@@ -88,7 +96,7 @@ SQL/tool result as compact table with units and dates → LLM explanation.
 
 `#langgraph` · `#langchain` · `#workflow`
 
-retrieve → assemble_context → generate → validate → response.
+Example graph nodes for RAG: retrieval, context assembly, generation, and optional validation—state passed between steps (context algorithm).
 
 → [See more in context-assembly-langchain-langgraph.md](./context-assembly-langchain-langgraph.md)
 
@@ -96,7 +104,7 @@ retrieve → assemble_context → generate → validate → response.
 
 `#security` · `#tenancy` · `#provenance`
 
-Seven rules for permissions, untrusted evidence, secrets, tools, tenant isolation, and traceability.
+Rules for safe, trustworthy context assembly—what may enter the prompt and how evidence is handled before and after the LLM.
 
 → [See more in context-reliable-architecture.md](./context-reliable-architecture.md)
 
@@ -104,7 +112,7 @@ Seven rules for permissions, untrusted evidence, secrets, tools, tenant isolatio
 
 `#eval` · `#metrics` · `#groundedness`
 
-Coverage, redundancy, tokens, citations, latency, security tests, abstain.
+Metrics and tests for context assembly quality—whether the prompt carries the right evidence efficiently, safely, and traceably (context algorithm, reliable architecture).
 
 → [See more in context-evaluate-assembling.md](./context-evaluate-assembling.md)
 
@@ -112,7 +120,7 @@ Coverage, redundancy, tokens, citations, latency, security tests, abstain.
 
 `#trade-offs` · `#anti-patterns` · `#token-budget`
 
-Eight assembly mistakes, impact, and better approaches.
+Common context assembly mistakes, why they hurt, and better approaches—companion to evaluate assembling and reliable architecture.
 
 → [See more in context-assembling-trade-offs.md](./context-assembling-trade-offs.md)
 
@@ -120,7 +128,7 @@ Eight assembly mistakes, impact, and better approaches.
 
 `#decision-guide` · `#startup` · `#enterprise` · `#multi-agent`
 
-Assembly, evidence, budget, history, security, eval, observability, and cost by maturity.
+How context assembly and prompt safety evolve from startup/prototype through growing production to enterprise / multi-agent.
 
 → [See more in context-architecturing-decision-based.md](./context-architecturing-decision-based.md)
 

@@ -23,7 +23,7 @@ Storaging connects [ingestion](../ingestion/) outputs, [embedding](../embedding/
 
 `#vector-index` · `#ann` · `#exact-search`
 
-Exact nearest-neighbor vs approximate (ANN) search—recall, latency, and scale trade-offs.
+How the vector index answers similarity search—exact scan vs approximate index—and when each fits your scale and recall targets.
 
 → [See more in storage-strategy.md](./storage-strategy.md)
 
@@ -31,7 +31,9 @@ Exact nearest-neighbor vs approximate (ANN) search—recall, latency, and scale 
 
 `#ann` · `#hnsw` · `#ivf`
 
-Flat exact, HNSW, IVF, and disk-oriented ANN—ideas and trade-offs.
+Vector index structures used for approximate or exact search—how each works and what you trade off.
+
+Builds on storage strategy — exact vs ANN.
 
 → [See more in index-strategies.md](./index-strategies.md)
 
@@ -39,7 +41,7 @@ Flat exact, HNSW, IVF, and disk-oriented ANN—ideas and trade-offs.
 
 `#hnsw` · `#query-path` · `#ann`
 
-Graph navigation from indexed vectors to top-K neighbors at search time.
+Query-time path for HNSW (Hierarchical Navigable Small World): graph traversal to approximate nearest neighbors without scanning every vector.
 
 → [See more in hnsw-flow.md](./hnsw-flow.md)
 
@@ -47,7 +49,9 @@ Graph navigation from indexed vectors to top-K neighbors at search time.
 
 `#decision-guide` · `#faiss` · `#pgvector` · `#managed`
 
-Requirement → starting store (FAISS, Chroma, pgvector, Pinecone, Qdrant, etc.) and why.
+Pick a vector storage starting point by requirement—not by popularity alone.
+
+Pair with index strategies and storage strategy once you know scale and recall targets.
 
 → [See more in storage-architecturing-decision-based.md](./storage-architecturing-decision-based.md)
 
@@ -55,7 +59,7 @@ Requirement → starting store (FAISS, Chroma, pgvector, Pinecone, Qdrant, etc.)
 
 `#decision-guide` · `#startup` · `#enterprise` · `#slo`
 
-Storage choice, ANN tuning, metadata, filtering, updates, deletions, scaling, availability, eval, and cost by maturity stage.
+How vector storage, indexes, metadata, and ops evolve from startup/MVP through medium SaaS to enterprise.
 
 → [See more in storage-indexing-decision-based.md](./storage-indexing-decision-based.md)
 
@@ -63,7 +67,9 @@ Storage choice, ANN tuning, metadata, filtering, updates, deletions, scaling, av
 
 `#metrics` · `#slo` · `#ann` · `#multi-tenant`
 
-Query latency, QPS, index size, freshness, Recall@K, filtered search, deletion propagation, and cost per tenant.
+Key metrics for vector storage and search—latency, capacity, freshness, quality with filters, security, and cost.
+
+Complements ingestion observability and chunking metrics with store- and query-path signals.
 
 → [See more in storage-observability.md](./storage-observability.md)
 
@@ -71,7 +77,9 @@ Query latency, QPS, index size, freshness, Recall@K, filtered search, deletion p
 
 `#tools` · `#prometheus` · `#opentelemetry` · `#langfuse`
 
-Metrics sources, Grafana/Prometheus, OpenTelemetry, LangSmith/Langfuse, and golden-set eval for vector search.
+Tooling for vector-store and search observability—metrics, dashboards, traces, and retrieval quality.
+
+Complements storage observability (what to measure), embedding tools decision-based (embedding/RAG path), and the repo-wide observability tools reference.
 
 → [See more in storage-observability-tools.md](./storage-observability-tools.md)
 

@@ -28,7 +28,9 @@ Embeddings sit after [chunking](../chunking/) and before or inside the vector in
 
 `#decision-guide` · `#model-selection` · `#governance`
 
-Ten selection factors (quality, languages, domain, latency, cost, deployment, ops) with questions to ask before committing.
+Selection factors and questions when choosing an embedding model for RAG.
+
+Validate answers on a golden dataset and Recall@K—not benchmarks alone (chunking metrics observability).
 
 → [See more in embedding-decision-based.md](./embedding-decision-based.md)
 
@@ -36,7 +38,9 @@ Ten selection factors (quality, languages, domain, latency, cost, deployment, op
 
 `#deployment` · `#hosted` · `#self-hosted`
 
-Setup, scaling, cost, latency, governance, and customization—hosted API vs self-hosted inference.
+Compare hosted embedding APIs with self-hosted models when implementing RAG indexing and query embedding.
+
+Use with embedding decision-based (deployment and data governance rows).
 
 → [See more in embedding-hosted-vs-self-hosted.md](./embedding-hosted-vs-self-hosted.md)
 
@@ -44,7 +48,7 @@ Setup, scaling, cost, latency, governance, and customization—hosted API vs sel
 
 `#migration` · `#re-index` · `#blue-green`
 
-Evaluate model B, build new index, switch query+index together, retire model A after validation.
+Safe embedding model change: build and evaluate a new index on model B before switching query embeddings and retiring model A’s index.
 
 → [See more in embedding-migration-ingestion-using-another-model.md](./embedding-migration-ingestion-using-another-model.md)
 
@@ -52,7 +56,9 @@ Evaluate model B, build new index, switch query+index together, retire model A a
 
 `#observability` · `#metrics` · `#recall`
 
-Latency, throughput, cost, cache, dimension consistency, freshness, Recall@K, and answer correctness.
+Metrics for embedding generation, index health, retrieval, and end-to-end RAG—what to measure and why.
+
+Overlaps with chunking metrics observability; this note centers on the embedding and vector-search path.
 
 → [See more in embedding-metrics.md](./embedding-metrics.md)
 
@@ -60,7 +66,9 @@ Latency, throughput, cost, cache, dimension consistency, freshness, Recall@K, an
 
 `#tools` · `#observability` · `#startup-vs-scale`
 
-Logs, traces, RAG eval, LangSmith/Langfuse, and per-tenant embedding usage—starting vs scaling stack.
+Observability and evaluation tooling for embedding and RAG paths—startup vs scaling.
+
+Complements embedding metrics (what to measure) and chunking tools decision-based (broader pipeline ops).
 
 → [See more in embedding-tools-decision-based.md](./embedding-tools-decision-based.md)
 
@@ -68,7 +76,7 @@ Logs, traces, RAG eval, LangSmith/Langfuse, and per-tenant embedding usage—sta
 
 `#maturity` · `#architecture` · `#mvp-to-enterprise`
 
-Eleven areas—from model selection and hosting through caching, upgrades, cost, eval, security, and observability by scale.
+How embedding choices evolve from startup/MVP through medium SaaS to enterprise—model, hosting, ops, cost, eval, and security.
 
 → [See more in embedding-startup-vs-enterprise-architecture-decision-based.md](./embedding-startup-vs-enterprise-architecture-decision-based.md)
 
@@ -76,7 +84,7 @@ Eleven areas—from model selection and hosting through caching, upgrades, cost,
 
 `#anti-patterns` · `#quality` · `#security`
 
-Nine common embedding mistakes with fixes—dimensions, similarity scores, model mix, ACL, hybrid search, re-embed waste.
+Common embedding and retrieval mistakes, why they hurt, and what to do instead.
 
 → [See more in embedding-bad-practices.md](./embedding-bad-practices.md)
 

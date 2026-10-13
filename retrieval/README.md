@@ -22,12 +22,12 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 
 | Section | Summary |
 |---------|---------|
-| [ingestion/](./ingestion/) | Offline pipeline docs (parse → vector index, MVP, multi-source, ops) |
-| [chunking/](./chunking/) | Chunk strategies, parameters, eval, and re-index |
-| [embedding/](./embedding/) | Document embedding, migration, metrics; [queries/](./embedding/queries/) for user query path |
-| [compacting/](./compacting/) | Context assembly, dedupe, truncation, summarization |
-| [storaging/](./storaging/) | Where chunks, vectors, and source records are stored |
-| [search/](./search/) | Query-time dense/sparse/hybrid retrieval, filters, reranking |
+| [ingestion/](./ingestion/) | Offline pipeline: fetch, parse, sync, and index documents into searchable stores. MVP through multi-source flows, procedures, and observability when ingestion breaks retrieval. |
+| [chunking/](./chunking/) | Split documents into retrieval units—fixed, structure-aware, and semantic strategies—with metrics and architecturing choices by scale. |
+| [embedding/](./embedding/) | Document and query embedding models, hosting, migration, and index-time quality. [queries/](./embedding/queries/) covers online query vectors, rewrite, and latency. |
+| [compacting/](./compacting/) | Shrink and prioritize retrieved text before the LLM: dedupe, truncation, summarization, and token budget trade-offs. |
+| [storaging/](./storaging/) | Vector indexes, metadata stores, HNSW lifecycle, freshness, and storage-side observability. |
+| [search/](./search/) | Query-time dense, sparse, and hybrid retrieval, metadata filters, reranking, architecture patterns, and eval metrics. |
 
 ## Guides
 
@@ -35,7 +35,9 @@ Design and operate **retrieval** for LLM applications: indexing, query-time sear
 
 `#flow` · `#rag` · `#hybrid`
 
-Offline ingest through query embedding, retrieval engine (vector, metadata, keyword), reranking, context assembly, and LLM answer.
+End-to-end RAG retrieval path: offline indexing, query-time search (vector + metadata + keyword), optional reranking, context assembly, and generation.
+
+Tenant and ACL filters belong on the retrieval engine branch, not only at the LLM (tenant-scoped retrieval).
 
 → [See more in retrieval-flow.md](./retrieval-flow.md) · [Combined query-time strategies](./search/retrieval-strategies-combined.md)
 
@@ -43,7 +45,9 @@ Offline ingest through query embedding, retrieval engine (vector, metadata, keyw
 
 `#architecture` · `#decision-guide` · `#maturity`
 
-Parsing through evaluation by MVP, medium, and large system—parsers, chunking, embeddings, vector store, retrieval, and eval depth.
+How to evolve parsing → evaluation choices as the system grows from MVP to medium to large scale.
+
+Pair with minimum ingestion MVP and guard-rails decision assistance for security and ops maturity.
 
 → [See more in retrieval-architecturing-decision-based.md](./retrieval-architecturing-decision-based.md)
 

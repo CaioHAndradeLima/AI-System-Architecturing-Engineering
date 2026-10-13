@@ -25,7 +25,7 @@ Typical RAG order: [retrieval](../retrieval/) → [context assembly](../contexti
 
 `#checklist` · `#implementation` · `#eval`
 
-Ten-step prompt engineering checklist with regression loop and rollout.
+Prompt engineering implementation checklist—from separation of trusted instructions through rollout, regression gate, and production monitoring.
 
 → [See more in prompt-implementation-flow.md](./prompt-implementation-flow.md)
 
@@ -33,7 +33,7 @@ Ten-step prompt engineering checklist with regression loop and rollout.
 
 `#taxonomy` · `#system` · `#rag`
 
-System, user, retrieved context, and output format—responsibility and change frequency.
+Four components that make up a typical LLM application prompt—what each owns and how often it changes per request.
 
 → [See more in prompt-categories.md](./prompt-categories.md)
 
@@ -41,7 +41,9 @@ System, user, retrieved context, and output format—responsibility and change f
 
 `#system-prompt` · `#rag` · `#abstain`
 
-Seven-part template: role, objective, evidence, decisions, security, output, failure.
+A system-prompt skeleton for production assistants—especially RAG.
+
+Keep sections explicit and versioned; pair with prompt categories (system vs user vs context vs output).
 
 → [See more in prompt-standard-format.md](./prompt-standard-format.md)
 
@@ -49,7 +51,7 @@ Seven-part template: role, objective, evidence, decisions, security, output, fai
 
 `#few-shot` · `#examples`
 
-When to add input/output samples; domain nuance and repeated failure modes.
+Few-shot prompting means including a small number of input/output examples to demonstrate the behavior you want.
 
 → [See more in prompt-few-shot-providing-samples.md](./prompt-few-shot-providing-samples.md)
 
@@ -57,7 +59,7 @@ When to add input/output samples; domain nuance and repeated failure modes.
 
 `#security` · `#injection` · `#rag`
 
-Untrusted input flow, delimiters, tool validation, output checks, adversarial testing.
+Defense-in-depth for untrusted user input and retrieved documents—from auth through delimiters, instructions, tools, and output checks.
 
 → [See more in prompt-injection.md](./prompt-injection.md)
 
@@ -65,7 +67,9 @@ Untrusted input flow, delimiters, tool validation, output checks, adversarial te
 
 `#versioning` · `#canary` · `#eval`
 
-Golden dataset, regression gate, canary, promotion; per-version audit fields.
+Ship prompt changes like code: golden-set eval, baseline comparison, canary, then full promotion.
+
+Unified prompt/model/retrieval gate: regression and canary releases.
 
 → [See more in prompt-versioning.md](./prompt-versioning.md)
 
@@ -73,7 +77,7 @@ Golden dataset, regression gate, canary, promotion; per-version audit fields.
 
 `#temperature` · `#model` · `#structured-output`
 
-Temperature, max tokens, top-p, stop sequences, schema mode, model choice.
+Generation parameters and model choice affect quality, cost, and reliability—version and eval them with prompts (prompt versioning).
 
 → [See more in prompt-relevant-variables-influences.md](./prompt-relevant-variables-influences.md)
 
@@ -81,7 +85,7 @@ Temperature, max tokens, top-p, stop sequences, schema mode, model choice.
 
 `#decision-guide` · `#startup` · `#enterprise` · `#multi-agent`
 
-Prompt design, few-shot, grounding, schemas, injection, versioning, eval, and ops by maturity.
+How prompting practices evolve from startup/prototype through growing production to enterprise / multi-agent.
 
 → [See more in prompt-architecturing-decision-based.md](./prompt-architecturing-decision-based.md)
 

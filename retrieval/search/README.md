@@ -25,7 +25,9 @@ Search sits after [embedding queries](../embedding/queries/) (query vectors and 
 
 `#flow` · `#rag` · `#pipeline`
 
-Full query-time stack: rewrite, embed, auth, dense/hybrid, merge, rerank, evidence rules, context, LLM.
+Single query-time pipeline that stitches together optional rewrite, embedding, auth filters, dense and/or keyword retrieval, merge, rerank, evidence rules, and context for the LLM.
+
+Each optional stage has a dedicated guide when you need depth.
 
 → [See more in retrieval-strategies-combined.md](./retrieval-strategies-combined.md)
 
@@ -33,7 +35,9 @@ Full query-time stack: rewrite, embed, auth, dense/hybrid, merge, rerank, eviden
 
 `#flow` · `#rag` · `#hybrid`
 
-Full pipeline diagram: ingestion → storage → query embed → retrieval engine → rerank → context → LLM.
+End-to-end RAG retrieval path: offline indexing, query-time search (vector + metadata + keyword), optional reranking, context assembly, and generation.
+
+Tenant and ACL filters belong on the retrieval engine branch, not only at the LLM (tenant-scoped retrieval).
 
 → [See more in retrieval-flow.md](../retrieval-flow.md)
 
@@ -41,7 +45,7 @@ Full pipeline diagram: ingestion → storage → query embed → retrieval engin
 
 `#dense` · `#top-k` · `#recall`
 
-What K means, example values, and how K relates to context assembly and eval.
+K is the number of candidate results you request from the retrieval system (vector search, hybrid fusion, or post-filter pipeline).
 
 → [See more in retrieval-strategy-top-k.md](./retrieval-strategy-top-k.md)
 
@@ -49,7 +53,7 @@ What K means, example values, and how K relates to context assembly and eval.
 
 `#dense` · `#threshold` · `#abstain`
 
-Top-K vs threshold vs both; score filter flow and when to abstain or clarify.
+How similarity scores from vector (or hybrid) search combine with top-K and thresholds to decide what counts as evidence—and when to abstain instead of hallucinating.
 
 → [See more in retrieval-strategy-similarity.md](./retrieval-strategy-similarity.md)
 
@@ -57,7 +61,9 @@ Top-K vs threshold vs both; score filter flow and when to abstain or clarify.
 
 `#metadata` · `#multi-tenant` · `#acl`
 
-Trusted tenant identity → access restrictions → search eligible vectors only.
+Metadata filters restrict search to vectors the caller is allowed to see—before or during vector/keyword retrieval, not after the LLM assembles context.
+
+Example query: *“What is our vacation policy?”*
 
 → [See more in retrieval-strategy-metadata-filtering.md](./retrieval-strategy-metadata-filtering.md)
 
@@ -65,7 +71,7 @@ Trusted tenant identity → access restrictions → search eligible vectors only
 
 `#hybrid` · `#bm25` · `#dense` · `#rrf`
 
-Parallel vector and keyword paths, merge/fuse, optional rerank to final evidence.
+Hybrid retrieval runs dense vector search and keyword search in parallel, then merges or fuses candidates before optional reranking and context assembly (retrieval flow).
 
 → [See more in retrieval-strategy-hybrid-search-vector-plus-keyword.md](./retrieval-strategy-hybrid-search-vector-plus-keyword.md)
 
@@ -73,7 +79,9 @@ Parallel vector and keyword paths, merge/fuse, optional rerank to final evidence
 
 `#rerank` · `#cross-encoder` · `#latency`
 
-Wide initial retrieval, query+passage rerank, narrow final evidence for the LLM.
+A vector database (or hybrid index) can quickly find a set of candidate passages.
+
+A reranker then examines the query and each candidate together to estimate how relevant each passage is to that specific query—before compacting and the LLM (retrieval flow).
 
 → [See more in retrieval-strategy-reranking.md](./retrieval-strategy-reranking.md)
 
@@ -81,7 +89,7 @@ Wide initial retrieval, query+passage rerank, narrow final evidence for the LLM.
 
 `#decision-guide` · `#startup` · `#enterprise` · `#slo`
 
-Retrieval method, K, thresholds, filters, rerank, hybrid, index, fallback, eval, and scaling by maturity.
+How query-time retrieval choices evolve from startup/MVP through medium SaaS to enterprise—method, K, thresholds, filters, rerank, hybrid, index tuning, fallback, eval, and scaling.
 
 → [See more in retrieval-decision-based.md](./retrieval-decision-based.md)
 
@@ -89,7 +97,11 @@ Retrieval method, K, thresholds, filters, rerank, hybrid, index, fallback, eval,
 
 `#metrics` · `#recall` · `#rerank` · `#abstain`
 
-Recall@K, MRR, nDCG, rerank lift, no-result rate, filter failures, context tokens, answer correctness.
+Metrics for query-time retrieval and RAG quality—ranking, rerank lift, latency, filters, context size, answers, and abstention.
+
+Complements storage observability (index/store signals) and chunking metrics (ingestion-side).
+
+For retrieval-only golden-set metrics and when to use each, see evaluate retrieval independently — metrics.
 
 → [See more in retrieval-metrics-observability.md](./retrieval-metrics-observability.md)
 
@@ -105,7 +117,7 @@ Eight-step rollout from dense search through hybrid, rerank, observability, and 
 
 `#agents` · `#supervisor` · `#tool`
 
-Supervisor calls retrieval tool (embed, search, filters, rerank) then main agent answers.
+The main or supervisor agent does not embed vector search inline—it calls a retrieval tool (or service) that runs the full query-time pipeline and returns relevant evidence for answer generation.
 
 → [See more in retrieval-architecture-supervisor-as-service.md](./retrieval-architecture-supervisor-as-service.md)
 
@@ -113,7 +125,7 @@ Supervisor calls retrieval tool (embed, search, filters, rerank) then main agent
 
 `#agents` · `#supervisor` · `#retrieval-agent`
 
-Retrieval agent selects sources, rewrites, strategizes, evaluates, retries; returns evidence to supervisor.
+The supervisor delegates to a Retrieval Agent—an LLM-driven specialist that chooses sources, rewrites queries, picks strategies, searches, judges evidence, and may retry or broaden search before returning results upstream.
 
 → [See more in retrieval-architecture-supervisor-as-agent.md](./retrieval-architecture-supervisor-as-agent.md)
 
@@ -121,7 +133,9 @@ Retrieval agent selects sources, rewrites, strategizes, evaluates, retries; retu
 
 `#agents` · `#supervisor` · `#parallel`
 
-Supervisor → Knowledge / Data / Engineering agents → tools → merge → final answer.
+A supervisor fans out to domain agents (each with its own tools), then aggregates branch results before the final user answer.
+
+Retrieval (RAG / search) is one branch—not the only path to evidence.
 
 → [See more in retrieval-architecture-multi-agent.md](./retrieval-architecture-multi-agent.md)
 
@@ -129,7 +143,7 @@ Supervisor → Knowledge / Data / Engineering agents → tools → merge → fin
 
 `#decision-guide` · `#agents` · `#tool`
 
-Requirement → service, multi-backend tool, routing, retrieval agent, or multi-agent.
+Pick how retrieval is wired into agents by requirement—not by defaulting to an LLM for every search.
 
 → [See more in retrieval-architecture-decision.md](./retrieval-architecture-decision.md)
 
@@ -137,7 +151,7 @@ Requirement → service, multi-backend tool, routing, retrieval agent, or multi-
 
 `#agents` · `#router` · `#rag` · `#sql`
 
-Two-branch supervisor loop: analytics + knowledge tools, merge, evidence sufficiency, response.
+A lightweight multi-branch loop: supervisor routes to a small set of specialists (here Analytics and Knowledge), each uses one primary tool, then the supervisor merges findings and checks evidence sufficiency before the final response.
 
 → [See more in retrieval-architecture-simple-loop.md](./retrieval-architecture-simple-loop.md)
 
@@ -145,7 +159,7 @@ Two-branch supervisor loop: analytics + knowledge tools, merge, evidence suffici
 
 `#eval` · `#agents` · `#security`
 
-Metrics by layer: service, retrieval agent, supervisor, E2E, and ACL/tenant isolation.
+What to measure by layer when retrieval is exposed as a service, agent, or multi-agent workflow—not only end-to-end answer quality.
 
 → [See more in retrieval-architecture-evaluation.md](./retrieval-architecture-evaluation.md)
 
@@ -153,7 +167,9 @@ Metrics by layer: service, retrieval agent, supervisor, E2E, and ACL/tenant isol
 
 `#cloud` · `#aws` · `#azure` · `#gcp`
 
-LLM, agent runtime, vector search, storage, events, SQL, identity, observability by provider.
+Maps retrieval and agent-stack responsibilities to representative services on AWS, Azure, and Google Cloud.
+
+Use with retrieval architecture decision (service vs agent vs multi-agent) and architecture evaluation (what to monitor per layer).
 
 → [See more in retrieval-cloud-tools.md](./retrieval-cloud-tools.md)
 
@@ -161,7 +177,9 @@ LLM, agent runtime, vector search, storage, events, SQL, identity, observability
 
 `#aws` · `#sample` · `#langgraph` · `#opensearch`
 
-API → LangGraph on Fargate → agents → Bedrock/OpenSearch/S3 ingestion stack.
+Reference AWS layout for a supervisor-style app: authenticated API → LangGraph on ECS/Fargate → domain agents → retrieval service and data tools, with an S3-driven ingestion path into Bedrock embeddings and OpenSearch.
+
+Pair with retrieval cloud tools and multi-agent retrieval architecture.
 
 → [See more in retrieval-aws-multi-agent-sample.md](./retrieval-aws-multi-agent-sample.md)
 
