@@ -1,23 +1,19 @@
 # Output implementation strategies
 
-Post-generation checks sit **after** [model inference](../llm/llm-flow.md) and **before** the response is returned. Combine layers: cheap deterministic gates first, heavier judges only when needed ([citation validation](./output-citation-validation.md), [failure responses](./output-validation-failure-impact.md)).
+How to **validate LLM outputs** against evidence and policy—pick strategies by risk, cost, and coverage ([LLM flow — output validation](../llm/llm-flow.md)).
 
 | Strategy | How it works | Trade-off |
 |----------|--------------|-----------|
-| **Deterministic checks** | Parse structured output (JSON schema, regex, required fields); verify citation ID format; enforce length, allowlists, and PII patterns with rule engines. | Fast, cheap, and auditable; misses semantic errors and subtle unsupported claims. |
-| **Claim-to-evidence** | Split the answer into atomic claims; retrieve or map each claim to cited chunks; flag claims with no linked evidence or wrong source IDs. | Strong fit for RAG with explicit citations; depends on chunk quality and segmentation heuristics. |
-| **NLI (natural language inference)** | For each (claim, passage) pair, run an entailment model: supported / contradicted / neutral relative to the cited text. | Good middle ground vs pure LLM judge; weaker on numerics, tables, and long-context reasoning. |
-| **LLM-as-a-judge** | Second model (or same model with a rubric prompt) scores faithfulness, citation use, safety, and format against evidence and policy. | Flexible and catches nuanced issues; higher cost/latency and can inherit judge blind spots—calibrate on eval sets ([evaluate assembling](../contexting/context-evaluate-assembling.md)). |
-| **Human review** | Route low-confidence, high-risk, or policy-triggered outputs to a reviewer queue; approve, edit, or reject before delivery. | Highest trust for regulated or high-stakes content; does not scale for real-time chat without tight triage rules. |
+| **Deterministic checks** | Validate IDs, dates, values, and explicit business rules | Reliable for known rules; limited semantic coverage |
+| **Claim-to-evidence matching** | Extract claims and check each against the evidence | More detailed, but claim extraction can miss or distort claims |
+| **NLI model** | Estimate whether evidence entails or contradicts a claim | Faster than some LLM checks, but can struggle with complex context |
+| **LLM-as-a-judge** | Ask a model to compare the answer with the evidence | Flexible, but adds cost and can make its own mistakes |
+| **Human review** | Have a person verify critical outputs | Strong for high-impact decisions, but expensive and slower |
 
-## Practical checklist
-
-- [ ] Run deterministic schema and citation-ID checks on every response.
-- [ ] Align claim-to-evidence with [context info for output](../contexting/context-info-for-output.md) (paired chunk + source metadata).
-- [ ] Log validation scores and failure class for [retry and routing](../llm/llm-retry-fallbacks-routing.md).
+Layer cheap deterministic checks first; add claim/NLI or judge on high-risk paths. On failure: [validation failure impact](./output-validation-failure-impact.md).
 
 ## See also
 
 - [Citation validation](./output-citation-validation.md)
+- [Evaluate assembling](../contexting/context-evaluate-assembling.md)
 - [Output overview](./README.md)
-- [Guard-rails strategy](../guard-rails/guardrails-strategy.md)
