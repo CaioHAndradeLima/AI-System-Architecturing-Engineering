@@ -42,6 +42,14 @@ Seven end-to-end answer metrics—correctness, relevance, completeness, schema, 
 
 → [See more in evaluate-answer-metrics.md](./evaluate-answer-metrics.md)
 
+### [llm-as-judge-vs-human.md](./llm-as-judge-vs-human.md)
+
+`#eval` · `#llm-judge` · `#human` · `#rubric`
+
+Automated rubric scoring vs expert review—advantages, limits, and when to combine.
+
+→ [See more in llm-as-judge-vs-human.md](./llm-as-judge-vs-human.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)

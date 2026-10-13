@@ -10,6 +10,8 @@ How to **validate LLM outputs** against evidence and policy—pick strategies by
 | **LLM-as-a-judge** | Ask a model to compare the answer with the evidence | Flexible, but adds cost and can make its own mistakes |
 | **Human review** | Have a person verify critical outputs | Strong for high-impact decisions, but expensive and slower |
 
+Compare judge vs human eval: [LLM-as-judge vs human](../observability-evaluation/llm-as-judge-vs-human.md).
+
 Layer cheap deterministic checks first; add claim/NLI or judge on high-risk paths. On failure: [validation failure impact](./output-validation-failure-impact.md).
 
 ## See also

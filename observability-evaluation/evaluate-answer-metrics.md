@@ -23,6 +23,8 @@ End-to-end **answer quality** metrics on golden or sampled conversations—after
 
 If **groundedness** or **citation support** fail but retrieval Recall@K is fine, debug [context assembly](../contexting/context-assembly-flow.md) and [prompt grounding](../prompting/prompt-standard-format.md) before swapping models.
 
+Score subjective metrics with [LLM-as-judge vs human evaluation](./llm-as-judge-vs-human.md) when labels are not purely deterministic.
+
 ## See also
 
 - [Embedding user query evaluation](../retrieval/embedding/queries/embedding-user-query-evaluation.md)
