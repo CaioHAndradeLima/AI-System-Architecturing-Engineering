@@ -29,6 +29,14 @@ Users through gateway, agents, RAG path, infra, and eval → canary → producti
 
 → [See more in production-architecture.md](./production-architecture.md)
 
+### [production-components.md](./production-components.md)
+
+`#stack` · `#fastapi` · `#langgraph` · `#docker` · `#cicd`
+
+Eleven production components with responsibilities and typical implementations.
+
+→ [See more in production-components.md](./production-components.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)

@@ -86,4 +86,5 @@ New incidents should add cases to the **failure dataset** and block promotion un
 
 ## See also
 
+- [Production components](./production-components.md)
 - [Deployment overview](./README.md)
