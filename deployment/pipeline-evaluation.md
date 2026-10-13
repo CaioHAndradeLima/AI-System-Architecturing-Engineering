@@ -66,7 +66,7 @@
 
 | Phase | Docs |
 |-------|------|
-| Static checks | Unit tests for retrieval, agents, guardrails ([example Python — `tests/`](../agents/multi-agent-architecture/example-python-directories.md)) |
+| Static checks | [Pipeline tools and steps — PR tests](./pipeline-tools-steps.md) · [Example Python — `tests/`](../agents/multi-agent-architecture/example-python-directories.md) |
 | Golden set | [Observability decision-based — golden dataset](../observability-evaluation/observability-decision-based.md) · [Guardrails practices](../output/output-validation-guardrails-practices.md) |
 | Candidate matrix | [Select LLM flow](../llm/select-llm-flow.md) · [Prompt versioning](../prompting/prompt-versioning.md) · [Top-K / hybrid](../retrieval/search/retrieval-strategy-top-k.md) |
 | Score each run (layers A–D) | [Pipeline scoring metrics](./pipeline-scoring-metrics.md) |

@@ -93,6 +93,14 @@ Eval report contents and six steps from gate block to gradual promote or rollbac
 
 → [See more in pipeline-criteria-pass-vs-fail.md](./pipeline-criteria-pass-vs-fail.md)
 
+### [pipeline-tools-steps.md](./pipeline-tools-steps.md)
+
+`#ci` · `#pr` · `#golden-set` · `#canary` · `#production`
+
+Seven test types and when they run from PR through production feedback.
+
+→ [See more in pipeline-tools-steps.md](./pipeline-tools-steps.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)
