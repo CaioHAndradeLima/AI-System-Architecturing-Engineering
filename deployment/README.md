@@ -77,6 +77,14 @@ Example baseline vs candidates B/C on recall, answers, citations, latency, cost.
 
 → [See more in pipeline-scoring-quality-gate.md](./pipeline-scoring-quality-gate.md)
 
+### [pipeline-release-policy-simple.md](./pipeline-release-policy-simple.md)
+
+`#release` · `#quality-gate` · `#sla` · `#budget`
+
+PASS criteria: correctness, citations, schema, auth, latency, cost, critical regressions.
+
+→ [See more in pipeline-release-policy-simple.md](./pipeline-release-policy-simple.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)

@@ -17,7 +17,7 @@
 | **B** | Better retrieval and answer quality, slightly higher latency and cost, **citation support holds or improves**—typical **pass** if p95 and cost stay within SLO/budget caps. |
 | **C** | Best Recall@5 and answer correctness, but **citation support drops** vs baseline and latency/cost jump—likely **fail** or require human review unless product explicitly trades safety for recall. |
 
-Gate rules should be **explicit** (e.g. no drop in citation support; p95 ≤ baseline + 20%; cost per 1k ≤ baseline + 25%) and recorded in CI config next to [pipeline evaluation YAML](./pipeline-evaluation-yaml-sample.md).
+Gate rules should be **explicit**—see [pipeline release policy (simple)](./pipeline-release-policy-simple.md) for a concrete PASS checklist—or encode deltas vs baseline (e.g. no drop in citation support) in CI next to [pipeline evaluation YAML](./pipeline-evaluation-yaml-sample.md).
 
 ## Metric → scoring layer
 
