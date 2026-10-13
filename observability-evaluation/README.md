@@ -50,6 +50,14 @@ Automated rubric scoring vs expert review—advantages, limits, and when to comb
 
 → [See more in llm-as-judge-vs-human.md](./llm-as-judge-vs-human.md)
 
+### [tracing-for-observability.md](./tracing-for-observability.md)
+
+`#tracing` · `#spans` · `#multi-agent` · `#latency`
+
+Example trace tree: API → supervisor → agents → validation → response.
+
+→ [See more in tracing-for-observability.md](./tracing-for-observability.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)

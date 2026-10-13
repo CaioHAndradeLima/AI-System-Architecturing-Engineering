@@ -16,7 +16,7 @@
 |------|------------------------|
 | Database and query metrics | Query latency (p50/p95/p99), QPS, search error rate, index size, memory utilization ([storage observability](./storage-observability.md)) |
 | Dashboards and alerts | Freshness, indexing throughput, filtered-search latency |
-| Distributed tracing | End-to-end query path including filter construction and vector search |
+| Distributed tracing | End-to-end query path including filter construction and vector search — [example trace tree](../../observability-evaluation/tracing-for-observability.md) |
 | RAG retrieval tracing | Recall@K regressions tied to traces; cost per query / tenant |
 | Retrieval quality | Recall@K, Precision@K, deletion propagation checks |
 
