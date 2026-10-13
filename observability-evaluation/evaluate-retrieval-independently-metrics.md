@@ -23,5 +23,6 @@ Run **Recall@K** and **empty-result rate** when you change [metadata filtering](
 
 ## See also
 
+- [Poor retrieval scores — debug flow](./poor-retrieval-scores.md)
 - [Retrieval implementation flow](../retrieval/search/retrieval-implementation-flow.md)
 - [Observability & evaluation overview](./README.md)

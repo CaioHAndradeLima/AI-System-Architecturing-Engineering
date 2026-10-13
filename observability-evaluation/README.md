@@ -26,6 +26,14 @@ Recall@K, Precision@K, MRR, nDCG@K, and empty-result rate—when each helps for 
 
 → [See more in evaluate-retrieval-independently-metrics.md](./evaluate-retrieval-independently-metrics.md)
 
+### [poor-retrieval-scores.md](./poor-retrieval-scores.md)
+
+`#debugging` · `#retrieval` · `#recall` · `#ndcg`
+
+If Recall@K / nDCG@K fail, fix retrieval; if they pass, eval context assembly and generation.
+
+→ [See more in poor-retrieval-scores.md](./poor-retrieval-scores.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)
