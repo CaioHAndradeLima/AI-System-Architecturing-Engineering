@@ -17,6 +17,7 @@ Each section **README** lists its guides with tags and a short (2–3 line) summ
 | [output](./output/README.md) | Post-LLM validation: schemas, citations, tool execution, failure repair, LangGraph routing, metrics, and adversarial test cases. |
 | [observability-evaluation](./observability-evaluation/README.md) | Golden datasets, retrieval and answer metrics, tracing, incident investigation, canary/regression, and LLM-as-judge vs human eval. |
 | [deployment](./deployment/README.md) | Production topology, CI evaluation pipeline, quality gates, cloud tooling, and continuous improvement from live feedback. [Decision guide](./deployment/deployment-decision-based.md) by scale. |
+| [design](./design/README.md) | AWS reference architectures by maturity: Lambda basic, ECS Fargate intermediate (with basic vs intermediate component table), and advanced multi-agent edge-to-CI/CD layout. |
 
 ## Adding a new note
 

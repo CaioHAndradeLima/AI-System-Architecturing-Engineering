@@ -1,3 +1,22 @@
+# AWS intermediate architecture
+
+**ECS Fargate** multi-service layout: supervisor and specialists as separate services, async jobs, durable state, and stronger observability. Compare to [AWS basic](./aws-basic.md) before adopting cost and ops complexity.
+
+## Basic vs intermediate
+
+| Component | Basic | Intermediate |
+|-----------|-------|----------------|
+| **Compute** | Lambda | ECS Fargate |
+| **Application structure** | One deployment | Separate supervisor and specialist services |
+| **Scaling** | Lambda concurrency | ECS service autoscaling |
+| **Background jobs** | Usually synchronous | SQS + workers |
+| **State** | Minimal or external | DynamoDB or a suitable persistent store |
+| **Retrieval** | Optional knowledge base | Dedicated retrieval service or managed knowledge base |
+| **Monitoring** | Basic logs | Metrics, dashboards, alarms, distributed tracing |
+
+## Architecture diagram
+
+```
                          USERS
                            |
                            v
@@ -81,5 +100,10 @@
      +-------------------+
      | Alarms / Alerts   |
      +-------------------+
+```
 
+## See also
 
+- [Deployment cloud tools — AWS row](../deployment/deployment-cloud-tools.md)
+- [Tracing for observability](../observability-evaluation/tracing-for-observability.md)
+- [Design overview](./README.md)
