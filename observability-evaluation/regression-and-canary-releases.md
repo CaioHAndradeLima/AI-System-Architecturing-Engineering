@@ -46,6 +46,7 @@ Tag every change with **prompt version**, **model ID**, and **retrieval/index ve
 
 ## See also
 
+- [Deployment overview](../deployment/README.md)
 - [Observability implementation flow](./observability-implementation-flow.md)
 - [Select LLM flow — canary](../llm/select-llm-flow.md)
 - [Retrieval implementation flow](../retrieval/search/retrieval-implementation-flow.md)

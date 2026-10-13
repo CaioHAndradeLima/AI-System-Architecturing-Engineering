@@ -1,6 +1,6 @@
 # AI System Architecturing & Engineering
 
-Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prompting, LLM inference, and related production patterns.
+Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prompting, LLM inference, output validation, observability, deployment, and related production patterns.
 
 ## Contents
 
@@ -14,6 +14,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 | [llm](./llm/) | Chat/completion models, hosting, inference ([decision guide](./llm/llm-decision-based.md)) |
 | [output](./output/) | Post-LLM validation, citations, tool execution, safe delivery |
 | [observability-evaluation](./observability-evaluation/) | Traces, metrics, golden sets, and continuous eval |
+| [deployment](./deployment/) | Release, runtime topology, scaling, secrets, and rollback |
 
 ## Adding a new note
 
