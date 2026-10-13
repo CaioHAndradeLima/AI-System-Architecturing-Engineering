@@ -30,6 +30,14 @@ Runtime, CI/CD, eval pipeline, observability, deploy, security, and cost by matu
 
 → [See more in deployment-decision-based.md](./deployment-decision-based.md)
 
+### [deployment-checklist-flow.md](./deployment-checklist-flow.md)
+
+`#checklist` · `#implementation` · `#cicd` · `#canary`
+
+Sections A–E: application, offline eval, CI/CD, release, continuous improvement.
+
+→ [See more in deployment-checklist-flow.md](./deployment-checklist-flow.md)
+
 ### [production-architecture.md](./production-architecture.md)
 
 `#topology` · `#langgraph` · `#multi-agent` · `#cicd`

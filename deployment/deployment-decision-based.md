@@ -33,6 +33,7 @@ How **runtime, CI/CD, evaluation pipelines, and production operations** evolve f
 
 ## See also
 
+- [Deployment checklist flow](./deployment-checklist-flow.md)
 - [Observability decision-based by scale](../observability-evaluation/observability-decision-based.md)
 - [Deployment implementation — pipeline evaluation](./pipeline-evaluation.md)
 - [Deployment overview](./README.md)

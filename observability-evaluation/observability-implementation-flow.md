@@ -77,7 +77,7 @@ EVALUATION & OBSERVABILITY CHECKLIST
 | 7. Regression tests / thresholds | [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md) · [Retrieval architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md) |
 | 8. Canary and monitor | [Regression and canary releases](./regression-and-canary-releases.md) · [Prompt versioning](../prompting/prompt-versioning.md) |
 | Gate: regression | Rollback, fix, retest — same flow as [regression and canary releases](./regression-and-canary-releases.md) |
-| Full stack | [Retrieval implementation flow](../retrieval/search/retrieval-implementation-flow.md) · [Prompt implementation flow](../prompting/prompt-implementation-flow.md) · [LLM implementation flow](../llm/llm-implementation-flow.md) · [Output implementation flow](../output/output-implementation-flow.md) |
+| Full stack | [Deployment checklist flow](../deployment/deployment-checklist-flow.md) · [Retrieval implementation flow](../retrieval/search/retrieval-implementation-flow.md) · [Prompt implementation flow](../prompting/prompt-implementation-flow.md) · [LLM implementation flow](../llm/llm-implementation-flow.md) · [Output implementation flow](../output/output-implementation-flow.md) |
 
 ## See also
 
