@@ -5,7 +5,7 @@ A **defense-in-depth pipeline** for agent systems: validate and authorize before
 ## Prerequisites
 
 - [Example Python directories](../agents/multi-agent-architecture/example-python-directories.md) (`guardrails/` package placement)
-- Basic [multi-agent orchestration](../agents/multi-agent-architecture/README.md)
+- Basic [multi-agent orchestration](../agents/README.md)
 
 ## Core idea
 

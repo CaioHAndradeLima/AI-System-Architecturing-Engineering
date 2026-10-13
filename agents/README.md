@@ -4,14 +4,14 @@ Tool use, planning loops, memory, and orchestrating multi-step AI workflows.
 
 ## Choosing a multi-agent pattern
 
-| Pattern | Best fit | Main trade-off |
-|---------|----------|----------------|
-| Supervisor | Dynamic routing to specialists | Routing and coordination overhead |
-| Sequential pipeline | Known multi-step process | Latency accumulates |
-| Parallel agents | Independent tasks | Concurrent cost and aggregation complexity |
+| Pattern                 | Best fit                                  | Main trade-off                              |
+|-------------------------|-------------------------------------------|---------------------------------------------|
+| Supervisor              | Dynamic routing to specialists            | Routing and coordination overhead           |
+| Sequential pipeline     | Known multi-step process                  | Latency accumulates                         |
+| Parallel agents         | Independent tasks                         | Concurrent cost and aggregation complexity  |
 | Hierarchical supervisor | Many domains with nested responsibilities | More orchestration and debugging complexity |
 
-Flat **supervisor** routing (single coordinator → specialists) is listed above; a dedicated diagram note can be added when documented.
+Guide files live under [`multi-agent-architecture/`](./multi-agent-architecture/) (no separate index there—this README is the section index).
 
 ---
 
@@ -21,7 +21,8 @@ Flat **supervisor** routing (single coordinator → specialists) is listed above
 
 `#sequential` · `#pipeline` · `#rag`
 
-A linear multi-agent workflow: each stage receives the output of the previous stage, transforms it, and passes control forward until a final user-facing response is produced.
+A linear multi-agent workflow: each stage receives the output of the previous stage, transforms it, and passes control
+forward until a final user-facing response is produced.
 
 → [See more in sequencial-ai-pipeline.md](./multi-agent-architecture/sequencial-ai-pipeline.md)
 
@@ -29,7 +30,8 @@ A linear multi-agent workflow: each stage receives the output of the previous st
 
 `#parallel` · `#coordinator` · `#aggregator`
 
-A fan-out / fan-in multi-agent workflow: a coordinator decomposes the user request, independent agents work on disjoint subtasks at the same time, and an aggregator merges their outputs into one final response.
+A fan-out / fan-in multi-agent workflow: a coordinator decomposes the user request, independent agents work on disjoint
+subtasks at the same time, and an aggregator merges their outputs into one final response.
 
 → [See more in parallel-agents-architecture.md](./multi-agent-architecture/parallel-agents-architecture.md)
 
@@ -37,7 +39,8 @@ A fan-out / fan-in multi-agent workflow: a coordinator decomposes the user reque
 
 `#hierarchical` · `#supervisor` · `#domains`
 
-A tree of supervisors: a main supervisor delegates to domain supervisors, each domain supervisor manages specialist worker agents, and results roll back up the hierarchy for synthesis and the final user response.
+A tree of supervisors: a main supervisor delegates to domain supervisors, each domain supervisor manages specialist
+worker agents, and results roll back up the hierarchy for synthesis and the final user response.
 
 → [See more in supervisor-hierarchical.md](./multi-agent-architecture/supervisor-hierarchical.md)
 
@@ -45,6 +48,8 @@ A tree of supervisors: a main supervisor delegates to domain supervisors, each d
 
 `#python` · `#project-layout` · `#implementation`
 
-Reference layout for a multi-agent application: API entrypoints, orchestration graph, agents, shared services, tools, guardrails, adapters, observability, and evaluation live in separate packages so you can grow each area without tangling imports.
+Reference layout for a multi-agent application: API entrypoints, orchestration graph, agents, shared services, tools,
+guardrails, adapters, observability, and evaluation live in separate packages so you can grow each area without tangling
+imports.
 
 → [See more in example-python-directories.md](./multi-agent-architecture/example-python-directories.md)
