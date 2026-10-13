@@ -1,6 +1,6 @@
 # LLM cloud services
 
-**Capability → provider** map for running LLM applications—model APIs, runtime, secrets, monitoring, identity. Broader retrieval/agent stack: [retrieval cloud tools](../retrieval/search/retrieval-cloud-tools.md). Security layers: [guard-rails cloud comparison](../guard-rails/guard-rails-cloud-comparison.md).
+**Capability → provider** map for running LLM applications—model APIs, runtime, secrets, monitoring, identity. Deploy/runtime stack by cloud: [deployment cloud tools](../deployment/deployment-cloud-tools.md). Broader retrieval/agent stack: [retrieval cloud tools](../retrieval/search/retrieval-cloud-tools.md). Security layers: [guard-rails cloud comparison](../guard-rails/guard-rails-cloud-comparison.md).
 
 | Capability | AWS | Azure | Google Cloud |
 |------------|-----|-------|--------------|

@@ -58,7 +58,7 @@ Keep **retrieval authorization** and **output validation** in application code e
 | Timeouts / retries / circuit breaker | [LLM retry and fallbacks](../llm/llm-retry-fallbacks-routing.md) · [Output failure impact](../output/output-validation-failure-impact.md) |
 | Rate limiting / concurrency | [LLM architecturing — gateway](../llm/llm-architecturing.md) · [Async vs streaming](../llm/llm-async-vs-streaming.md) |
 | Queue and worker | [Ingestion procedures](../retrieval/ingestion/ingestion-procedures.md) |
-| Secrets | [Guard-rails AWS services](../guard-rails/guardrails-aws-services.md) |
+| Secrets | [Deployment cloud tools — secrets row](./deployment-cloud-tools.md) · [Guard-rails AWS services](../guard-rails/guardrails-aws-services.md) |
 | Canary / rollback | [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Prompt versioning](../prompting/prompt-versioning.md) |
 
 ## See also

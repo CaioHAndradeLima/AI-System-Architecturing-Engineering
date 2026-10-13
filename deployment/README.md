@@ -117,6 +117,14 @@ Seven test types and when they run from PR through production feedback.
 
 → [See more in pipeline-tools-steps.md](./pipeline-tools-steps.md)
 
+### [deployment-cloud-tools.md](./deployment-cloud-tools.md)
+
+`#aws` · `#azure` · `#gcp` · `#containers` · `#cicd`
+
+Runtime, registry, secrets, monitoring, queues, model APIs, GitHub Actions identity.
+
+→ [See more in deployment-cloud-tools.md](./deployment-cloud-tools.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)
