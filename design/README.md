@@ -35,7 +35,7 @@ ALB → ECS supervisor and specialist services, async SQS workers, DynamoDB/S3, 
 
 `#aws` · `#route53` · `#waf` · `#multi-agent` · `#eventbridge` · `#cicd`
 
-Route 53 and CloudFront/WAF in front of authenticated API Gateway and ALB; ECS/EKS with multiple agent services, tool layer, OpenSearch and business APIs; EventBridge/SQS workers; S3, DynamoDB, Aurora; observability, SLOs, and GitHub Actions → OIDC → ECR deploy.
+Capability-to-approach table (volume, isolation, jobs, retrieval, cost, faults, deploys, security, quality) plus Route 53/WAF edge, multi-agent ECS/EKS, EventBridge/SQS, layered data, observability, and OIDC CI/CD to ECR.
 
 → [See more in aws-advance.md](./aws-advance.md)
 
