@@ -30,6 +30,42 @@ Capture on the trace or on the relevant span:
 
 Redact **PII and secrets** in span payloads; keep IDs and hashes needed for audit ([reliable architecture](../contexting/context-reliable-architecture.md)).
 
+## A. Operational metrics
+
+- Request success and error rates.
+- p50, p95, and p99 end-to-end latency.
+- Model and retrieval timeouts.
+- Throughput and concurrent requests.
+- Queue depth and ingestion freshness.
+- Retry count and provider rate limits.
+
+Dashboards and alerts: [retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) · [LLM latency](../llm/llm-latency-variables-measurement.md) · [storage observability](../retrieval/storaging/storage-observability.md).
+
+## B. AI quality metrics
+
+- Recall@K, Precision@K, and nDCG@K.
+- Answer correctness and groundedness.
+- Citation support rate.
+- Empty retrieval results and abstention rate.
+- Tool-call success and routing accuracy.
+- Schema validation and repair rates.
+
+These tell you whether the system is finding the right evidence and using it correctly.
+
+Retrieval-only: [evaluate retrieval independently — metrics](./evaluate-retrieval-independently-metrics.md). Answers: [evaluate answer metrics](./evaluate-answer-metrics.md). Validation gates: [output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md). Architecture layers: [retrieval architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md).
+
+## C. Cost and business metrics
+
+- Input/output tokens per request.
+- Model and infrastructure cost per successful task.
+- Task completion and user adoption.
+- User feedback and escalation rate.
+- Resolution time or other domain-specific outcomes.
+
+These tell you whether the system provides enough value to justify its operating cost.
+
+Cost attribution on traces: span-level tokens and provider cost fields above. Scale policies: [output decision-based](../output/output-decision-based.md) · [LLM decision-based](../llm/llm-decision-based.md).
+
 ## See also
 
 - [Tracing for observability — example tree](./tracing-for-observability.md)

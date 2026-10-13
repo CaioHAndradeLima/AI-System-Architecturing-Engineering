@@ -62,7 +62,7 @@ Example trace tree: API → supervisor → agents → validation → response.
 
 `#tracing` · `#attributes` · `#cost` · `#tokens`
 
-Trace ID, versions, retrieval config, durations, tools, retries, validation, cost.
+Span attributes plus operational, AI quality, and cost/business metric groups.
 
 → [See more in tracing-for-observability-metrics.md](./tracing-for-observability-metrics.md)
 
