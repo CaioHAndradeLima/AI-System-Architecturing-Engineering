@@ -45,6 +45,14 @@ PR checks → candidate matrix → score → baseline gate → staging → produ
 
 → [See more in pipeline-evaluation.md](./pipeline-evaluation.md)
 
+### [pipeline-evaluation-components.md](./pipeline-evaluation-components.md)
+
+`#ab-test` · `#model` · `#prompt` · `#retrieval` · `#context`
+
+Five evaluation dimensions, candidate changes, and discovery goals.
+
+→ [See more in pipeline-evaluation-components.md](./pipeline-evaluation-components.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)

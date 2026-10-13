@@ -75,9 +75,10 @@
 | Baseline / quality gate | [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) |
 | Staging → production | [Production architecture](./production-architecture.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md) |
 
-Run every candidate on the **same frozen golden set** with tagged **model, prompt, and retrieval config** on each run record so baseline comparison is fair.
+Run every candidate on the **same frozen golden set** with tagged **model, prompt, and retrieval config** on each run record so baseline comparison is fair. Which axes to vary: [pipeline evaluation components](./pipeline-evaluation-components.md).
 
 ## See also
 
+- [Pipeline evaluation components](./pipeline-evaluation-components.md)
 - [Production components — CI/CD and offline evaluation](./production-components.md)
 - [Deployment overview](./README.md)
