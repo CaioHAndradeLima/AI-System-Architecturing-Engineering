@@ -14,7 +14,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 | [llm](./llm/) | Chat/completion models, hosting, inference ([decision guide](./llm/llm-decision-based.md)) |
 | [output](./output/) | Post-LLM validation, citations, tool execution, safe delivery |
 | [observability-evaluation](./observability-evaluation/) | Traces, metrics, golden sets, and continuous eval |
-| [deployment](./deployment/) | Release, runtime topology, scaling, secrets, and rollback |
+| [deployment](./deployment/) | Release, runtime topology, scaling ([decision guide](./deployment/deployment-decision-based.md)) |
 
 ## Adding a new note
 

@@ -16,10 +16,19 @@ Deployment closes the loop from [LLM](../llm/) inference and [output](../output/
 | **Infrastructure as code** | Reproducible stacks and drift control |
 | **Rollback & incidents** | Safe revert when quality or SLOs break |
 | **Compliance & residency** | Data location, audit, retention |
+| **Scale & maturity** | Runtime, CI/CD, deploy, and feedback by stage |
 
 ---
 
 ## Guides
+
+### [deployment-decision-based.md](./deployment-decision-based.md)
+
+`#architecture` · `#scale` · `#enterprise` · `#multi-agent`
+
+Runtime, CI/CD, eval pipeline, observability, deploy, security, and cost by maturity.
+
+→ [See more in deployment-decision-based.md](./deployment-decision-based.md)
 
 ### [production-architecture.md](./production-architecture.md)
 

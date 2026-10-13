@@ -31,6 +31,7 @@ How **evaluation, tracing, metrics, and release discipline** evolve from startup
 
 ## See also
 
+- [Deployment decision-based by scale](../deployment/deployment-decision-based.md)
 - [Observability implementation flow](./observability-implementation-flow.md)
 - [Output decision-based by scale](../output/output-decision-based.md)
 - [Prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md)
