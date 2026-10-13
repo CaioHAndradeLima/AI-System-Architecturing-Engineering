@@ -65,6 +65,14 @@ retrieve → generate → validate → route: END, repair, retrieve_more, safe_e
 
 → [See more in output-failure-guardrails-via-langchain.md](./output-failure-guardrails-via-langchain.md)
 
+### [output-validation-via-test-or-guardrails-metrics.md](./output-validation-via-test-or-guardrails-metrics.md)
+
+`#metrics` · `#groundedness` · `#citations` · `#guardrails`
+
+Schema, citation, abstain, false-block, repair, validation latency, cost.
+
+→ [See more in output-validation-via-test-or-guardrails-metrics.md](./output-validation-via-test-or-guardrails-metrics.md)
+
 ## Related
 
 - [LLM flow](../llm/llm-flow.md) · [LangGraph validate node](../contexting/context-assembly-langchain-langgraph.md)
