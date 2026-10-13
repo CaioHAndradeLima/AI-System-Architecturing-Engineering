@@ -13,6 +13,7 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 | [prompting](./prompting/) | System prompts, templates, grounding ([decision guide](./prompting/prompt-architecturing-decision-based.md)) |
 | [llm](./llm/) | Chat/completion models, hosting, inference ([decision guide](./llm/llm-decision-based.md)) |
 | [output](./output/) | Post-LLM validation, citations, tool execution, safe delivery |
+| [observability-evaluation](./observability-evaluation/) | Traces, metrics, golden sets, and continuous eval |
 
 ## Adding a new note
 
