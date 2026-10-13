@@ -80,7 +80,7 @@ Knowledge-agent path matches [tracing for observability](../observability-evalua
 |-------|------|
 | CI/CD + offline eval | [Pipeline evaluation](./pipeline-evaluation.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md) |
 | Quality gates → canary → prod | [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) |
-| Monitoring → failure dataset | [Investigate failure](../observability-evaluation/investigate-failure-by-observability-data.md) · [Guardrails practices](../output/output-validation-guardrails-practices.md) |
+| Monitoring → failure dataset | [Production flow](./production-flow.md) · [Investigate failure](../observability-evaluation/investigate-failure-by-observability-data.md) · [Guardrails practices](../output/output-validation-guardrails-practices.md) |
 
 New incidents should add cases to the **failure dataset** and block promotion until [regression tests](../observability-evaluation/regression-and-canary-releases.md) pass.
 

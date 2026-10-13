@@ -37,6 +37,14 @@ Eleven production components with responsibilities and typical implementations.
 
 → [See more in production-components.md](./production-components.md)
 
+### [production-flow.md](./production-flow.md)
+
+`#production` · `#feedback` · `#dataset` · `#loop`
+
+Telemetry → label → offline eval → gate → canary or improve.
+
+→ [See more in production-flow.md](./production-flow.md)
+
 ### [pipeline-evaluation.md](./pipeline-evaluation.md)
 
 `#cicd` · `#golden-set` · `#quality-gate` · `#canary`
