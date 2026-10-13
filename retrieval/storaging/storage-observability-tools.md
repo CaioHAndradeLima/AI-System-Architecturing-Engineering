@@ -1,6 +1,6 @@
 # Storage observability tools
 
-**Tooling** for vector-store and search observability—metrics, dashboards, traces, and retrieval quality. Complements [storage observability](./storage-observability.md) (what to measure) and [embedding tools decision-based](../embedding/embedding-tools-decision-based.md) (embedding/RAG path).
+**Tooling** for vector-store and search observability—metrics, dashboards, traces, and retrieval quality. Complements [storage observability](./storage-observability.md) (what to measure), [embedding tools decision-based](../embedding/embedding-tools-decision-based.md) (embedding/RAG path), and the repo-wide [observability tools](../../observability-evaluation/observability-tools.md) reference.
 
 | Need | Possible tools |
 |------|----------------|

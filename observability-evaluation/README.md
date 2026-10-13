@@ -74,6 +74,14 @@ Ten-step flow from trace to failure category, repro, fix, and safe deploy.
 
 → [See more in investigate-failure-by-observability-data.md](./investigate-failure-by-observability-data.md)
 
+### [observability-tools.md](./observability-tools.md)
+
+`#tools` · `#langsmith` · `#langfuse` · `#opentelemetry` · `#prometheus` · `#eval`
+
+Cross-stack tracing, metrics, cloud monitoring, and custom evaluation tooling for AI systems.
+
+→ [See more in observability-tools.md](./observability-tools.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)
