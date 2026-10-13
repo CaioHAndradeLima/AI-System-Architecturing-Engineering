@@ -38,6 +38,7 @@
              v             v             v
         Retrieval      Answer         Operational
         metrics        quality        metrics
+        (+ safety — see pipeline-scoring-metrics)
              |             |             |
              +-------------+-------------+
                            |
