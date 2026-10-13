@@ -49,6 +49,14 @@ Nine validation failure modes mapped to recommended responses—repair prompts, 
 
 → [See more in output-validation-failure-impact.md](./output-validation-failure-impact.md)
 
+### [output-failure-procedure-flow.md](./output-failure-procedure-flow.md)
+
+`#flow` · `#repair` · `#abstain` · `#escalation`
+
+Validate → classify → schema repair, retrieve/abstain, deny, or fallback.
+
+→ [See more in output-failure-procedure-flow.md](./output-failure-procedure-flow.md)
+
 ## Related
 
 - [LLM flow](../llm/llm-flow.md) · [LangGraph validate node](../contexting/context-assembly-langchain-langgraph.md)
