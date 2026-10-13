@@ -27,6 +27,14 @@ Golden data, retrieval/answer eval, tracing, CI/CD, feedback, and cost by maturi
 
 → [See more in observability-decision-based.md](./observability-decision-based.md)
 
+### [observability-implementation-flow.md](./observability-implementation-flow.md)
+
+`#checklist` · `#implementation` · `#canary` · `#regression`
+
+Eight-step evaluation and observability checklist through canary promote or rollback.
+
+→ [See more in observability-implementation-flow.md](./observability-implementation-flow.md)
+
 ### [evaluate-retrieval-independently-metrics.md](./evaluate-retrieval-independently-metrics.md)
 
 `#retrieval` · `#metrics` · `#golden-set` · `#offline-eval`

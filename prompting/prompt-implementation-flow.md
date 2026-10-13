@@ -95,7 +95,7 @@ PROMPT ENGINEERING — IMPLEMENTATION CHECKLIST
 | 8. Golden regression | [Query evaluation](../retrieval/embedding/queries/embedding-user-query-evaluation.md) · [Evaluate assembling](../contexting/context-evaluate-assembling.md) |
 | 9. Monitor | [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) |
 | 10. Rollout / rollback | [Prompt versioning — canary](./prompt-versioning.md) |
-| Full RAG context path | [Context implementation](../contexting/context-algorithm.md) · [Retrieval implementation](../retrieval/search/retrieval-implementation-flow.md) · [Output implementation flow](../output/output-implementation-flow.md) |
+| Full RAG context path | [Context implementation](../contexting/context-algorithm.md) · [Retrieval implementation](../retrieval/search/retrieval-implementation-flow.md) · [Output implementation flow](../output/output-implementation-flow.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md) |
 
 ## See also
 
