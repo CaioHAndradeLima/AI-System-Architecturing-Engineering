@@ -82,6 +82,14 @@ Cross-stack tracing, metrics, cloud monitoring, and custom evaluation tooling fo
 
 → [See more in observability-tools.md](./observability-tools.md)
 
+### [regression-and-canary-releases.md](./regression-and-canary-releases.md)
+
+`#canary` · `#regression` · `#deploy` · `#rollback`
+
+Test → baseline → reject or canary → monitor → rollback or promote.
+
+→ [See more in regression-and-canary-releases.md](./regression-and-canary-releases.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)

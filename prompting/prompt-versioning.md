@@ -1,6 +1,6 @@
 # Prompt versioning
 
-Ship **prompt changes** like code: golden-set eval, baseline comparison, canary, then full promotion.
+Ship **prompt changes** like code: golden-set eval, baseline comparison, canary, then full promotion. Unified prompt/model/retrieval gate: [regression and canary releases](../observability-evaluation/regression-and-canary-releases.md).
 
 ```
 Prompt v1

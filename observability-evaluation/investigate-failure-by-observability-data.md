@@ -63,9 +63,11 @@ Work **top-down from the trace** when a user report or alert does not match expe
 | **Validation failure** | Schema, citations, policy ([citation validation](../output/output-citation-validation.md)) |
 | **Incorrect business rule** | Deterministic validators, tool auth, policy engine ([secure tool execution](../output/output-secure-tool-execution-flow.md)) |
 
-Add a **regression case** for step 8 whenever step 7 finds a new category you did not test before.
+Add a **regression case** for step 8 whenever step 7 finds a new category you did not test before. Step 10 aligns with [regression and canary releases](./regression-and-canary-releases.md).
 
 ## See also
+
+- [Regression and canary releases](./regression-and-canary-releases.md)
 
 - [LLM-as-judge vs human](./llm-as-judge-vs-human.md)
 - [Observability & evaluation overview](./README.md)
