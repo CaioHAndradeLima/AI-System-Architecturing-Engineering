@@ -58,6 +58,14 @@ Example trace tree: API → supervisor → agents → validation → response.
 
 → [See more in tracing-for-observability.md](./tracing-for-observability.md)
 
+### [tracing-for-observability-metrics.md](./tracing-for-observability-metrics.md)
+
+`#tracing` · `#attributes` · `#cost` · `#tokens`
+
+Trace ID, versions, retrieval config, durations, tools, retries, validation, cost.
+
+→ [See more in tracing-for-observability-metrics.md](./tracing-for-observability-metrics.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)
