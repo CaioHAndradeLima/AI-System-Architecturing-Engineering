@@ -28,7 +28,7 @@ Return response
 | **retrieve_node** | In: user question, tenant identity, optional rewritten query. Out: candidate chunks, scores, errors ([search](../retrieval/search/)) |
 | **assemble_context_node** | In: candidates, history, token budget, permissions. Out: rendered prompt / messages ([context info for output](./context-info-for-output.md), [algorithm steps](./context-algorithm.md)) |
 | **generate_answer_node** | In: assembled messages. Out: draft answer + citation placeholders |
-| **validate_answer_node** | In: draft + evidence. Out: final answer or retry/abstain ([guard-rails](../guard-rails/)) |
+| **validate_answer_node** | In: draft + evidence. Out: final answer or retry/abstain ([guard-rails](../guard-rails/)); graph routing: [output failure guardrails LangGraph](../output/output-failure-guardrails-via-langchain.md) |
 
 Keep **authorization** in retrieve and assemble nodes—do not rely on validate alone to strip leaked content.
 

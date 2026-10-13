@@ -57,6 +57,14 @@ Validate → classify → schema repair, retrieve/abstain, deny, or fallback.
 
 → [See more in output-failure-procedure-flow.md](./output-failure-procedure-flow.md)
 
+### [output-failure-guardrails-via-langchain.md](./output-failure-guardrails-via-langchain.md)
+
+`#langgraph` · `#routing` · `#repair` · `#safe-exit`
+
+retrieve → generate → validate → route: END, repair, retrieve_more, safe_exit.
+
+→ [See more in output-failure-guardrails-via-langchain.md](./output-failure-guardrails-via-langchain.md)
+
 ## Related
 
 - [LLM flow](../llm/llm-flow.md) · [LangGraph validate node](../contexting/context-assembly-langchain-langgraph.md)
