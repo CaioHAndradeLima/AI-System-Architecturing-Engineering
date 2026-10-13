@@ -69,6 +69,14 @@ Four scoring layers: retrieval, answer, operational, and safety/reliability.
 
 → [See more in pipeline-scoring-metrics.md](./pipeline-scoring-metrics.md)
 
+### [pipeline-scoring-quality-gate.md](./pipeline-scoring-quality-gate.md)
+
+`#quality-gate` · `#baseline` · `#regression` · `#cost`
+
+Example baseline vs candidates B/C on recall, answers, citations, latency, cost.
+
+→ [See more in pipeline-scoring-quality-gate.md](./pipeline-scoring-quality-gate.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)

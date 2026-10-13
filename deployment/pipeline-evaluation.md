@@ -73,7 +73,7 @@
 | Retrieval scores | [Evaluate retrieval independently — metrics](../observability-evaluation/evaluate-retrieval-independently-metrics.md) |
 | Answer scores | [Evaluate answer metrics](../observability-evaluation/evaluate-answer-metrics.md) · [LLM-as-judge vs human](../observability-evaluation/llm-as-judge-vs-human.md) |
 | Operational scores | [Tracing metrics](../observability-evaluation/tracing-for-observability-metrics.md) |
-| Baseline / quality gate | [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) |
+| Baseline / quality gate | [Pipeline scoring quality gate — example](./pipeline-scoring-quality-gate.md) · [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) |
 | Staging → production | [Production architecture](./production-architecture.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md) |
 
 Run every candidate on the **same frozen golden set** with tagged **model, prompt, and retrieval config** on each run record so baseline comparison is fair. Which axes to vary: [pipeline evaluation components](./pipeline-evaluation-components.md). Example config shape: [pipeline evaluation YAML sample](./pipeline-evaluation-yaml-sample.md).

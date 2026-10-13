@@ -47,5 +47,6 @@ A candidate can pass **A** and fail **B**—tune [context assembly](../contextin
 
 ## See also
 
+- [Pipeline scoring quality gate — example comparison](./pipeline-scoring-quality-gate.md)
 - [Pipeline evaluation YAML sample](./pipeline-evaluation-yaml-sample.md)
 - [Deployment overview](./README.md)
