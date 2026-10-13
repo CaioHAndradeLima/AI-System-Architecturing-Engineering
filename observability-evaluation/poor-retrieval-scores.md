@@ -23,7 +23,7 @@ reranking
 
 **No** — query rewriting ([context scoring](../contexting/context-scoring-math.md)), chunking ([chunking metrics](../retrieval/chunking/chunking-metrics-observability.md)), embeddings ([query evaluation](../retrieval/embedding/queries/embedding-user-query-evaluation.md)), filters ([metadata filtering](../retrieval/search/retrieval-strategy-metadata-filtering.md)), reranking ([strategy](../retrieval/search/retrieval-strategy-reranking.md)), index ([storage observability](../retrieval/storaging/storage-observability.md)).
 
-**Yes** — [context assembly](../contexting/context-assembly-flow.md), [evaluate assembling](../contexting/context-evaluate-assembling.md), [prompting](../prompting/prompt-implementation-flow.md), [output validation](../output/output-implementation-flow.md).
+**Yes** — [evaluate answer metrics](./evaluate-answer-metrics.md), [context assembly](../contexting/context-assembly-flow.md), [evaluate assembling](../contexting/context-evaluate-assembling.md), [prompting](../prompting/prompt-implementation-flow.md), [output validation](../output/output-implementation-flow.md).
 
 ## See also
 

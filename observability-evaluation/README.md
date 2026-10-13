@@ -34,6 +34,14 @@ If Recall@K / nDCG@K fail, fix retrieval; if they pass, eval context assembly an
 
 → [See more in poor-retrieval-scores.md](./poor-retrieval-scores.md)
 
+### [evaluate-answer-metrics.md](./evaluate-answer-metrics.md)
+
+`#answers` · `#groundedness` · `#citations` · `#abstain`
+
+Seven end-to-end answer metrics—correctness, relevance, completeness, schema, and abstention.
+
+→ [See more in evaluate-answer-metrics.md](./evaluate-answer-metrics.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)

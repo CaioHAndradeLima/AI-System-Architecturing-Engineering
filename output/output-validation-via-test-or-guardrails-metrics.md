@@ -19,7 +19,7 @@ Metrics and tests for **post-generation validation**—schema, citations, ground
 
 | Overlap | See also |
 |---------|----------|
-| Context / answer quality | [Evaluate assembling](../contexting/context-evaluate-assembling.md) |
+| Context / answer quality | [Evaluate answer metrics](../observability-evaluation/evaluate-answer-metrics.md) · [Evaluate assembling](../contexting/context-evaluate-assembling.md) |
 | Retrieval + E2E | [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) |
 | Architecture layers | [Architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md) |
 | Adversarial / tenant | [Guard-rails test use cases](../guard-rails/guard-rails-test-use-cases.md) |

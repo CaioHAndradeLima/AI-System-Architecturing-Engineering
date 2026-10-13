@@ -17,7 +17,7 @@ What to measure **by layer** when retrieval is exposed as a service, agent, or m
 | Retrieval service | [Evaluate retrieval independently — metrics](../../observability-evaluation/evaluate-retrieval-independently-metrics.md) · [Retrieval metrics observability](./retrieval-metrics-observability.md) · [Implementation flow](./retrieval-implementation-flow.md) |
 | Retrieval agent | [Supervisor with retrieval agent](./retrieval-architecture-supervisor-as-agent.md) |
 | Supervisor / multi-agent | [Architecture decision](./retrieval-architecture-decision.md) · [Simple loop](./retrieval-architecture-simple-loop.md) · [Multi-agent](./retrieval-architecture-multi-agent.md) |
-| End-to-end | [Query evaluation](../embedding/queries/embedding-user-query-evaluation.md) |
+| End-to-end | [Evaluate answer metrics](../../observability-evaluation/evaluate-answer-metrics.md) · [Query evaluation](../embedding/queries/embedding-user-query-evaluation.md) |
 | Security | [Guard-rails test use cases](../../guard-rails/guard-rails-test-use-cases.md) · [Metadata filtering](./retrieval-strategy-metadata-filtering.md) |
 
 Eval the **retrieval service** on golden sets before blaming the supervisor for bad answers. Eval **agents and supervisors** with scenarios that require routing, skip, or merge—not only single-hop RAG.

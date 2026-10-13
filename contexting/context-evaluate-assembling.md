@@ -26,6 +26,7 @@ Run **unauthorized-evidence tests** on every change to assembly, caching, or fil
 
 ## See also
 
+- [Evaluate answer metrics](../observability-evaluation/evaluate-answer-metrics.md)
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)
 - [Assembling trade-offs — mistakes and fixes](./context-assembling-trade-offs.md)
 - [Context info for output](./context-info-for-output.md)
