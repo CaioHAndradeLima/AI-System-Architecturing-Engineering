@@ -62,5 +62,6 @@ The **No** path updates prompts, retrieval, or validation, then re-enters the lo
 
 ## See also
 
+- [Production retrieval regression testing — worked example](./production-retrieval-regression-testing.md)
 - [Pipeline tools and steps](./pipeline-tools-steps.md)
 - [Deployment overview](./README.md)

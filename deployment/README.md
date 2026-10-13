@@ -45,6 +45,14 @@ Telemetry → label → offline eval → gate → canary or improve.
 
 → [See more in production-flow.md](./production-flow.md)
 
+### [production-retrieval-regression-testing.md](./production-retrieval-regression-testing.md)
+
+`#regression` · `#retrieval` · `#versioning` · `#golden-set`
+
+Stale-policy example: trace → dataset → version filter → gate → canary.
+
+→ [See more in production-retrieval-regression-testing.md](./production-retrieval-regression-testing.md)
+
 ### [pipeline-evaluation.md](./pipeline-evaluation.md)
 
 `#cicd` · `#golden-set` · `#quality-gate` · `#canary`
