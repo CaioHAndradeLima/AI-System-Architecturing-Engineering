@@ -1,0 +1,37 @@
+# Tracing for observability — metrics and attributes
+
+What to **record on traces and spans** so you can debug latency, cost, quality regressions, and security incidents ([example trace tree](./tracing-for-observability.md)).
+
+Capture on the trace or on the relevant span:
+
+- Trace ID and request ID.
+- Model and prompt version.
+- Retrieval configuration and index version.
+- Duration of each stage.
+- Input and output token counts.
+- Tool calls, results, and errors.
+- Retry counts and timeout events.
+- Validation outcomes.
+- Estimated or provider-reported costs.
+
+## Where each attribute usually lives
+
+| Attribute | Typical spans | Docs |
+|-----------|---------------|------|
+| Trace / request ID | Root + all children | [Guard-rails](../guard-rails/) |
+| Model / prompt version | Query rewrite, LLM generation, validation | [Prompt versioning](../prompting/prompt-versioning.md) · [LLM flow](../llm/llm-flow.md) |
+| Retrieval config / index version | Vector search, reranking | [Storage observability](../retrieval/storaging/storage-observability.md) · [Top-K](../retrieval/search/retrieval-strategy-top-k.md) |
+| Stage duration | Every span | [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) |
+| Token counts | Context assembly, LLM generation | [Context algorithm](../contexting/context-algorithm.md) · [Generation parameters](../llm/llm-generation-parameters.md) |
+| Tool calls / errors | Analytics agent, SQL, secure tools | [Secure tool execution](../output/output-secure-tool-execution-flow.md) |
+| Retries / timeouts | LLM, retrieval, validation | [Retry and fallbacks](../llm/llm-retry-fallbacks-routing.md) · [Failure impact](../output/output-validation-failure-impact.md) |
+| Validation outcomes | Output validation | [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md) |
+| Cost | LLM + rerank + judge spans | [LLM latency sample](../llm/llm-latency-sample.md) · [Output decision-based](../output/output-decision-based.md) |
+
+Redact **PII and secrets** in span payloads; keep IDs and hashes needed for audit ([reliable architecture](../contexting/context-reliable-architecture.md)).
+
+## See also
+
+- [Tracing for observability — example tree](./tracing-for-observability.md)
+- [Storage observability tools](../retrieval/storaging/storage-observability-tools.md)
+- [Observability & evaluation overview](./README.md)

@@ -43,10 +43,11 @@ Trace: request_123
 | **Output validation** | Pass/fail category, repair loops | [Output implementation flow](../output/output-implementation-flow.md) |
 | **Final response** | Time to first byte (if streaming), status | [Output overview](../output/README.md) |
 
-Propagate **trace ID** and **tenant ID** on every span; tag **prompt/model versions** on generation and validation spans for regression analysis ([prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md)).
+Attribute checklist: [tracing for observability — metrics](./tracing-for-observability-metrics.md). Propagate **tenant ID** on every span for per-tenant dashboards ([prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md)).
 
 ## See also
 
+- [Tracing for observability — metrics and attributes](./tracing-for-observability-metrics.md)
 - [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md)
 - [Evaluate answer metrics](./evaluate-answer-metrics.md)
 - [Observability & evaluation overview](./README.md)
