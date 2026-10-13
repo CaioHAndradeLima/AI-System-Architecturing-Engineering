@@ -29,6 +29,7 @@ How **chat/completion model and inference ops** evolve from startup/prototype th
 
 ## See also
 
+- [Output decision-based by scale](../output/output-decision-based.md)
 - [Prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md)
 - [Context architecturing decision-based](../contexting/context-architecturing-decision-based.md)
 - [LLM overview](./README.md)

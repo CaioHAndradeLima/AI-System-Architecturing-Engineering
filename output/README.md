@@ -12,10 +12,19 @@ Output validation sits at the end of [LLM flow](../llm/llm-flow.md) (after infer
 | **Citation validation** | Authorized source IDs and claim–evidence alignment |
 | **Tool execution** | Policy gates, sandboxing, scoped credentials |
 | **Failure handling** | Repair, retry, abstain, and escalation by failure type |
+| **Scale & maturity** | Startup → production → enterprise output policies |
 
 ---
 
 ## Guides
+
+### [output-decision-based.md](./output-decision-based.md)
+
+`#architecture` · `#scale` · `#enterprise` · `#multi-agent`
+
+Schema, groundedness, citations, security, failure, eval, observability, and cost by maturity stage.
+
+→ [See more in output-decision-based.md](./output-decision-based.md)
 
 ### [output-implementation-strategies.md](./output-implementation-strategies.md)
 
