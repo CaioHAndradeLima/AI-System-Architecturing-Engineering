@@ -85,6 +85,14 @@ PASS criteria: correctness, citations, schema, auth, latency, cost, critical reg
 
 → [See more in pipeline-release-policy-simple.md](./pipeline-release-policy-simple.md)
 
+### [pipeline-criteria-pass-vs-fail.md](./pipeline-criteria-pass-vs-fail.md)
+
+`#report` · `#promote` · `#canary` · `#rollback`
+
+Eval report contents and six steps from gate block to gradual promote or rollback.
+
+→ [See more in pipeline-criteria-pass-vs-fail.md](./pipeline-criteria-pass-vs-fail.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)

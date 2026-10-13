@@ -24,8 +24,10 @@ PASS only if:
 | Cost per successful task | C | [LLM decision-based — cost](../llm/llm-decision-based.md) |
 | Critical test categories | Golden / adversarial | [Guardrails practices](../output/output-validation-guardrails-practices.md) |
 
-Tune thresholds per product risk; document **budget** and **critical categories** in repo config next to [pipeline evaluation YAML](./pipeline-evaluation-yaml-sample.md). Any **FAIL** blocks promote in [pipeline evaluation](./pipeline-evaluation.md) until fixed and re-run.
+Tune thresholds per product risk; document **budget** and **critical categories** in repo config next to [pipeline evaluation YAML](./pipeline-evaluation-yaml-sample.md). Any **FAIL** blocks promote in [pipeline evaluation](./pipeline-evaluation.md) until fixed and re-run. **PASS** path: [pipeline criteria pass vs fail](./pipeline-criteria-pass-vs-fail.md).
 
 ## See also
+
+- [Pipeline criteria pass vs fail](./pipeline-criteria-pass-vs-fail.md)
 
 - [Deployment overview](./README.md)
