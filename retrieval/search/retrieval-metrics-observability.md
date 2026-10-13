@@ -1,6 +1,6 @@
 # Retrieval metrics observability
 
-Metrics for **query-time retrieval and RAG quality**—ranking, rerank lift, latency, filters, context size, answers, and abstention. Complements [storage observability](../storaging/storage-observability.md) (index/store signals) and [chunking metrics](../chunking/chunking-metrics-observability.md) (ingestion-side).
+Metrics for **query-time retrieval and RAG quality**—ranking, rerank lift, latency, filters, context size, answers, and abstention. Complements [storage observability](../storaging/storage-observability.md) (index/store signals) and [chunking metrics](../chunking/chunking-metrics-observability.md) (ingestion-side). For **retrieval-only** golden-set metrics and when to use each, see [evaluate retrieval independently — metrics](../../observability-evaluation/evaluate-retrieval-independently-metrics.md).
 
 | Metric | What it measures | Why it matters |
 |--------|------------------|----------------|

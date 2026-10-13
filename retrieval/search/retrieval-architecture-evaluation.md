@@ -14,7 +14,7 @@ What to measure **by layer** when retrieval is exposed as a service, agent, or m
 
 | Layer | See also |
 |-------|----------|
-| Retrieval service | [Retrieval metrics observability](./retrieval-metrics-observability.md) · [Implementation flow](./retrieval-implementation-flow.md) |
+| Retrieval service | [Evaluate retrieval independently — metrics](../../observability-evaluation/evaluate-retrieval-independently-metrics.md) · [Retrieval metrics observability](./retrieval-metrics-observability.md) · [Implementation flow](./retrieval-implementation-flow.md) |
 | Retrieval agent | [Supervisor with retrieval agent](./retrieval-architecture-supervisor-as-agent.md) |
 | Supervisor / multi-agent | [Architecture decision](./retrieval-architecture-decision.md) · [Simple loop](./retrieval-architecture-simple-loop.md) · [Multi-agent](./retrieval-architecture-multi-agent.md) |
 | End-to-end | [Query evaluation](../embedding/queries/embedding-user-query-evaluation.md) |

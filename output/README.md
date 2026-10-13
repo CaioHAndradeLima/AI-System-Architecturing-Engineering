@@ -18,6 +18,14 @@ Output validation sits at the end of [LLM flow](../llm/llm-flow.md) (after infer
 
 ## Guides
 
+### [output-implementation-flow.md](./output-implementation-flow.md)
+
+`#checklist` · `#implementation` · `#guardrails`
+
+Nine-step output validation checklist through production monitoring and the validation gate.
+
+→ [See more in output-implementation-flow.md](./output-implementation-flow.md)
+
 ### [output-decision-based.md](./output-decision-based.md)
 
 `#architecture` · `#scale` · `#enterprise` · `#multi-agent`

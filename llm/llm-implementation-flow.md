@@ -79,7 +79,7 @@ LLM MODEL SELECTION & GENERATION CHECKLIST
 | 3. Golden dataset eval | [Select LLM flow](./select-llm-flow.md) · [Query evaluation](../retrieval/embedding/queries/embedding-user-query-evaluation.md) · [Evaluate assembling](../contexting/context-evaluate-assembling.md) |
 | 4. Generation config | [Generation parameters](./llm-generation-parameters.md) · [Prompt standard format](../prompting/prompt-standard-format.md) |
 | 5. Inference | [Async vs streaming](./llm-async-vs-streaming.md) · [Cloud services](./llm-cloud-services.md) |
-| 6. Tools & outputs | [Routing policy — authorization row](./llm-routing-policy.md) · [Prompt injection](../prompting/prompt-injection.md) |
+| 6. Tools & outputs | [Output implementation flow](../output/output-implementation-flow.md) · [Routing policy — authorization row](./llm-routing-policy.md) · [Prompt injection](../prompting/prompt-injection.md) |
 | 7. Reliability | [Retry, fallbacks, and routing](./llm-retry-fallbacks-routing.md) · [Architecturing — gateway](./llm-architecturing.md) |
 | 8. Measure | [Latency variables and measurement](./llm-latency-variables-measurement.md) · [Deciding sample](./select-llm-deciding-sample.md) |
 | Canary / deploy | [Prompt versioning](../prompting/prompt-versioning.md) |

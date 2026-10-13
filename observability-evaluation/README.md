@@ -18,7 +18,13 @@
 
 ## Guides
 
-_Guides will be added here._
+### [evaluate-retrieval-independently-metrics.md](./evaluate-retrieval-independently-metrics.md)
+
+`#retrieval` · `#metrics` · `#golden-set` · `#offline-eval`
+
+Recall@K, Precision@K, MRR, nDCG@K, and empty-result rate—when each helps for retrieval-only benchmarks.
+
+→ [See more in evaluate-retrieval-independently-metrics.md](./evaluate-retrieval-independently-metrics.md)
 
 ## Related links
 
