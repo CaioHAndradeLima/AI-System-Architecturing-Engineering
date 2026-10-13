@@ -53,6 +53,14 @@ Five evaluation dimensions, candidate changes, and discovery goals.
 
 → [See more in pipeline-evaluation-components.md](./pipeline-evaluation-components.md)
 
+### [pipeline-evaluation-yaml-sample.md](./pipeline-evaluation-yaml-sample.md)
+
+`#config` · `#yaml` · `#experiment` · `#reproducibility`
+
+Pinned model, prompt, retrieval, context, and golden dataset version for one eval run.
+
+→ [See more in pipeline-evaluation-yaml-sample.md](./pipeline-evaluation-yaml-sample.md)
+
 ## Related
 
 - [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Observability implementation flow](../observability-evaluation/observability-implementation-flow.md)
