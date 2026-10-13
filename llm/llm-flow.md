@@ -44,7 +44,7 @@ Response to user
 | Prompt construction | [Prompt categories](../prompting/prompt-categories.md) · [Standard format](../prompting/prompt-standard-format.md) |
 | Model selection | [Select LLM flow](./select-llm-flow.md) · [LLM questions](./llm-questions.md) · [Prompt variables — model choice](../prompting/prompt-relevant-variables-influences.md) |
 | Inference / generation | [Cloud tools — LLM inference](../retrieval/search/retrieval-cloud-tools.md) · [LangGraph generate node](../contexting/context-assembly-langchain-langgraph.md) |
-| Output validation | [Guard-rails](../guard-rails/) · [Evaluate assembling](../contexting/context-evaluate-assembling.md) · [Prompt injection](../prompting/prompt-injection.md) |
+| Output validation | [Output](../output/README.md) · [Guard-rails](../guard-rails/) · [Evaluate assembling](../contexting/context-evaluate-assembling.md) · [Prompt injection](../prompting/prompt-injection.md) |
 
 Selection inputs (complexity, quality, latency, cost, context/tools) should be **explicit in code or config**, not only implied by the prompt.
 
