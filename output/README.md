@@ -73,6 +73,14 @@ Schema, citation, abstain, false-block, repair, validation latency, cost.
 
 → [See more in output-validation-via-test-or-guardrails-metrics.md](./output-validation-via-test-or-guardrails-metrics.md)
 
+### [output-validation-guardrails-practices.md](./output-validation-guardrails-practices.md)
+
+`#testing` · `#adversarial` · `#tenant` · `#false-block`
+
+Golden and adversarial cases: citations, JSON, injection, tools, abstain.
+
+→ [See more in output-validation-guardrails-practices.md](./output-validation-guardrails-practices.md)
+
 ## Related
 
 - [LLM flow](../llm/llm-flow.md) · [LangGraph validate node](../contexting/context-assembly-langchain-langgraph.md)

@@ -24,7 +24,7 @@ Metrics and tests for **post-generation validation**—schema, citations, ground
 | Architecture layers | [Architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md) |
 | Adversarial / tenant | [Guard-rails test use cases](../guard-rails/guard-rails-test-use-cases.md) |
 
-Track **false-block rate** alongside **unsafe-action prevention**—tight guardrails that block good answers harm UX. Log failure category on every [LangGraph validation route](./output-failure-guardrails-via-langchain.md) for repair and abstain dashboards.
+Scenario checklist: [validation guardrails practices](./output-validation-guardrails-practices.md). Track **false-block rate** alongside **unsafe-action prevention**—tight guardrails that block good answers harm UX. Log failure category on every [LangGraph validation route](./output-failure-guardrails-via-langchain.md) for repair and abstain dashboards.
 
 ## See also
 
