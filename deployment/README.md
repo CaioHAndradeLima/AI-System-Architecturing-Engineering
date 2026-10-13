@@ -33,7 +33,7 @@ Users through gateway, agents, RAG path, infra, and eval → canary → producti
 
 `#stack` · `#fastapi` · `#langgraph` · `#docker` · `#cicd`
 
-Eleven production components with responsibilities and typical implementations.
+Application stack (API, LangGraph, retrieval, …) plus production controls (Docker, limits, canary, rollback).
 
 → [See more in production-components.md](./production-components.md)
 

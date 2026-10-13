@@ -1,6 +1,8 @@
 # Production components
 
-**Component map** for a production LLM application—what each layer owns and common implementations. Fits the [production architecture](./production-architecture.md) diagram ([example Python directories](../agents/multi-agent-architecture/example-python-directories.md)).
+**Application stack** and **operational controls** for a production LLM service—fits [production architecture](./production-architecture.md) and [production flow](./production-flow.md) ([example Python directories](../agents/multi-agent-architecture/example-python-directories.md)).
+
+## Application stack
 
 | Component | Responsibility | Typical implementation |
 |-----------|----------------|------------------------|
@@ -32,6 +34,34 @@
 
 Keep **retrieval authorization** and **output validation** in application code even when using LangChain/LangGraph abstractions—do not rely on the framework alone for tenant boundaries ([reliable architecture](../contexting/context-reliable-architecture.md)).
 
+## Production controls
+
+| Control | Purpose | Example implementation |
+|---------|---------|------------------------|
+| **Docker** | Reproducible application packaging | Dockerfile with pinned dependencies |
+| **Health checks** | Detect unhealthy service instances | Liveness and readiness endpoints |
+| **Timeouts** | Bound slow operations | Per-call and end-to-end deadlines |
+| **Retries** | Recover from transient failures | Exponential backoff with jitter |
+| **Rate limiting** | Prevent overload and control spend | Gateway limits and provider quotas |
+| **Concurrency limits** | Protect model and database capacity | Bounded async workers |
+| **Circuit breaker** | Stop repeatedly calling a failing dependency | Temporarily reject or route around failures |
+| **Queue and worker** | Handle long-running ingestion and batch tasks | SQS, Azure Service Bus, Pub/Sub, or equivalent |
+| **Secrets management** | Protect API keys and credentials | Cloud secret manager |
+| **Canary release** | Limit exposure to a new version | Gradual traffic rollout |
+| **Rollback** | Restore a known-good release | Versioned image and configuration |
+
+## Control → guides
+
+| Control | Docs |
+|---------|------|
+| Docker / health | [Pipeline criteria pass vs fail — immutable image](./pipeline-criteria-pass-vs-fail.md) |
+| Timeouts / retries / circuit breaker | [LLM retry and fallbacks](../llm/llm-retry-fallbacks-routing.md) · [Output failure impact](../output/output-validation-failure-impact.md) |
+| Rate limiting / concurrency | [LLM architecturing — gateway](../llm/llm-architecturing.md) · [Async vs streaming](../llm/llm-async-vs-streaming.md) |
+| Queue and worker | [Ingestion procedures](../retrieval/ingestion/ingestion-procedures.md) |
+| Secrets | [Guard-rails AWS services](../guard-rails/guardrails-aws-services.md) |
+| Canary / rollback | [Regression and canary releases](../observability-evaluation/regression-and-canary-releases.md) · [Prompt versioning](../prompting/prompt-versioning.md) |
+
 ## See also
 
+- [Pipeline tools and steps](./pipeline-tools-steps.md)
 - [Deployment overview](./README.md)
