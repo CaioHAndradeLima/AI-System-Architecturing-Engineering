@@ -65,6 +65,8 @@ This is a **sample topology**, not a mandatory bill of materials—swap OpenSear
 
 ## See also
 
+- [Production architecture](../../deployment/production-architecture.md)
+
 - [Guardrails AWS services](../../guard-rails/guardrails-aws-services.md)
 - [Example Python directories](../../agents/multi-agent-architecture/example-python-directories.md)
 - [Search overview](./README.md)

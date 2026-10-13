@@ -21,7 +21,13 @@ Deployment closes the loop from [LLM](../llm/) inference and [output](../output/
 
 ## Guides
 
-_Guides will be listed here as you add markdown files in this folder (same pattern as [observability-evaluation](../observability-evaluation/README.md))._
+### [production-architecture.md](./production-architecture.md)
+
+`#topology` · `#langgraph` · `#multi-agent` · `#cicd`
+
+Users through gateway, agents, RAG path, infra, and eval → canary → production loop.
+
+→ [See more in production-architecture.md](./production-architecture.md)
 
 ## Related
 
