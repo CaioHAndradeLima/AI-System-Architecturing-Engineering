@@ -31,6 +31,7 @@ How **prompting** practices evolve from startup/prototype through growing produc
 
 ## See also
 
+- [Observability decision-based by scale](../observability-evaluation/observability-decision-based.md)
 - [Output decision-based by scale](../output/output-decision-based.md)
 - [Context architecturing decision-based](../contexting/context-architecturing-decision-based.md)
 - [Retrieval architecturing decision-based](../retrieval/retrieval-architecturing-decision-based.md)

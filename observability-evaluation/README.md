@@ -13,10 +13,19 @@
 | Regression & CI | Eval gates on pull requests and before deploy |
 | Continuous evaluation | Sampling and scoring live traffic over time |
 | Multi-agent | Attribution, per-step metrics, and eval when several agents collaborate |
+| Scale & maturity | Golden sets, CI/canary, tracing, and cost by stage |
 
 ---
 
 ## Guides
+
+### [observability-decision-based.md](./observability-decision-based.md)
+
+`#architecture` · `#scale` · `#enterprise` · `#multi-agent`
+
+Golden data, retrieval/answer eval, tracing, CI/CD, feedback, and cost by maturity.
+
+→ [See more in observability-decision-based.md](./observability-decision-based.md)
 
 ### [evaluate-retrieval-independently-metrics.md](./evaluate-retrieval-independently-metrics.md)
 

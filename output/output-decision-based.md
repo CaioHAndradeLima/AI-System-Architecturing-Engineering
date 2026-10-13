@@ -27,7 +27,7 @@ How **post-generation validation, delivery, and guardrails** evolve from startup
 | Business rules | [Implementation strategies — deterministic checks](./output-implementation-strategies.md) · [Secure tool execution flow](./output-secure-tool-execution-flow.md) |
 | Failure handling | [Validation failure impact](./output-validation-failure-impact.md) · [Failure procedure flow](./output-failure-procedure-flow.md) · [LangGraph routing](./output-failure-guardrails-via-langchain.md) |
 | Evaluation | [Validation metrics](./output-validation-via-test-or-guardrails-metrics.md) · [Guardrails practices](./output-validation-guardrails-practices.md) · [Evaluate assembling](../contexting/context-evaluate-assembling.md) |
-| Observability | [Validation metrics](./output-validation-via-test-or-guardrails-metrics.md) · [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) |
+| Observability | [Observability decision-based](../observability-evaluation/observability-decision-based.md) · [Validation metrics](./output-validation-via-test-or-guardrails-metrics.md) |
 | Cost control | [Validation metrics — cost per successful task](./output-validation-via-test-or-guardrails-metrics.md) · [LLM retry and fallbacks](../llm/llm-retry-fallbacks-routing.md) |
 | Multi-agent | [Failure guardrails LangGraph](./output-failure-guardrails-via-langchain.md) · [Retrieval architecture decision](../retrieval/search/retrieval-architecture-decision.md) |
 
