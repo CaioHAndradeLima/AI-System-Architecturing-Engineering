@@ -47,6 +47,7 @@ Attribute checklist: [tracing for observability — metrics](./tracing-for-obser
 
 ## See also
 
+- [Investigate failure by observability data](./investigate-failure-by-observability-data.md)
 - [Tracing for observability — metrics and attributes](./tracing-for-observability-metrics.md)
 - [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md)
 - [Evaluate answer metrics](./evaluate-answer-metrics.md)

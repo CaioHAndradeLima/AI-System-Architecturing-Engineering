@@ -66,6 +66,14 @@ Span attributes plus operational, AI quality, and cost/business metric groups.
 
 → [See more in tracing-for-observability-metrics.md](./tracing-for-observability-metrics.md)
 
+### [investigate-failure-by-observability-data.md](./investigate-failure-by-observability-data.md)
+
+`#incident` · `#debugging` · `#trace` · `#regression`
+
+Ten-step flow from trace to failure category, repro, fix, and safe deploy.
+
+→ [See more in investigate-failure-by-observability-data.md](./investigate-failure-by-observability-data.md)
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)
