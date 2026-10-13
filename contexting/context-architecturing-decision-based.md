@@ -32,5 +32,6 @@ How **context assembly and prompt safety** evolve from startup/prototype through
 
 ## See also
 
+- [Output decision-based by scale](../output/output-decision-based.md)
 - [Retrieval architecturing decision-based](../retrieval/retrieval-architecturing-decision-based.md)
 - [Contexting overview](./README.md)
