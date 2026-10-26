@@ -4,7 +4,7 @@ A **fan-out / fan-in multi-agent workflow**: a coordinator decomposes the user r
 
 ## Prerequisites
 
-- [Sequential AI pipeline](./sequencial-ai-pipeline.md) (contrast: fixed order vs parallel work)
+- [Sequential AI pipeline](./sequential-ai-pipeline.md) (contrast: fixed order vs parallel work)
 - Tool/API access patterns per domain agent (docs, tickets, metrics, etc.)
 
 ## Core idea
@@ -83,5 +83,5 @@ Partial failure is normal: ship an answer that states which sources failed rathe
 ## See also
 
 - [Retrieval multi-agent architecture (supervisor + domain branches)](../../retrieval/search/retrieval-architecture-multi-agent.md)
-- [Sequential AI pipeline](./sequencial-ai-pipeline.md)
+- [Sequential AI pipeline](./sequential-ai-pipeline.md)
 - [Multi-agent architecture index](./README.md)

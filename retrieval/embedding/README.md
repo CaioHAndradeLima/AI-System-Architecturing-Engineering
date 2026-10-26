@@ -19,8 +19,8 @@ Embeddings sit after [chunking](../chunking/) and before or inside the vector in
 
 | Section | Summary |
 |---------|---------|
-| [queries/](./queries/) | Online user question → query vector → evidence |
-| _(this folder)_ | Document embedding, model lifecycle, platform metrics |
+| [queries/](./queries/) | Online path: preprocess and embed the user question, run retrieval, and measure query latency, caching, and eval. |
+| _(this folder)_ | Index-time embedding models, hosted vs self-hosted, migration, metrics, and tooling decision guides. |
 
 ## Guides
 

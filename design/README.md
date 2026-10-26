@@ -23,21 +23,21 @@ API Gateway → Lambda with in-process supervisor and agents, Bedrock LLM, optio
 
 → [See more in aws-basic.md](./aws-basic.md)
 
-### [aws-intermedium.md](./aws-intermedium.md)
+### [aws-intermediate.md](./aws-intermediate.md)
 
 `#aws` · `#ecs` · `#fargate` · `#sqs` · `#dynamodb`
 
 ALB → ECS supervisor and specialist services, async SQS workers, DynamoDB/S3, dedicated retrieval path, metrics and alarms.
 
-→ [See more in aws-intermedium.md](./aws-intermedium.md)
+→ [See more in aws-intermediate.md](./aws-intermediate.md)
 
-### [aws-advance.md](./aws-advance.md)
+### [aws-advanced.md](./aws-advanced.md)
 
 `#aws` · `#route53` · `#waf` · `#multi-agent` · `#eventbridge` · `#cicd`
 
 Capability-to-approach table (volume, isolation, jobs, retrieval, cost, faults, deploys, security, quality) plus Route 53/WAF edge, multi-agent ECS/EKS, EventBridge/SQS, layered data, observability, and OIDC CI/CD to ECR.
 
-→ [See more in aws-advance.md](./aws-advance.md)
+→ [See more in aws-advanced.md](./aws-advanced.md)
 
 ## Related
 

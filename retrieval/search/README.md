@@ -85,6 +85,14 @@ A reranker then examines the query and each candidate together to estimate how r
 
 → [See more in retrieval-strategy-reranking.md](./retrieval-strategy-reranking.md)
 
+### [retrieval-reranker-evaluation-and-fine-tuning.md](./retrieval-reranker-evaluation-and-fine-tuning.md)
+
+`#cross-encoder` · `#golden-set` · `#hard-negatives` · `#latency`
+
+Build query-document relevance labels, compare a pretrained cross-encoder against the retrieval baseline, fine-tune with hard negatives when needed, and gate on ranking quality, latency, and cost.
+
+→ [See more in retrieval-reranker-evaluation-and-fine-tuning.md](./retrieval-reranker-evaluation-and-fine-tuning.md)
+
 ### [retrieval-decision-based.md](./retrieval-decision-based.md)
 
 `#decision-guide` · `#startup` · `#enterprise` · `#slo`

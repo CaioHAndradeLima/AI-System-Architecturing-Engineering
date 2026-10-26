@@ -45,7 +45,7 @@ The tool may skip keyword or rerank when config says so—match [retrieval strat
 
 Python layout sketch: `tools/retrieval.py` or `services/retrieval/` called from `orchestration/supervisor.py` ([example Python directories](../../agents/multi-agent-architecture/example-python-directories.md)).
 
-Related patterns: [sequential AI pipeline](../../agents/multi-agent-architecture/sequencial-ai-pipeline.md) (retrieval as an explicit step), [parallel agents](../../agents/multi-agent-architecture/parallel-agents-architecture.md) (multiple retrieval calls merged upstream).
+Related patterns: [sequential AI pipeline](../../agents/multi-agent-architecture/sequential-ai-pipeline.md) (retrieval as an explicit step), [parallel agents](../../agents/multi-agent-architecture/parallel-agents-architecture.md) (multiple retrieval calls merged upstream).
 
 ## Contract (starting point)
 

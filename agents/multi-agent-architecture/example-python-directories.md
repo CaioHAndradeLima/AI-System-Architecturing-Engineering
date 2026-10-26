@@ -88,7 +88,7 @@ guardrails & observability hook at api + orchestration boundaries
 
 | Pattern | Where it lives |
 |---------|----------------|
-| [Sequential pipeline](./sequencial-ai-pipeline.md) | `graph.py` defines ordered nodes; `state.py` accumulates plan → evidence → draft → review |
+| [Sequential pipeline](./sequential-ai-pipeline.md) | `graph.py` defines ordered nodes; `state.py` accumulates plan → evidence → draft → review |
 | [Parallel agents](./parallel-agents-architecture.md) | `graph.py` fan-out/fan-in; coordinator/aggregator nodes or supervisor routing |
 | [Hierarchical supervisor](./supervisor-hierarchical.md) | `supervisor.py` + nested subgraphs or delegated agent modules |
 

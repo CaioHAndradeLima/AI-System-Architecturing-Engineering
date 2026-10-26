@@ -1,6 +1,6 @@
 # AWS advanced reference architecture
 
-**Production-scale** multi-agent layout: edge protection, authenticated ingress, dedicated agent services, event-driven workers, layered data, full observability, and gated CI/CD. Evolve from [AWS intermediate](./aws-intermedium.md) when you need isolation, durable workflows, and safe release at higher volume.
+**Production-scale** multi-agent layout: edge protection, authenticated ingress, dedicated agent services, event-driven workers, layered data, full observability, and gated CI/CD. Evolve from [AWS intermediate](./aws-intermediate.md) when you need isolation, durable workflows, and safe release at higher volume.
 
 ## Capability approach
 

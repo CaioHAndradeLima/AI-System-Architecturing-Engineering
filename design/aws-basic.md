@@ -1,6 +1,6 @@
 # AWS basic architecture
 
-Single **Lambda** deployment with LangGraph supervisor and in-process specialist agents—good for prototypes and low traffic ([intermediate comparison](./aws-intermedium.md)).
+Single **Lambda** deployment with LangGraph supervisor and in-process specialist agents—good for prototypes and low traffic ([intermediate comparison](./aws-intermediate.md)).
 
 ```
                        USER
@@ -71,5 +71,5 @@ Single **Lambda** deployment with LangGraph supervisor and in-process specialist
 
 ## See also
 
-- [AWS intermediate architecture](./aws-intermedium.md)
+- [AWS intermediate architecture](./aws-intermediate.md)
 - [Design overview](./README.md)

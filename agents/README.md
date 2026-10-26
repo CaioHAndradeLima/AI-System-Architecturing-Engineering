@@ -17,14 +17,22 @@ Guide files live under [`multi-agent-architecture/`](./multi-agent-architecture/
 
 ## Guides
 
-### [sequencial-ai-pipeline.md](./multi-agent-architecture/sequencial-ai-pipeline.md)
+### [agentic-ai-evaluation-and-improvement.md](./agentic-ai-evaluation-and-improvement.md)
+
+`#evaluation` · `#verification` · `#test-time-compute` · `#langgraph`
+
+Evaluate task success, tool use, safety, and efficiency; control test-time scaling and use reviewed evaluation gates for self-improvement.
+
+→ [See more in agentic-ai-evaluation-and-improvement.md](./agentic-ai-evaluation-and-improvement.md)
+
+### [sequential-ai-pipeline.md](./multi-agent-architecture/sequential-ai-pipeline.md)
 
 `#sequential` · `#pipeline` · `#rag`
 
 A linear multi-agent workflow: each stage receives the output of the previous stage, transforms it, and passes control
 forward until a final user-facing response is produced.
 
-→ [See more in sequencial-ai-pipeline.md](./multi-agent-architecture/sequencial-ai-pipeline.md)
+→ [See more in sequential-ai-pipeline.md](./multi-agent-architecture/sequential-ai-pipeline.md)
 
 ### [parallel-agents-architecture.md](./multi-agent-architecture/parallel-agents-architecture.md)
 

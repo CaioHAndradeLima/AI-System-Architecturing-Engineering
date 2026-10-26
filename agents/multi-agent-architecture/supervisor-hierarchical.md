@@ -5,7 +5,7 @@ A **tree of supervisors**: a main supervisor delegates to domain supervisors, ea
 ## Prerequisites
 
 - [Parallel agents architecture](./parallel-agents-architecture.md) (flat coordinator vs layered delegation)
-- [Sequential AI pipeline](./sequencial-ai-pipeline.md) (when to prefer a linear chain instead)
+- [Sequential AI pipeline](./sequential-ai-pipeline.md) (when to prefer a linear chain instead)
 
 ## Core idea
 
@@ -83,5 +83,5 @@ Escalation paths: a worker can signal “out of scope” to its domain superviso
 ## See also
 
 - [Parallel agents architecture](./parallel-agents-architecture.md)
-- [Sequential AI pipeline](./sequencial-ai-pipeline.md)
+- [Sequential AI pipeline](./sequential-ai-pipeline.md)
 - [Multi-agent architecture index](./README.md)
