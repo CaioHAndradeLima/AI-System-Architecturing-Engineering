@@ -26,6 +26,11 @@ Reference **tracing, metrics, and evaluation platforms** for AI systems—what e
 
 LangSmith, Langfuse, and cloud dashboards rarely encode **tenant ACL boundaries**, **citation-to-source rules**, or **domain-specific business logic** on their own. Keep a **custom Python evaluation suite** (golden datasets plus deterministic checks) for filtered-search isolation, citation support, schema contracts, and policy outcomes—aligned with [guard-rails test use cases](../guard-rails/guard-rails-test-use-cases.md) and [output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md).
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — platform capability matrix in `observability_tools.py` (no vendor SDK deploy). Key: `observability_tools`.
+
 ## See also
 
 - [Observability & evaluation overview](./README.md)

@@ -66,6 +66,11 @@ These tell you whether the system provides enough value to justify its operating
 
 Cost attribution on traces: span-level tokens and provider cost fields above. Scale policies: [output decision-based](../output/output-decision-based.md) · [LLM decision-based](../llm/llm-decision-based.md).
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — latency, token, and cost rollups in `tracing_metrics.py`. Key: `tracing_metrics`.
+
 ## See also
 
 - [Tracing for observability — example tree](./tracing-for-observability.md)

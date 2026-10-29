@@ -79,6 +79,11 @@ EVALUATION & OBSERVABILITY CHECKLIST
 | Gate: regression | Rollback, fix, retest — same flow as [regression and canary releases](./regression-and-canary-releases.md) |
 | Full stack | [Deployment checklist flow](../deployment/deployment-checklist-flow.md) · [Retrieval implementation flow](../retrieval/search/retrieval-implementation-flow.md) · [Prompt implementation flow](../prompting/prompt-implementation-flow.md) · [LLM implementation flow](../llm/llm-implementation-flow.md) · [Output implementation flow](../output/output-implementation-flow.md) |
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — checklist coverage in `implementation_flow.py` and `evaluate_implementation_checklist`. Keys: `implementation_flow`, `implementation_checklist`.
+
 ## See also
 
 - [Observability & evaluation overview](./README.md)

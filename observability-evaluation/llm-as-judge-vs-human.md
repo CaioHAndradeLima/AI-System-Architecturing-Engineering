@@ -40,6 +40,11 @@ Define a **shared rubric** and calibration set so reviewers align; use human lab
 | New product or domain | Human labels first, then distill rubric for judge |
 | Judge drift or false passes | Re-calibrate with human evaluation |
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — offline rubric struct in `llm_judge.py`; optional live judge when API keys are set (CI skips). Key: `llm_judge_vs_human`.
+
 ## See also
 
 - [Output decision-based by scale](../output/output-decision-based.md)

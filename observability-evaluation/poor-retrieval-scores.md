@@ -25,6 +25,11 @@ reranking
 
 **Yes** — [evaluate answer metrics](./evaluate-answer-metrics.md), [context assembly](../contexting/context-assembly-flow.md), [evaluate assembling](../contexting/context-evaluate-assembling.md), [prompting](../prompting/prompt-implementation-flow.md), [output validation](../output/output-implementation-flow.md).
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — `poor_retrieval.next_fix_branch` and `evaluate-scenarios` (`poor_retrieval_scores`, `scenarios.poor_retrieval`).
+
 ## See also
 
 - [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md)

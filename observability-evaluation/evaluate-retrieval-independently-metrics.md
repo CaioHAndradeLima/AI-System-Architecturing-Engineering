@@ -21,6 +21,11 @@ Measure **search and ranking alone** on a golden dataset (query → known releva
 
 Run **Recall@K** and **empty-result rate** when you change [metadata filtering](../retrieval/search/retrieval-strategy-metadata-filtering.md), [top-K](../retrieval/search/retrieval-strategy-top-k.md), or [storage / index](../retrieval/storaging/storage-observability.md) settings. Use **MRR** or **nDCG@K** when order within K drives which chunk the model sees first.
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — Recall@K, nDCG@K, and labeled hit rate in `retrieval_metrics.py`; scorecard via `evaluate-pipeline --profile ci-observability-eval`. Map: `evaluate-full` → `retrieval_independent_metrics` ([LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/observability-strategies/blob/main/docs/LAB_COVERAGE.md)).
+
 ## See also
 
 - [Poor retrieval scores — debug flow](./poor-retrieval-scores.md)

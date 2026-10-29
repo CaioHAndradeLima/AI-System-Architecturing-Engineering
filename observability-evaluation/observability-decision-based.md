@@ -29,6 +29,11 @@ How **evaluation, tracing, metrics, and release discipline** evolve from startup
 | Cost control | [LLM decision-based](../llm/llm-decision-based.md) · [Output decision-based](../output/output-decision-based.md) |
 | Multi-agent | [Tracing example tree](./tracing-for-observability.md) · [Retrieval architecture evaluation](../retrieval/search/retrieval-architecture-evaluation.md) |
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — maturity snapshot in `maturity.py` (`production_deployment_only` lists out-of-scope live infra). Keys: `maturity`, `decision_based`.
+
 ## See also
 
 - [Deployment decision-based by scale](../deployment/deployment-decision-based.md)
