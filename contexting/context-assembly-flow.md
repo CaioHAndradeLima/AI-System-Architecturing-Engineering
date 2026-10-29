@@ -46,6 +46,10 @@ End-to-end **RAG pipeline** with **context assembly** as the step that merges re
 
 What to put in the assembled prompt: [context info for output](./context-info-for-output.md). How to build it: [context algorithm](./context-algorithm.md).
 
+## Code lab
+
+- [contexting-strategies — `evaluate-full`](https://github.com/CaioHAndradeLima/contexting-strategies) — `assembly_flow` stage trace (retrieve → rerank → assemble → sufficiency) and full RAG pipeline metrics; see [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/contexting-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Prompting](../prompting/) — templates and instructions after assembly

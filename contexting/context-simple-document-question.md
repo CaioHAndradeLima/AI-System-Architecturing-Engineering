@@ -25,6 +25,10 @@ Skip conversation history when turns are independent; add [conversation strategi
 
 For scoring, dedupe, and token limits before this minimal prompt, use the full [context algorithm](./context-algorithm.md) or a subset (validate → select → render).
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `simple_document_mvp` assembler and `evaluate-full` → `simple_document` (question + cited chunks only, tenant-safe).
+
 ## See also
 
 - [Multi-hop question](./context-multi-hop-question.md)

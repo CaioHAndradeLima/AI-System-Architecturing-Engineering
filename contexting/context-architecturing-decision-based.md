@@ -30,6 +30,10 @@ How **context assembly and prompt safety** evolve from startup/prototype through
 | Failure & cost | [Similarity abstain](../retrieval/search/retrieval-strategy-similarity.md) · [Retrieval metrics](../retrieval/search/retrieval-metrics-observability.md) |
 | Multi-agent | [Architecture decision (retrieval)](../retrieval/search/retrieval-architecture-decision.md) · [Multi-agent sample](../retrieval/search/retrieval-architecture-multi-agent.md) |
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `evaluate-full` → `maturity` lists lab capabilities vs enterprise gaps for each row in this guide.
+
 ## See also
 
 - [Output decision-based by scale](../output/output-decision-based.md)

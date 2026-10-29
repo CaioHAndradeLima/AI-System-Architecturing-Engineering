@@ -30,9 +30,12 @@ Organize evidence with **timestamps, source IDs, and section headers** so the mo
 
 Eval: answer correctness and groundedness on questions that require more than one corpus ([retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md)).
 
+## Code lab
+
+- [contexting-strategies — `evaluate-scenarios`](https://github.com/CaioHAndradeLima/contexting-strategies) — per-hop retrieval and hop-coverage metrics (`multihop_golden.json`); also in `evaluate-full` → `scenarios.multihop`.
+
 ## See also
 
-- [contexting-strategies — `evaluate-scenarios`](https://github.com/CaioHAndradeLima/contexting-strategies) — per-hop retrieval and hop-coverage metrics (`multihop_golden.json`)
 - [Simple document question](./context-simple-document-question.md) — single-hop contrast
 - [Context assembly flow](./context-assembly-flow.md)
 - [Contexting overview](./README.md)

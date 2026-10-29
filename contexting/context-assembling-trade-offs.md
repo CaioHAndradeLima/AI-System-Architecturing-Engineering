@@ -26,6 +26,10 @@ Common **context assembly mistakes**, why they hurt, and better approaches—com
 | Task-specific context | [Multi-agent sample](../retrieval/search/retrieval-aws-multi-agent-sample.md) · [LangGraph nodes](./context-assembly-langchain-langgraph.md) |
 | Benchmark quality vs length | [Retrieval metrics observability](../retrieval/search/retrieval-metrics-observability.md) |
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — compare `naive_retrieval_order` vs pipeline in `evaluate`; `evaluate-full` → `tradeoffs` maps strategies to anti-pattern flags from this table.
+
 ## See also
 
 - [Contexting overview](./README.md)
