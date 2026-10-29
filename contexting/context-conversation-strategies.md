@@ -20,8 +20,10 @@ Pair with **contextual query resolution** so retrieval uses a standalone query e
 
 Message compaction and DB+vector chat patterns: [compacting](../retrieval/compacting/) · [user context compact flow](../retrieval/embedding/queries/embedding-user-context-compact-flow.md).
 
-## See also
+## Code lab
 
-- [contexting-strategies — `evaluate-scenarios`](https://github.com/CaioHAndradeLima/contexting-strategies) — `full_history`, `last_n`, and `summary_plus_recent` with split history/evidence budgets (`threads.json`)
+- [contexting-strategies — `evaluate-scenarios`](https://github.com/CaioHAndradeLima/contexting-strategies) — `full_history`, `last_n`, and `summary_plus_recent` with split history/evidence budgets (`threads.json`); `evaluate-full` → `query_resolution` for resolved vs ambiguous follow-ups.
+
+## See also
 - [Context algorithm — token budget](./context-algorithm.md)
 - [Contexting overview](./README.md)

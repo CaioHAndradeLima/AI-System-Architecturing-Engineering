@@ -42,6 +42,10 @@ Keep **authorization** in retrieve and assemble nodes—do not rely on validate 
 
 LangChain/LangGraph APIs change—treat node names as **roles**, not framework-specific requirements.
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `workflow.py` linear retrieve → rerank → assemble → sufficiency trace (no LangGraph dependency); `evaluate-full` → `workflow`.
+
 ## See also
 
 - [Context assembly flow](./context-assembly-flow.md)

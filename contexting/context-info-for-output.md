@@ -20,6 +20,10 @@ Five **inputs** that context assembly combines before the LLM—each with a dist
 
 Trim by **token budget** after ranking; drop low-score retrieval before dropping citation metadata on kept chunks.
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `full_prompt.py` renders the five inputs in assembly order (policy → evidence → structured → history → request).
+
 ## See also
 
 - [Retrieval metrics observability — context token count](../retrieval/search/retrieval-metrics-observability.md)

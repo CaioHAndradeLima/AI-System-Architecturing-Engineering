@@ -54,6 +54,10 @@ This is often called **query rewriting** or **contextual query resolution**. It 
 
 Deeper patterns: [embedding — cleaning user query](../retrieval/embedding/queries/embedding-cleaning-user-query.md).
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `scoring.py` implements \(S(d)\); `evaluate-full` → `scoring_math` prints \(R,F,A,T\) breakdown; `query_resolution` compares ambiguous vs resolved follow-up queries (`threads.json`).
+
 ## See also
 
 - [Context info for output](./context-info-for-output.md)

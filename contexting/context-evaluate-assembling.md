@@ -24,9 +24,11 @@ Metrics and tests for **context assembly** quality—whether the prompt carries 
 
 Run **unauthorized-evidence tests** on every change to assembly, caching, or filter logic—not only on retrieval index changes.
 
-## See also
+## Code lab
 
-- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — runnable assembly metrics, tenant tests, abstention scenarios, and `measure` pipeline with LLM context/answer judges on a demo corpus
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `metrics.py` (coverage, redundancy, citations, leaks), `evaluate-scenarios` abstention, offline `groundedness`, and `measure` with LLM judges (OpenAI or local Cursor agent).
+
+## See also
 - [Evaluate answer metrics](../observability-evaluation/evaluate-answer-metrics.md)
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)
 - [Assembling trade-offs — mistakes and fixes](./context-assembling-trade-offs.md)

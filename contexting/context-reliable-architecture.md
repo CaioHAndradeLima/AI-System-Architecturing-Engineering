@@ -24,6 +24,10 @@ Rules for **safe, trustworthy context assembly**—what may enter the prompt and
 
 These rules apply in **assemble_context_node** and earlier—validation after generation cannot undo a prompt that already contained forbidden evidence ([LangGraph workflow](./context-assembly-langchain-langgraph.md)).
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — ACL in pipeline assembler, `reliability.py` injection filtering, unauthorized leak metrics in `evaluate` / `measure`, and `workflow.injection_detected` in `evaluate-full`.
+
 ## See also
 
 - [Evaluate context assembling](./context-evaluate-assembling.md) — unauthorized-evidence tests, groundedness, no-answer handling

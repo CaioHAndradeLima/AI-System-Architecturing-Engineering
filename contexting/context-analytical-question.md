@@ -29,6 +29,10 @@ LLM explains the result
 
 Combine with doc RAG when the question needs **policy plus numbers** ([multi-hop question](./context-multi-hop-question.md)).
 
+## Code lab
+
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `analytical.py`, `data/structured_results.json`, and `evaluate-full` → `analytical` with numeric support checks.
+
 ## See also
 
 - [Context assembly flow](./context-assembly-flow.md)
