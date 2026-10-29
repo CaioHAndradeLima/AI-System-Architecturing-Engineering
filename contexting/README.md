@@ -140,8 +140,9 @@ How context assembly and prompt safety evolve from startup/prototype through gro
 |---------|-------------------|
 | `python -m contexting_strategies.cli evaluate` | [Context algorithm](./context-algorithm.md) steps (ACL, dedupe, \(S(d)\) scoring, budget), [assembling trade-offs](./context-assembling-trade-offs.md) baselines, [evaluate assembling](./context-evaluate-assembling.md) metrics |
 | `python -m contexting_strategies.cli evaluate-scenarios` | [Multi-hop question](./context-multi-hop-question.md), [conversation strategies](./context-conversation-strategies.md), insufficient-evidence / no-answer handling |
+| `python -m contexting_strategies.cli evaluate-full` | All of the above plus rerank→assemble bridge, [analytical question](./context-analytical-question.md), offline groundedness samples, [reliable architecture](./context-reliable-architecture.md) injection filtering, [context info for output](./context-info-for-output.md) render order, [LangGraph-style workflow](./context-assembly-langchain-langgraph.md) stage trace |
 
-Pair with **[reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies)** for candidate ordering before assembly ([reranking](../retrieval/search/retrieval-strategy-reranking.md)).
+Pair with **[reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies)** for candidate ordering before assembly ([reranking](../retrieval/search/retrieval-strategy-reranking.md)). Export ranked lists with `python scripts/export_context_candidates.py` in that repo for the contexting rerank bridge fixture.
 
 ## Related
 
