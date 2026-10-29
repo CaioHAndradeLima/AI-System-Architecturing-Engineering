@@ -43,6 +43,12 @@ Guardrails do not enforce tenancy—combine Bedrock controls with [guardrails da
 - [ ] Log guardrail interventions without storing full PII in plain text
 - [ ] Validate cross-tenant scenarios still fail at **retrieval/IAM**, not only at content filters
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — AWS control slot + offline stub in `cloud_adapters.py`. Keys: `amazon_bedrock_guardrails`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [AI-specific controls — Google Cloud Model Armor](./ai-specific-controls-google-model-armor.md)

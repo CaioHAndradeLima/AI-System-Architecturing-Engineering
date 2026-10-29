@@ -15,6 +15,12 @@ Infrastructure and platform controls that complement application-level guardrail
 
 Pair these with [guard-rails category](./guard-rails-category.md) enforcement in application code (tenant isolation, tool safety, output validation).
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Infra complement table in `aws_services_complement.py` (no deploy). Keys: `guardrails_aws_services`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Guardrails cloud architecture](./guardrails-cloud-architecture.md)

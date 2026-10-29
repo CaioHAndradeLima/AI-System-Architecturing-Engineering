@@ -79,6 +79,12 @@ Deep dives: [Bedrock Guardrails](./ai-specific-controls-amazon-bedrock-guardrail
 | 9 | **Log enough to investigate incidents, but avoid logging sensitive payloads by default.** |
 | 10 | **Add complexity when risk, evidence, or requirements justify it.** |
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Maturity snapshot in `maturity.py`. Keys: `guard_rails_decision_assistance`, `maturity`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Guard-rails test use cases](./guard-rails-test-use-cases.md)

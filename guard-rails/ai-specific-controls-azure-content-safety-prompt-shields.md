@@ -40,6 +40,12 @@ Use **trusted identity claims**, **server-side membership checks**, and **tenant
 - [ ] Wire Purview or other DLP where sensitive categories require governance beyond AI safety APIs
 - [ ] Test unauthorized retrieval failures **without** assuming Prompt Shields blocks data exfiltration
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Azure control slot + offline stub in `cloud_adapters.py`. Keys: `azure_content_safety`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [AI-specific controls — Amazon Bedrock Guardrails](./ai-specific-controls-amazon-bedrock-guardrails.md)

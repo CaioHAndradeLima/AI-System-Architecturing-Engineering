@@ -38,6 +38,12 @@ Multi-cloud mapping: [guard-rails-cloud-comparison.md](./guard-rails-cloud-compa
 - [ ] On block/redact, return a safe user-facing message and log the event without leaking blocked content
 - [ ] Pair Model Armor with **IAM + tenant-aware retrieval**, not prompt screening alone
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — GCP control slot + offline stub in `cloud_adapters.py`. Keys: `google_model_armor`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [AI-specific controls — Azure Content Safety and Prompt Shields](./ai-specific-controls-azure-content-safety-prompt-shields.md)

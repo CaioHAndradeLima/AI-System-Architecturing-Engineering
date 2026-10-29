@@ -17,6 +17,12 @@ Scenarios to prove tenant isolation, tool safety, and content handling behave as
 
 These cases align with [what good guardrails do](./README.md#what-good-guardrails-do) (testable, fail safely), [robust cloud rules implementation](./guard-rails-robust-cloud-rules-implementation.md), and [data isolation strategies](./guardrails-data-isolation.md).
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — One scenario per table row in `scenario_evaluation.py` / `data/test_use_cases.json`. Keys: `guard_rails_test_use_cases`, `scenarios.test_use_cases`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Safer architecture: tenant-scoped retrieval](./safer-architecture-tenant-scoped-retrieval.md)

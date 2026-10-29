@@ -14,6 +14,12 @@ Maps common guardrail **responsibilities** to representative services on **AWS**
 
 Vendor offerings change frequently—treat this table as a **starting map**, not an exhaustive or version-pinned catalog. For AWS Bedrock Guardrails capabilities in depth, see [AI-specific controls — Amazon Bedrock Guardrails](./ai-specific-controls-amazon-bedrock-guardrails.md). For Google Cloud, see [AI-specific controls — Model Armor](./ai-specific-controls-google-model-armor.md). For Azure, see [AI-specific controls — Content Safety and Prompt Shields](./ai-specific-controls-azure-content-safety-prompt-shields.md). For stage-based adoption and a compact service map, see [decision architecturing assistance](./guard-rails-decision-architecturing-assistance.md). Tenant isolation always requires **application-level** scoping (see [data isolation](./guardrails-data-isolation.md) and [safer tenant retrieval](./safer-architecture-tenant-scoped-retrieval.md)).
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Responsibility → vendor table in `cloud_guardrail_map.py`. Keys: `guard_rails_cloud_comparison`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Guardrails AWS services](./guardrails-aws-services.md) — AWS control purposes in more detail
