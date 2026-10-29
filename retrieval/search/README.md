@@ -191,6 +191,10 @@ Pair with retrieval cloud tools and multi-agent retrieval architecture.
 
 → [See more in retrieval-aws-multi-agent-sample.md](./retrieval-aws-multi-agent-sample.md)
 
+## Runnable code lab
+
+**[reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies)** measures BM25, dense/hybrid, and reranking pipelines on a demo corpus. After reranking, see **[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** for prompt assembly under token budgets ([contexting](../../contexting/README.md)).
+
 ## Related
 
 - [Embedding user query flow](../embedding/queries/embedding-user-query-flow.md)

@@ -32,6 +32,7 @@ Eval: answer correctness and groundedness on questions that require more than on
 
 ## See also
 
+- [contexting-strategies — `evaluate-scenarios`](https://github.com/CaioHAndradeLima/contexting-strategies) — per-hop retrieval and hop-coverage metrics (`multihop_golden.json`)
 - [Simple document question](./context-simple-document-question.md) — single-hop contrast
 - [Context assembly flow](./context-assembly-flow.md)
 - [Contexting overview](./README.md)

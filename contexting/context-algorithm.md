@@ -50,5 +50,6 @@ Steps **1–2** are safety and correctness; skipping them cannot be fixed by pro
 
 ## See also
 
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — reference pipeline (`pipeline_acl_dedupe_score_diverse`) and `evaluate` CLI
 - [Compacting](../retrieval/compacting/) — overlap with dedupe and budget before or inside this pipeline
 - [Contexting overview](./README.md)
