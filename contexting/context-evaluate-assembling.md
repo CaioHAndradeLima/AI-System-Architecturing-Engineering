@@ -26,7 +26,7 @@ Run **unauthorized-evidence tests** on every change to assembly, caching, or fil
 
 ## Code lab
 
-- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `metrics.py` (coverage, redundancy, citations, leaks), `evaluate-scenarios` abstention, offline `groundedness`, and `measure` with LLM judges (OpenAI or local Cursor agent).
+- [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) — `evaluate-pipeline --profile ci-contexting-eval` scorecard (assembly + abstention + multi-hop gates); `metrics.py`; `measure` with optional LLM judges (OpenAI or Cursor).
 
 ## See also
 - [Evaluate answer metrics](../observability-evaluation/evaluate-answer-metrics.md)
