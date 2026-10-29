@@ -87,6 +87,10 @@ OUTPUT VALIDATION & GUARDRAILS CHECKLIST
 | Gate: failed validation | [Failure impact](./output-validation-failure-impact.md) — safe recovery, log category, re-test |
 | Full stack | [Prompt implementation flow](../prompting/prompt-implementation-flow.md) · [LLM implementation flow](../llm/llm-implementation-flow.md) · [Context algorithm](../contexting/context-algorithm.md) |
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** maps this checklist to `implementation_flow.py` and tagged golden cases. Run `python -m output_strategies.cli evaluate-full` → `implementation_flow`, `implementation_checklist`. PR gate: `evaluate-pipeline --profile ci-output-eval`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Output overview](./README.md)

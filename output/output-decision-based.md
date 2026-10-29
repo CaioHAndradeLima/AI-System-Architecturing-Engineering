@@ -31,6 +31,10 @@ How **post-generation validation, delivery, and guardrails** evolve from startup
 | Cost control | [Validation metrics — cost per successful task](./output-validation-via-test-or-guardrails-metrics.md) · [LLM retry and fallbacks](../llm/llm-retry-fallbacks-routing.md) |
 | Multi-agent | [Failure guardrails LangGraph](./output-failure-guardrails-via-langchain.md) · [Retrieval architecture decision](../retrieval/search/retrieval-architecture-decision.md) |
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — maturity tiers and recommended default strategy in `maturity.py`. Run `evaluate-full` → `maturity`, `decision_based`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Output implementation flow](./output-implementation-flow.md)

@@ -47,6 +47,10 @@ Classify failure
 
 **Retrieve more** only within latency budget and ACL scope ([search](../retrieval/search/), [metadata filtering](../retrieval/search/retrieval-strategy-metadata-filtering.md)). **One repair attempt** aligns with constrained output ([generation parameters](../llm/llm-generation-parameters.md)).
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — branch mapping (repair, retrieve-more, deny, escalate) in `failure_routing.py`; scenario metrics in `evaluate-scenarios` → `failure_routing`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Output implementation strategies](./output-implementation-strategies.md)

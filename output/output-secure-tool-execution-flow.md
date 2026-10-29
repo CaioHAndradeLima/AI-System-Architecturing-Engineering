@@ -35,6 +35,10 @@ if granted      least privilege
 
 Do not **retry** the same unauthorized tool call automatically ([validation failure impact — unauthorized tool](./output-validation-failure-impact.md)). Test with [guard-rails test use cases](../guard-rails/guard-rails-test-use-cases.md).
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — tool allowlists, tenant-scoped arguments, and deny routes in `tool_execution.py`; fixtures in `data/tool_scenarios.json`. Run `evaluate-scenarios` → `tool_execution` or `evaluate-full` → `secure_tool_execution`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Output overview](./README.md)

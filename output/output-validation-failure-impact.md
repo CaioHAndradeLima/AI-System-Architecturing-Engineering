@@ -14,6 +14,10 @@ When post-generation or tool validation fails, respond in a **bounded, safe** wa
 | **Provider timeout** | Apply a bounded retry if the deadline permits |
 | **Repeated validation failures** | Stop, return a safe failure response, and log the failure category |
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — failure categories and safe routes in `failure_classifier.py` / `failure_routing.py`. Run `evaluate-full` → `failure_impact`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Failure procedure flow](./output-failure-procedure-flow.md)
