@@ -132,9 +132,9 @@ How context assembly and prompt safety evolve from startup/prototype through gro
 
 → [See more in context-architecturing-decision-based.md](./context-architecturing-decision-based.md)
 
-## Runnable code lab
+## Reference implementation
 
-**[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** is a small Python project that implements and measures ideas from this section on a synthetic corpus. It is for learning and controlled experiments—not a production service.
+**[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** is the **reference codebase** for the best practices in this section: default assembly pipeline, evaluation gates, and CI profiles. It uses a bundled regression corpus; you swap in your data for production adoption.
 
 | Command | What it exercises |
 |---------|-------------------|
