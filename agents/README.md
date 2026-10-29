@@ -17,6 +17,14 @@ Guide files live under [`multi-agent-architecture/`](./multi-agent-architecture/
 
 ## Guides
 
+### [platform-agent-interview-cheat-sheet.md](./platform-agent-interview-cheat-sheet.md)
+
+`#interview` · `#cheat-sheet` · `#platform` · `#mcp` · `#gcp` · `#fintech`
+
+One-page talking points and links for platform-agent interviews: SDK primitives, lifecycle, MCP, production guardrails, GCP layout, and fintech reliability.
+
+→ [See more in platform-agent-interview-cheat-sheet.md](./platform-agent-interview-cheat-sheet.md)
+
 ### [agent-platform-starter-kit-primitives.md](./agent-platform-starter-kit-primitives.md)
 
 `#platform` · `#sdk` · `#abstractions` · `#vendor-agnostic`
