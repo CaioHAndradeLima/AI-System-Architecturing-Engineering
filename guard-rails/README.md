@@ -164,3 +164,18 @@ When to adopt common guardrails by product stage (small/MVP → medium → large
 Use with guard-rails category, cloud comparison, and robust implementation.
 
 → [See more in guard-rails-decision-architecturing-assistance.md](./guard-rails-decision-architecturing-assistance.md)
+
+---
+
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — layered policy orchestration (identity → ACL → retrieval → tools → output), multi-tenant golden attacks, and CI measure gates on bundled fixtures.
+
+| Command | Guides exercised |
+| --- | --- |
+| `python -m guardrails_strategies.cli evaluate-pipeline --profile ci-guardrails-eval` | Core policy metrics + [test use cases](./guard-rails-test-use-cases.md) + tenant-scoped vs shared retrieval |
+| `python -m guardrails_strategies.cli evaluate-scenarios` | All rows in [guard-rails-test-use-cases.md](./guard-rails-test-use-cases.md) |
+| `python -m guardrails_strategies.cli evaluate-full` | **100% guard-rails guide coverage** — [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14) |
+| Docker + `check-measure` | Profiles in [measure_profiles.json](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/config/measure_profiles.json); **`ci-guardrails-eval`** uses `evaluate-pipeline`. GitHub Actions `measure-gate`. |
+
+Pair with **[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** (tenant-scoped evidence), **[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** (post-LLM validation), and **[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** (incident/canary regression).

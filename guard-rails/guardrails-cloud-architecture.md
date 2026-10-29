@@ -88,6 +88,12 @@ Cross-cutting items are not a bypass path—if secrets or monitoring fail, fail 
 - [ ] Output controls run **before** caching or streaming completion to the client
 - [ ] Audit events cover auth decisions, tool calls, and retrieval doc IDs (redacted content where required)
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Logical layer checklist in `cloud_architecture_checklist.py` (no cloud SDK). Keys: `guardrails_cloud_architecture`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Guard-rails overview](./README.md)

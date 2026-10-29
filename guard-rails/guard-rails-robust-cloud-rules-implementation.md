@@ -21,6 +21,12 @@ Checklist for a **production-grade** multi-tenant agent or RAG stack on cloud: r
 - Storage tiers: [guardrails data isolation](./guardrails-data-isolation.md)
 - AI safety alone is insufficient: [Azure Prompt Shields note](./ai-specific-controls-azure-content-safety-prompt-shields.md), [Model Armor](./ai-specific-controls-google-model-armor.md), [Bedrock Guardrails](./ai-specific-controls-amazon-bedrock-guardrails.md)
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Checklist coverage in `implementation_flow.py`. Keys: `guard_rails_robust_implementation`, `implementation_checklist`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [What good guardrails do](./README.md#what-good-guardrails-do)

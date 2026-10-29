@@ -80,6 +80,12 @@ A **multi-tenant RAG pattern** where identity and authorization are resolved in 
 - [ ] Run cross-tenant retrieval tests from [test use cases](./guard-rails-test-use-cases.md)
 - [ ] Fail closed if tenant cannot be resolved or membership check fails
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Tenant filter in `tenant_scoped_retrieval.py`. Keys: `safer_architecture_tenant_scoped_retrieval`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Wrong architecture: shared retrieval](./wrong-architecture-shared-retrieval.md)

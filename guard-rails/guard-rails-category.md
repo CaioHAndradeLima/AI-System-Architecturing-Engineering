@@ -15,6 +15,12 @@ Reference map of common guardrail categories: what each one covers, a concrete e
 | **Privacy** | Detect or redact sensitive information when required | DLP/PII detection and data-handling policies |
 | **Resource controls** | Limit tokens, requests, execution time, and cost | API gateway, application quotas, provider limits |
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Category → layer map in `policy_categories.py`. Keys: `guard_rails_category`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Enforcement layers](./README.md#enforcement-layers)

@@ -86,6 +86,12 @@ Customer C --> Dedicated environment C
 | 2. Separate schemas or databases | Strong | Medium |
 | 3. Dedicated infrastructure per tenant | Strongest | Highest |
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Isolation mode fixtures in `data_isolation.py`. Keys: `guardrails_data_isolation`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Safer architecture: tenant-scoped retrieval](./safer-architecture-tenant-scoped-retrieval.md)

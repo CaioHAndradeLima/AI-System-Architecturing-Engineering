@@ -34,6 +34,12 @@ This violates **security guardrails** (tenant isolation, data protection) from t
 3. **Validate outputs** for citations: retrieved doc IDs must belong to the same tenant as the session.
 4. **Test with cross-tenant adversarial queries** (see [test use cases](./guard-rails-test-use-cases.md); e.g. “summarize Customer B’s contract” while authenticated as A).
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Shared-index leak metrics in `shared_index_simulation.py`. Keys: `wrong_architecture_shared_retrieval`, `scenarios.shared_index_antipattern`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Safer architecture: tenant-scoped retrieval](./safer-architecture-tenant-scoped-retrieval.md)

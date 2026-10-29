@@ -87,6 +87,12 @@ Order matters: authentication after basic input parsing is common (you need a bo
 - [ ] Emit spans/metrics per layer to see where requests die
 - [ ] Document **fail-closed** behavior for each layer (HTTP code, user message, internal alert)
 
+## Reference implementation
+
+**[guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies)** — Layered pipeline in `policy_pipeline.py` / `strategies.py`. Keys: `guardrails_strategy`, `strategy_comparison`.
+
+Recommended gate: `ci-guardrails-eval` (`evaluate-pipeline` + `check-measure`). Coverage: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/guardrails-strategies/blob/main/docs/LAB_COVERAGE.md) (14/14).
+
 ## See also
 
 - [Example Python directories](../agents/multi-agent-architecture/example-python-directories.md)
