@@ -44,6 +44,11 @@ Prompt / Model / Retrieval Change
 
 Tag every change with **prompt version**, **model ID**, and **retrieval/index version** on traces so canary cohorts compare apples to apples.
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — baseline vs candidate bundles in `regression_canary.py` / `data/canary_baselines.json`. Keys: `regression_and_canary`, `scenarios.canary`.
+
 ## See also
 
 - [Deployment overview](../deployment/README.md)

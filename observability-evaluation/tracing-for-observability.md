@@ -45,6 +45,11 @@ Trace: request_123
 
 Attribute checklist: [tracing for observability — metrics](./tracing-for-observability-metrics.md). Propagate **tenant ID** on every span for per-tenant dashboards ([prompt architecturing decision-based](../prompting/prompt-architecturing-decision-based.md)).
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — fixture span trees in `tracing.py` / `data/traces.json`. Key: `tracing_for_observability`.
+
 ## See also
 
 - [Investigate failure by observability data](./investigate-failure-by-observability-data.md)

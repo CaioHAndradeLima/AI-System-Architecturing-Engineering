@@ -65,6 +65,11 @@ Work **top-down from the trace** when a user report or alert does not match expe
 
 Add a **regression case** for step 8 whenever step 7 finds a new category you did not test before. Step 10 aligns with [regression and canary releases](./regression-and-canary-releases.md).
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — top-down layer hypothesis in `failure_investigation.py` on `data/incident_scenarios.json`. Keys: `investigate_failure`, `scenarios.incident`.
+
 ## See also
 
 - [Regression and canary releases](./regression-and-canary-releases.md)

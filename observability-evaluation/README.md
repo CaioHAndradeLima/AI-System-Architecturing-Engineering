@@ -109,6 +109,20 @@ Safe rollout when prompts, models, or retrieval change—automated tests and bas
 
 → [See more in regression-and-canary-releases.md](./regression-and-canary-releases.md)
 
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** is the **reference codebase** for the best practices in this section: retrieval-only and end-to-end golden eval, fixture traces, incident layer diagnosis, and CI profiles. It uses a bundled regression corpus; swap in your labeled queries, qrels, and trace exports for production adoption.
+
+| Command | What it exercises |
+|---------|-------------------|
+| `python -m observability_strategies.cli evaluate-pipeline --profile ci-observability-eval` | **[Retrieval + answer scorecard](./evaluate-retrieval-independently-metrics.md)** — Recall@K, nDCG, groundedness, abstain, canary/incident scenarios ([PIPELINE_EVAL.md](https://github.com/CaioHAndradeLima/observability-strategies/blob/main/docs/PIPELINE_EVAL.md)) |
+| `python -m observability_strategies.cli evaluate` | [Decision maturity](./observability-decision-based.md) — `retrieval_only` vs `e2e_offline` vs `judge_augmented` |
+| `python -m observability_strategies.cli evaluate-scenarios` | [Poor retrieval](./poor-retrieval-scores.md), [incident investigation](./investigate-failure-by-observability-data.md), [canary](./regression-and-canary-releases.md) |
+| `python -m observability_strategies.cli evaluate-full` | **100% observability guide coverage** — [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/observability-strategies/blob/main/docs/LAB_COVERAGE.md) (11/11) |
+| Docker + `check-measure` | Profiles in [measure_profiles.json](https://github.com/CaioHAndradeLima/observability-strategies/blob/main/config/measure_profiles.json); **`ci-observability-eval`** uses `evaluate-pipeline`. GitHub Actions `measure-gate`. |
+
+Pair with **[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** ([evaluate assembling](../contexting/context-evaluate-assembling.md)) and **[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** ([answer/output metrics](../output/output-validation-via-test-or-guardrails-metrics.md)).
+
 ## Related links
 
 - [Output validation metrics](../output/output-validation-via-test-or-guardrails-metrics.md)

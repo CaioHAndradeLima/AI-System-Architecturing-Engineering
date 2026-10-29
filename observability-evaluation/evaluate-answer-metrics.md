@@ -25,6 +25,11 @@ If **groundedness** or **citation support** fail but retrieval Recall@K is fine,
 
 Score subjective metrics with [LLM-as-judge vs human evaluation](./llm-as-judge-vs-human.md) when labels are not purely deterministic.
 
+
+## Reference implementation
+
+**[observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies)** — groundedness, abstain, and citation alignment in `answer_metrics.py`; pair with [output-strategies](https://github.com/CaioHAndradeLima/output-strategies) for delivery gates. Key: `evaluate_answer_metrics`.
+
 ## See also
 
 - [Embedding user query evaluation](../retrieval/embedding/queries/embedding-user-query-evaluation.md)
