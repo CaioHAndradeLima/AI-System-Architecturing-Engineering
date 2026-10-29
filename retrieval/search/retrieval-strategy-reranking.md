@@ -42,5 +42,6 @@ Common reranker types: cross-encoder models (query+passage joint scoring), light
 
 ## See also
 
+- [reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies) — hybrid retrieval and reranker comparison lab (`rerank-lab evaluate`)
 - [Retrieval strategy — similarity scores](./retrieval-strategy-similarity.md)
 - [Search overview](./README.md)

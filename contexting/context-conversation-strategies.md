@@ -22,5 +22,6 @@ Message compaction and DB+vector chat patterns: [compacting](../retrieval/compac
 
 ## See also
 
+- [contexting-strategies — `evaluate-scenarios`](https://github.com/CaioHAndradeLima/contexting-strategies) — `full_history`, `last_n`, and `summary_plus_recent` with split history/evidence budgets (`threads.json`)
 - [Context algorithm — token budget](./context-algorithm.md)
 - [Contexting overview](./README.md)

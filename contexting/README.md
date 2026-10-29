@@ -132,6 +132,17 @@ How context assembly and prompt safety evolve from startup/prototype through gro
 
 → [See more in context-architecturing-decision-based.md](./context-architecturing-decision-based.md)
 
+## Runnable code lab
+
+**[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** is a small Python project that implements and measures ideas from this section on a synthetic corpus. It is for learning and controlled experiments—not a production service.
+
+| Command | What it exercises |
+|---------|-------------------|
+| `python -m contexting_strategies.cli evaluate` | [Context algorithm](./context-algorithm.md) steps (ACL, dedupe, \(S(d)\) scoring, budget), [assembling trade-offs](./context-assembling-trade-offs.md) baselines, [evaluate assembling](./context-evaluate-assembling.md) metrics |
+| `python -m contexting_strategies.cli evaluate-scenarios` | [Multi-hop question](./context-multi-hop-question.md), [conversation strategies](./context-conversation-strategies.md), insufficient-evidence / no-answer handling |
+
+Pair with **[reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies)** for candidate ordering before assembly ([reranking](../retrieval/search/retrieval-strategy-reranking.md)).
+
 ## Related
 
 - [Retrieval flow](../retrieval/retrieval-flow.md) · [Retrieval strategies combined](../retrieval/search/retrieval-strategies-combined.md)
