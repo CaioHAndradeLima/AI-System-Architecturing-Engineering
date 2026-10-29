@@ -26,6 +26,10 @@ Metrics and tests for **post-generation validation**—schema, citations, ground
 
 Scenario checklist: [validation guardrails practices](./output-validation-guardrails-practices.md). Track **false-block rate** alongside **unsafe-action prevention**—tight guardrails that block good answers harm UX. Log failure category on every [LangGraph validation route](./output-failure-guardrails-via-langchain.md) for repair and abstain dashboards.
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — schema, citation, grounding, false-block, and latency metrics in `metrics.py`; CI scorecard via `evaluate-pipeline --profile ci-output-eval` ([PIPELINE_EVAL.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/PIPELINE_EVAL.md)). Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Validation failure impact](./output-validation-failure-impact.md)

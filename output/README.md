@@ -98,6 +98,20 @@ Test and review scenarios for post-generation validation—cover in golden sets,
 
 → [See more in output-validation-guardrails-practices.md](./output-validation-guardrails-practices.md)
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** is the **reference codebase** for the best practices in this section: layered post-generation validation, failure routing, adversarial fixtures, and CI profiles. It uses a bundled regression corpus; swap in your labeled outputs and evidence IDs for production adoption.
+
+| Command | What it exercises |
+|---------|-------------------|
+| `python -m output_strategies.cli evaluate-pipeline --profile ci-output-eval` | **[Validation metrics](./output-validation-via-test-or-guardrails-metrics.md) scorecard** — schema, citations, grounding, tool safety, scenarios ([PIPELINE_EVAL.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/PIPELINE_EVAL.md)) |
+| `python -m output_strategies.cli evaluate` | [Implementation strategies](./output-implementation-strategies.md) — `schema_only` vs `schema_plus_citation` vs `layered_pipeline` |
+| `python -m output_strategies.cli evaluate-scenarios` | [Failure procedure](./output-failure-procedure-flow.md), abstention, adversarial and tool scenarios |
+| `python -m output_strategies.cli evaluate-full` | **100% output guide coverage** — [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md) (10/10) |
+| Docker + `check-measure` | Profiles in [measure_profiles.json](https://github.com/CaioHAndradeLima/output-strategies/blob/main/config/measure_profiles.json); **`ci-output-eval`** uses `evaluate-pipeline`. GitHub Actions `measure-gate`. |
+
+Pair with **[contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies)** for authorized evidence assembly before generation ([context assembly flow](../contexting/context-assembly-flow.md)).
+
 ## Related
 
 - [LLM flow](../llm/llm-flow.md) · [LangGraph validate node](../contexting/context-assembly-langchain-langgraph.md)

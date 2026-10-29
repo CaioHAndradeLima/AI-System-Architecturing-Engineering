@@ -14,6 +14,10 @@ Compare judge vs human eval: [LLM-as-judge vs human](../observability-evaluation
 
 Layer cheap deterministic checks first; add claim/NLI or judge on high-risk paths. On failure: [validation failure impact](./output-validation-failure-impact.md).
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** compares deterministic layers (`schema_only`, `schema_plus_citation`, `layered_pipeline`) on golden fixtures. Run `python -m output_strategies.cli evaluate` or `evaluate-full` → `implementation_strategies`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Citation validation](./output-citation-validation.md)

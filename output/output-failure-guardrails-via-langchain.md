@@ -43,6 +43,10 @@ route_by_validation
 
 Baseline graph layout: [context assembly LangGraph](../contexting/context-assembly-langchain-langgraph.md). Enforce **authorization** before **retrieve_more** and **repair_node** so loops cannot widen tenant scope.
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — LangGraph-style node traces (`validate_output_node`, repair, safe exit) in `langgraph_workflow.py` (no LangGraph dependency). Run `evaluate-full` → `langgraph`, `failure_guardrails_langgraph`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Failure procedure flow](./output-failure-procedure-flow.md)

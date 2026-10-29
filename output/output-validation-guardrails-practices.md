@@ -30,6 +30,10 @@ Exercise the pipeline with cases like:
 
 Include **negative controls** (legitimate answers) whenever tightening validators—regressions often show up as false blocks before unsafe leaks.
 
+## Reference implementation
+
+**[output-strategies](https://github.com/CaioHAndradeLima/output-strategies)** — adversarial and tenant-style cases in `data/adversarial_scenarios.json`; run `evaluate-scenarios` → `adversarial` or `evaluate-full` → `guardrails_practices`. Map: [LAB_COVERAGE.md](https://github.com/CaioHAndradeLima/output-strategies/blob/main/docs/LAB_COVERAGE.md).
+
 ## See also
 
 - [Failure procedure flow](./output-failure-procedure-flow.md)

@@ -4,13 +4,14 @@ Markdown guides on multi-agent systems, guard-rails, retrieval, contexting, prom
 
 Each section **README** lists its guides with tags and a short (2–3 line) summary; open the linked note for diagrams, tables, and checklists.
 
-## Companion code labs
+## Reference implementations
 
-Runnable repositories mirror selected guides with synthetic data, tests, and recorded baselines:
+Runnable repositories mirror selected guides with synthetic regression data, tests, and CI measure gates:
 
-| Lab | Documentation |
+| Repository | Documentation |
 |-----|----------------|
 | [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) | [Contexting](./contexting/README.md) — assembly, budget, multi-hop, history, abstention |
+| [output-strategies](https://github.com/CaioHAndradeLima/output-strategies) | [Output](./output/README.md) — post-LLM validation, citations, tools, failure routing |
 | [reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies) | [Search — reranking](./retrieval/search/retrieval-strategy-reranking.md) · [Reranker evaluation](./retrieval/search/retrieval-reranker-evaluation-and-fine-tuning.md) |
 
 ## Contents
