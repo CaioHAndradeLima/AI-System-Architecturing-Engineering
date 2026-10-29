@@ -17,6 +17,38 @@ Guide files live under [`multi-agent-architecture/`](./multi-agent-architecture/
 
 ## Guides
 
+### [agent-platform-starter-kit-primitives.md](./agent-platform-starter-kit-primitives.md)
+
+`#platform` · `#sdk` · `#abstractions` · `#vendor-agnostic`
+
+Design an Agent Starter Kit: reusable primitives, hook-friendly runtime, adapter boundaries, and versioned contracts so product teams configure agents without forking provider code.
+
+→ [See more in agent-platform-starter-kit-primitives.md](./agent-platform-starter-kit-primitives.md)
+
+### [agent-lifecycle-internals.md](./agent-lifecycle-internals.md)
+
+`#lifecycle` · `#hooks` · `#state` · `#memory` · `#loop-control`
+
+Pre/post model and tool hooks, tool-call validation, retries, loop budgets, checkpoints, and memory tiers—the mechanics interviewers ask about under “agent internals.”
+
+→ [See more in agent-lifecycle-internals.md](./agent-lifecycle-internals.md)
+
+### [mcp-native-tools-vs-servers.md](./mcp-native-tools-vs-servers.md)
+
+`#mcp` · `#tools` · `#integrations` · `#platform`
+
+When to register in-process native tools versus MCP servers, hybrid registries, and keeping authz and tracing in the host.
+
+→ [See more in mcp-native-tools-vs-servers.md](./mcp-native-tools-vs-servers.md)
+
+### [agent-production-guardrails-at-scale.md](./agent-production-guardrails-at-scale.md)
+
+`#production` · `#observability` · `#pii` · `#hitl` · `#circuit-breaker`
+
+Tracing and metrics for agent trajectories, PII-safe logs, circuit breakers, rollback/canary, and human-in-the-loop approval at scale.
+
+→ [See more in agent-production-guardrails-at-scale.md](./agent-production-guardrails-at-scale.md)
+
 ### [agentic-ai-evaluation-and-improvement.md](./agentic-ai-evaluation-and-improvement.md)
 
 `#evaluation` · `#verification` · `#test-time-compute` · `#langgraph`
