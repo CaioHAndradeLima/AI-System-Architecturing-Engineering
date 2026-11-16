@@ -16,6 +16,7 @@ Runnable repositories mirror selected guides with synthetic regression data, tes
 | [observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies) | [Observability & evaluation](./observability-evaluation/README.md) — golden eval, traces, incident/canary gates |
 | [guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies) | [Guard-rails](./guard-rails/README.md) — layered policy, tenant isolation, tool scope, test-use-case gates |
 | [prompting-strategies](https://github.com/CaioHAndradeLima/prompting-strategies) | [Prompting](./prompting/README.md) — templates, versioning, few-shot, injection fencing, grounding/abstain |
+| [llm-strategies](https://github.com/CaioHAndradeLima/llm-strategies) | [LLM](./llm/README.md) — routing, fallbacks, streaming vs batch, cost-capped inference gates |
 
 ## Contents
 
