@@ -96,6 +96,10 @@ How prompting practices evolve from startup/prototype through growing production
 - [LangGraph — generate / validate nodes](../contexting/context-assembly-langchain-langgraph.md)
 - [Guard-rails strategy](../guard-rails/guard-rails-strategy.md)
 
+## Reference implementation
+
+**[prompting-strategies](https://github.com/CaioHAndradeLima/prompting-strategies)** — template assembly, versioned policies, few-shot curation, injection-hardened evidence fencing, and **`ci-prompting-eval`** gates. CLI: `prompt-lab evaluate-pipeline --profile ci-prompting-eval` ([PIPELINE_EVAL.md](https://github.com/CaioHAndradeLima/prompting-strategies/blob/main/docs/PIPELINE_EVAL.md)).
+
 ## See also
 
 - [Repository overview](../README.md)

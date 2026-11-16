@@ -171,6 +171,10 @@ How chat/completion model and inference ops evolve from startup/prototype throug
 - [Retrieval cloud tools — LLM inference](../retrieval/search/retrieval-cloud-tools.md)
 - [LangGraph generate node](../contexting/context-assembly-langchain-langgraph.md)
 
+## Reference implementation
+
+**[llm-strategies](https://github.com/CaioHAndradeLima/llm-strategies)** — single-model baseline, task routing, fallback chains, cost-capped degradation, and **`ci-llm-eval`** gates. CLI: `llm-lab evaluate-pipeline --profile ci-llm-eval`.
+
 ## See also
 
 - [Repository overview](../README.md)

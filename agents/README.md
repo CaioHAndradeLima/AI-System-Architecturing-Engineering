@@ -101,3 +101,11 @@ guardrails, adapters, observability, and evaluation live in separate packages so
 imports.
 
 → [See more in example-python-directories.md](./multi-agent-architecture/example-python-directories.md)
+
+## Reference implementation
+
+**[agents-strategies](https://github.com/CaioHAndradeLima/agents-strategies)** — sequential pipelines, supervisor routing, parallel fan-out, MCP hybrid tool registries, loop budgets, and tool authz fixtures. CLI: `agent-lab evaluate-pipeline --profile ci-agents-eval`.
+
+## See also
+
+- [Repository overview](../README.md)
