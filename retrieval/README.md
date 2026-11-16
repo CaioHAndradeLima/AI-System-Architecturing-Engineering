@@ -53,6 +53,13 @@ Pair with minimum ingestion MVP and guard-rails decision assistance for security
 
 _Section indexes: [ingestion](./ingestion/README.md) · [chunking](./chunking/README.md) · [embedding](./embedding/README.md) · [queries](./embedding/queries/README.md) · [compacting](./compacting/README.md) · [storaging](./storaging/README.md) · [search](./search/README.md)_
 
+## Reference implementations
+
+| Repo | Focus |
+|------|--------|
+| **[retrieval-strategies](https://github.com/CaioHAndradeLima/retrieval-strategies)** | Chunking (fixed/recursive/semantic), dense/hybrid/metadata search, tenant partition storage — `retrieval-lab` / `ci-retrieval-eval` |
+| **[reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies)** | Cross-encoder vs heuristic rerank, calibration, bridge export to [contexting-strategies](https://github.com/CaioHAndradeLima/contexting-strategies) |
+
 ## Related guard-rails
 
 - [Safer architecture: tenant-scoped retrieval](../guard-rails/safer-architecture-tenant-scoped-retrieval.md)

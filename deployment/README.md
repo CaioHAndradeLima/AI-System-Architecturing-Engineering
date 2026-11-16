@@ -154,6 +154,10 @@ Deployment concern → cloud services on AWS, Azure, and Google Cloud—runtime,
 - [Guard-rails AWS services](../guard-rails/guardrails-aws-services.md) · [Guard-rails cloud comparison](../guard-rails/guard-rails-cloud-comparison.md)
 - [Retrieval AWS multi-agent sample](../retrieval/search/retrieval-aws-multi-agent-sample.md)
 
+## Reference implementation
+
+**[deployment-strategies](https://github.com/CaioHAndradeLima/deployment-strategies)** — manual promote, CI quality gates, canary golden regression, live feedback loop simulation. CLI: `deploy-lab evaluate-pipeline --profile ci-deployment-eval`.
+
 ## See also
 
 - [Repository overview](../README.md)

@@ -15,6 +15,12 @@ Runnable repositories mirror selected guides with synthetic regression data, tes
 | [reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies) | [Search — reranking](./retrieval/search/retrieval-strategy-reranking.md) · [Reranker evaluation](./retrieval/search/retrieval-reranker-evaluation-and-fine-tuning.md) |
 | [observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies) | [Observability & evaluation](./observability-evaluation/README.md) — golden eval, traces, incident/canary gates |
 | [guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies) | [Guard-rails](./guard-rails/README.md) — layered policy, tenant isolation, tool scope, test-use-case gates |
+| [prompting-strategies](https://github.com/CaioHAndradeLima/prompting-strategies) | [Prompting](./prompting/README.md) — templates, versioning, few-shot, injection fencing, grounding/abstain |
+| [llm-strategies](https://github.com/CaioHAndradeLima/llm-strategies) | [LLM](./llm/README.md) — routing, fallbacks, streaming vs batch, cost-capped inference gates |
+| [agents-strategies](https://github.com/CaioHAndradeLima/agents-strategies) | [Agents](./agents/README.md) — supervisor, sequential, parallel fan-out, MCP hybrid tool registries |
+| [retrieval-strategies](https://github.com/CaioHAndradeLima/retrieval-strategies) | [Retrieval](./retrieval/README.md) — chunking, hybrid search, metadata filter, tenant storage |
+| [deployment-strategies](https://github.com/CaioHAndradeLima/deployment-strategies) | [Deployment](./deployment/README.md) — manual promote, CI gates, canary regression, feedback loop |
+| [design-strategies](https://github.com/CaioHAndradeLima/design-strategies) | [Design](./design/README.md) — startup vs enterprise vs fintech architecture scoring |
 
 ## Contents
 

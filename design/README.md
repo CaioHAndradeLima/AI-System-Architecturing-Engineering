@@ -63,6 +63,10 @@ Reliability and security patterns for financial agents: idempotency, dual contro
 - [Production components](../deployment/production-components.md)
 - [Agents overview](../agents/README.md)
 
+## Reference implementation
+
+**[design-strategies](https://github.com/CaioHAndradeLima/design-strategies)** — architecture scoring for startup single-region, enterprise multi-tenant, and fintech high-stakes workloads (synthetic reliability/cost/compliance checklists). CLI: `design-lab evaluate-pipeline --profile ci-design-eval`.
+
 ## See also
 
 - [Repository overview](../README.md)
