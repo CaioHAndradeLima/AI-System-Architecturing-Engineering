@@ -15,6 +15,7 @@ Runnable repositories mirror selected guides with synthetic regression data, tes
 | [reranking-strategies](https://github.com/CaioHAndradeLima/reranking-strategies) | [Search — reranking](./retrieval/search/retrieval-strategy-reranking.md) · [Reranker evaluation](./retrieval/search/retrieval-reranker-evaluation-and-fine-tuning.md) |
 | [observability-strategies](https://github.com/CaioHAndradeLima/observability-strategies) | [Observability & evaluation](./observability-evaluation/README.md) — golden eval, traces, incident/canary gates |
 | [guardrails-strategies](https://github.com/CaioHAndradeLima/guardrails-strategies) | [Guard-rails](./guard-rails/README.md) — layered policy, tenant isolation, tool scope, test-use-case gates |
+| [prompting-strategies](https://github.com/CaioHAndradeLima/prompting-strategies) | [Prompting](./prompting/README.md) — templates, versioning, few-shot, injection fencing, grounding/abstain |
 
 ## Contents
 
